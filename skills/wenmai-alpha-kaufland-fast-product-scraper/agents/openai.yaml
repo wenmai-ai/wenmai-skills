@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 Alpha Kaufland Fast Product Scraper"
+  short_description: "调用 Alpha Kaufland Fast Product Scraper API"
+  default_prompt: "Use $wenmai-alpha-kaufland-fast-product-scraper to call the Wenmai Alpha `alpha_kaufland_fast_product_scraper` standard API."
+policy:
+  allow_implicit_invocation: true

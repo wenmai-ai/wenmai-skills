@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 SellerSprite traffic listing"
+  short_description: "查询指定 ASIN 在 Amazon 站内的关联商品列表，用于分析竞品结构与关联关系"
+  default_prompt: "Use $wenmai-sellersprite-traffic-listing to call the Wenmai SellerSprite `traffic_listing` standard API."
+policy:
+  allow_implicit_invocation: true

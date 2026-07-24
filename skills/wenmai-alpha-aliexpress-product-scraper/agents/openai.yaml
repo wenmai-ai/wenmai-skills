@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 Alpha Aliexpress Product Scraper"
+  short_description: "调用 Alpha Aliexpress Product Scraper API"
+  default_prompt: "Use $wenmai-alpha-aliexpress-product-scraper to call the Wenmai Alpha `alpha_aliexpress_product_scraper` standard API."
+policy:
+  allow_implicit_invocation: true

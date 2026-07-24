@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 SIF ASIN 关键词"
+  short_description: "反查 ASIN 关键词流量信号"
+  default_prompt: "Use $wenmai-sif-asin-keywords to fetch SIF ASIN 关键词 data through Wenmai standard API."
+policy:
+  allow_implicit_invocation: true

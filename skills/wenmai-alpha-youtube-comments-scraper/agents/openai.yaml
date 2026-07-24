@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 Alpha Youtube Comments Scraper"
+  short_description: "调用 Alpha Youtube Comments Scraper API"
+  default_prompt: "Use $wenmai-alpha-youtube-comments-scraper to call the Wenmai Alpha `alpha_youtube_comments_scraper` standard API."
+policy:
+  allow_implicit_invocation: true

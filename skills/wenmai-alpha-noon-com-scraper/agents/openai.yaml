@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 Alpha Noon Com Scraper"
+  short_description: "调用 Alpha Noon Com Scraper API"
+  default_prompt: "Use $wenmai-alpha-noon-com-scraper to call the Wenmai Alpha `alpha_noon_com_scraper` standard API."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 SellerSprite review"
+  short_description: "查询指定 Amazon ASIN 的商品评论列表，返回评论标题、评论内容、评分、评论人、评论时间等信息，用于获取商品"
+  default_prompt: "Use $wenmai-sellersprite-review to call the Wenmai SellerSprite `review` standard API."
+policy:
+  allow_implicit_invocation: true

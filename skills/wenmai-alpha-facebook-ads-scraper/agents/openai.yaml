@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 Alpha Facebook Ads Scraper"
+  short_description: "调用 Alpha Facebook Ads Scraper API"
+  default_prompt: "Use $wenmai-alpha-facebook-ads-scraper to call the Wenmai Alpha `alpha_facebook_ads_scraper` standard API."
+policy:
+  allow_implicit_invocation: true

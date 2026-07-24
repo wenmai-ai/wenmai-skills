@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 Alpha Wildberries Products Search Scraper"
+  short_description: "调用 Alpha Wildberries Products Search Scraper API"
+  default_prompt: "Use $wenmai-alpha-wildberries-products-search-scraper to call the Wenmai Alpha `alpha_wildberries_products_search_scraper` standard API."
+policy:
+  allow_implicit_invocation: true

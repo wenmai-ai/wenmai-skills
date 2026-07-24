@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 Keepa 商品搜索"
+  short_description: "按关键词搜索 Keepa 商品"
+  default_prompt: "Use $wenmai-keepa-product-search to fetch Keepa 商品搜索 data through Wenmai standard API."
+policy:
+  allow_implicit_invocation: true

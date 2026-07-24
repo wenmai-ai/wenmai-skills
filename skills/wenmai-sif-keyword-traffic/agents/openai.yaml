@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 SIF 关键词流量"
+  short_description: "查关键词竞争和流量份额"
+  default_prompt: "Use $wenmai-sif-keyword-traffic to fetch SIF 关键词竞争 data through Wenmai standard API."
+policy:
+  allow_implicit_invocation: true

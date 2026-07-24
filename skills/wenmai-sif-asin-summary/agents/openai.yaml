@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 SIF ASIN 流量概览"
+  short_description: "看 ASIN 自然/广告流量结构"
+  default_prompt: "Use $wenmai-sif-asin-summary to fetch SIF ASIN 流量概览 data through Wenmai standard API."
+policy:
+  allow_implicit_invocation: true

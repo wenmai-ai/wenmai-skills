@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 Alpha Ozon Scraper Pro"
+  short_description: "调用 Alpha Ozon Scraper Pro API"
+  default_prompt: "Use $wenmai-alpha-ozon-scraper-pro to call the Wenmai Alpha `alpha_ozon_scraper_pro` standard API."
+policy:
+  allow_implicit_invocation: true

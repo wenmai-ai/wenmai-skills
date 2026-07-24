@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 Amazon 评论"
+  short_description: "按 ASIN 获取真实买家评论"
+  default_prompt: "Use $wenmai-amazon-reviews to fetch Amazon 评论 / VOC data through Wenmai standard API."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 Alpha Zalando Scraper"
+  short_description: "调用 Alpha Zalando Scraper API"
+  default_prompt: "Use $wenmai-alpha-zalando-scraper to call the Wenmai Alpha `alpha_zalando_scraper` standard API."
+policy:
+  allow_implicit_invocation: true

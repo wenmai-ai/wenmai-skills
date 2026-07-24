@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 卖家精灵竞品查询"
+  short_description: "查竞品商品列表和基础指标"
+  default_prompt: "Use $wenmai-sellersprite-competitor to fetch 卖家精灵竞品查询 data through Wenmai standard API."
+policy:
+  allow_implicit_invocation: true

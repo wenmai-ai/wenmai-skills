@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 Alpha Dealwatch Scraper"
+  short_description: "调用 Alpha Dealwatch Scraper API"
+  default_prompt: "Use $wenmai-alpha-dealwatch-scraper to call the Wenmai Alpha `alpha_dealwatch_scraper` standard API."
+policy:
+  allow_implicit_invocation: true

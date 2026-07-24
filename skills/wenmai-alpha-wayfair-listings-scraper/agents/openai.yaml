@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 Alpha Wayfair Listings Scraper"
+  short_description: "调用 Alpha Wayfair Listings Scraper API"
+  default_prompt: "Use $wenmai-alpha-wayfair-listings-scraper to call the Wenmai Alpha `alpha_wayfair_listings_scraper` standard API."
+policy:
+  allow_implicit_invocation: true

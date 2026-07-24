@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 SellerSprite asin detail"
+  short_description: "查询 Amazon 单个商品（ASIN）的完整详情信息"
+  default_prompt: "Use $wenmai-sellersprite-asin-detail to call the Wenmai SellerSprite `asin_detail` standard API."
+policy:
+  allow_implicit_invocation: true

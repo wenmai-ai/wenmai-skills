@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 卖家精灵商品搜索"
+  short_description: "按条件筛选 Amazon 商品池"
+  default_prompt: "Use $wenmai-sellersprite-product-search to fetch 卖家精灵商品筛选 data through Wenmai standard API."
+policy:
+  allow_implicit_invocation: true

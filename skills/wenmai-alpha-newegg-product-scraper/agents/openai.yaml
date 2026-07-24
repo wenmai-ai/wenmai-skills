@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 Alpha Newegg Product Scraper"
+  short_description: "调用 Alpha Newegg Product Scraper API"
+  default_prompt: "Use $wenmai-alpha-newegg-product-scraper to call the Wenmai Alpha `alpha_newegg_product_scraper` standard API."
+policy:
+  allow_implicit_invocation: true

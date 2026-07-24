@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 Alpha Douyin Product Search Scraper"
+  short_description: "调用 Alpha Douyin Product Search Scraper API"
+  default_prompt: "Use $wenmai-alpha-douyin-product-search-scraper to call the Wenmai Alpha `alpha_douyin_product_search_scraper` standard API."
+policy:
+  allow_implicit_invocation: true

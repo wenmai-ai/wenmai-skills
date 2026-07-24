@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 Alpha Lowes Product Lookup"
+  short_description: "调用 Alpha Lowes Product Lookup API"
+  default_prompt: "Use $wenmai-alpha-lowes-product-lookup to call the Wenmai Alpha `alpha_lowes_product_lookup` standard API."
+policy:
+  allow_implicit_invocation: true

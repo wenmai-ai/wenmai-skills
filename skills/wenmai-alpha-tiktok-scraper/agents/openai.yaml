@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 Alpha Tiktok Scraper"
+  short_description: "调用 Alpha Tiktok Scraper API"
+  default_prompt: "Use $wenmai-alpha-tiktok-scraper to call the Wenmai Alpha `alpha_tiktok_scraper` standard API."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 SellerSprite google trend"
+  short_description: "用于查询 Google Trends 中指定关键词在特定市场的搜索热度变化趋势"
+  default_prompt: "Use $wenmai-sellersprite-google-trend to call the Wenmai SellerSprite `google_trend` standard API."
+policy:
+  allow_implicit_invocation: true

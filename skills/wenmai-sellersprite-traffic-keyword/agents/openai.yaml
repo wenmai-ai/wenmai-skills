@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 卖家精灵流量关键词"
+  short_description: "查 ASIN 搜索关键词表现"
+  default_prompt: "Use $wenmai-sellersprite-traffic-keyword to fetch 卖家精灵流量关键词 data through Wenmai standard API."
+policy:
+  allow_implicit_invocation: true

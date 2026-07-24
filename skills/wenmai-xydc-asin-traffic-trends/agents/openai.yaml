@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 XYDC ASIN Traffic Trends"
+  short_description: "调用 XYDC asin流量得分趋势（天） API"
+  default_prompt: "Use $wenmai-xydc-asin-traffic-trends to call the Wenmai XYDC `get_asin_traffic_trends` standard API."
+policy:
+  allow_implicit_invocation: true

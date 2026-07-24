@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 Alpha Etsy Scraper"
+  short_description: "调用 Alpha Etsy Scraper API"
+  default_prompt: "Use $wenmai-alpha-etsy-scraper to call the Wenmai Alpha `alpha_etsy_scraper` standard API."
+policy:
+  allow_implicit_invocation: true

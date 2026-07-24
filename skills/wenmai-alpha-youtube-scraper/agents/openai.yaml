@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 Alpha Youtube Scraper"
+  short_description: "调用 Alpha Youtube Scraper API"
+  default_prompt: "Use $wenmai-alpha-youtube-scraper to call the Wenmai Alpha `alpha_youtube_scraper` standard API."
+policy:
+  allow_implicit_invocation: true

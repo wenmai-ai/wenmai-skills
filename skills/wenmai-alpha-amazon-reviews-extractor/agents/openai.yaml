@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 Alpha Amazon Reviews Extractor"
+  short_description: "调用 Alpha Amazon Reviews Extractor API"
+  default_prompt: "Use $wenmai-alpha-amazon-reviews-extractor to call the Wenmai Alpha `alpha_amazon_reviews_extractor` standard API."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 SIF 关键词概览"
+  short_description: "查关键词搜索量与集中度"
+  default_prompt: "Use $wenmai-sif-keyword-overview to fetch SIF 关键词概览 data through Wenmai standard API."
+policy:
+  allow_implicit_invocation: true

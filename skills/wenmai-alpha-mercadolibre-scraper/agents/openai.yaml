@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 Alpha Mercadolibre Scraper"
+  short_description: "调用 Alpha Mercadolibre Scraper API"
+  default_prompt: "Use $wenmai-alpha-mercadolibre-scraper to call the Wenmai Alpha `alpha_mercadolibre_scraper` standard API."
+policy:
+  allow_implicit_invocation: true

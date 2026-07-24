@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 Keepa 历史走势"
+  short_description: "查价格、BSR、评分等历史"
+  default_prompt: "Use $wenmai-keepa-product-history to fetch Keepa 历史数据 data through Wenmai standard API."
+policy:
+  allow_implicit_invocation: true

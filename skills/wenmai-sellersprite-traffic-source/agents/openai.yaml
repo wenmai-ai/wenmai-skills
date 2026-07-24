@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 SellerSprite traffic source"
+  short_description: "Amazon 流量关键词结构分析工具（ASIN / 关键词维度）"
+  default_prompt: "Use $wenmai-sellersprite-traffic-source to call the Wenmai SellerSprite `traffic_source` standard API."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 Alpha Xiaohongshu Pro Scraper"
+  short_description: "调用 Alpha Xiaohongshu Pro Scraper API"
+  default_prompt: "Use $wenmai-alpha-xiaohongshu-pro-scraper to call the Wenmai Alpha `alpha_xiaohongshu_pro_scraper` standard API."
+policy:
+  allow_implicit_invocation: true

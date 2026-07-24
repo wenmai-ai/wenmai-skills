@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 XYDC ASIN Keywords Monthly"
+  short_description: "调用 XYDC asin反查关键词列表（月） API"
+  default_prompt: "Use $wenmai-xydc-asin-keywords-monthly to call the Wenmai XYDC `get_asin_keywords_monthly` standard API."
+policy:
+  allow_implicit_invocation: true
