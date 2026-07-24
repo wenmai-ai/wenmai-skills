@@ -1,0 +1,6 @@
+interface:
+  display_name: "JIIMORE 查询细分市场商品"
+  short_description: "调用 JIIMORE 标准 API：查询细分市场商品"
+  default_prompt: "Use $wenmai-jiimore-get-niche-asins to 查询细分市场商品 and return traceable results."
+policy:
+  allow_implicit_invocation: true

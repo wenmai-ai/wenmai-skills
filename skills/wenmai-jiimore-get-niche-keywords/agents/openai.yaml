@@ -1,0 +1,6 @@
+interface:
+  display_name: "JIIMORE 查询细分市场关键词"
+  short_description: "调用 JIIMORE 标准 API：查询细分市场关键词"
+  default_prompt: "Use $wenmai-jiimore-get-niche-keywords to 查询细分市场关键词 and return traceable results."
+policy:
+  allow_implicit_invocation: true

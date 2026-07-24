@@ -1,0 +1,6 @@
+interface:
+  display_name: "JIIMORE ASIN 反查关键词排名"
+  short_description: "调用 JIIMORE 标准 API：ASIN 反查关键词排名"
+  default_prompt: "Use $wenmai-jiimore-get-keyword-rankings to ASIN 反查关键词排名 and return traceable results."
+policy:
+  allow_implicit_invocation: true

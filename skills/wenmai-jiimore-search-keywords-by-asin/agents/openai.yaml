@@ -1,0 +1,6 @@
+interface:
+  display_name: "JIIMORE 按 ASIN 查询关键词"
+  short_description: "调用 JIIMORE 标准 API：按 ASIN 查询关键词"
+  default_prompt: "Use $wenmai-jiimore-search-keywords-by-asin to 按 ASIN 查询关键词 and return traceable results."
+policy:
+  allow_implicit_invocation: true

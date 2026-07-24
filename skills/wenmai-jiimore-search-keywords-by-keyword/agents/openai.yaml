@@ -1,0 +1,6 @@
+interface:
+  display_name: "JIIMORE 关键词扩词"
+  short_description: "调用 JIIMORE 标准 API：关键词扩词"
+  default_prompt: "Use $wenmai-jiimore-search-keywords-by-keyword to 关键词扩词 and return traceable results."
+policy:
+  allow_implicit_invocation: true

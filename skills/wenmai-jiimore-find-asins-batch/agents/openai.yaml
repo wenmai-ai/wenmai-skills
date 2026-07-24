@@ -1,0 +1,6 @@
+interface:
+  display_name: "JIIMORE 批量查询 ASIN 摘要"
+  short_description: "调用 JIIMORE 标准 API：批量查询 ASIN 摘要"
+  default_prompt: "Use $wenmai-jiimore-find-asins-batch to 批量查询 ASIN 摘要 and return traceable results."
+policy:
+  allow_implicit_invocation: true

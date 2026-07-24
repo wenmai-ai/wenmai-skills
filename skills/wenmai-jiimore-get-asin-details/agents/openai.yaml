@@ -1,0 +1,6 @@
+interface:
+  display_name: "JIIMORE ASIN 商品详情"
+  short_description: "调用 JIIMORE 标准 API：ASIN 商品详情"
+  default_prompt: "Use $wenmai-jiimore-get-asin-details to ASIN 商品详情 and return traceable results."
+policy:
+  allow_implicit_invocation: true

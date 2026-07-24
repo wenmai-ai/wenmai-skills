@@ -1,0 +1,6 @@
+interface:
+  display_name: "JIIMORE 查询 ABA 相似商品"
+  short_description: "调用 JIIMORE 标准 API：查询 ABA 相似商品"
+  default_prompt: "Use $wenmai-jiimore-find-similar-asins to 查询 ABA 相似商品 and return traceable results."
+policy:
+  allow_implicit_invocation: true

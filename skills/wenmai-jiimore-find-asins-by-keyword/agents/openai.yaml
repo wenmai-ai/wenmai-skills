@@ -1,0 +1,6 @@
+interface:
+  display_name: "JIIMORE 按关键词查询商品"
+  short_description: "调用 JIIMORE 标准 API：按关键词查询商品"
+  default_prompt: "Use $wenmai-jiimore-find-asins-by-keyword to 按关键词查询商品 and return traceable results."
+policy:
+  allow_implicit_invocation: true
