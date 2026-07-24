@@ -1,7 +1,7 @@
 # Wenmai Skills
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python](https://img.shields.io/badge/python-3.x-blue.svg)](https://www.python.org/)
+[![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/)
 [![Agent Skills](https://img.shields.io/badge/Agent%20Skills-Open%20Standard-orange)](https://agentskills.io)
 [![Skills](https://img.shields.io/badge/skills-56-brightgreen)](#skills-catalog)
 
@@ -13,7 +13,7 @@
 
 ## Installation
 
-当前仓库暂不支持通过 `npx skills add` 安装。请下载仓库，并把需要的完整 Skill 目录复制到 Agent 的 Skills 目录。
+当前仓库暂不支持通过 `npx skills add` 安装。请下载仓库，并把需要的完整 Skill 目录复制到 Agent 的 Skills 目录。Skill 脚本需要 Python 3.9 或更高版本，且仅依赖 Python 标准库，无需额外安装第三方包。
 
 ### 1. 下载仓库
 
