@@ -1,6 +1,6 @@
 ---
 name: wenmai-sellersprite-market-statistics
-description: "Use when users need SellerSprite node-level market statistics through Wenmai standard API, including a specific Amazon category node summary, topN market statistics, new product metrics, average sales/revenue/price/rating/BSR, and node-level opportunity assessment."
+description: "卖家精灵 Amazon 类目节点统计接口，用于获取指定节点的 Top N 市场汇总、新品指标、平均销量、销售额、价格、评分和 BSR。当用户提到类目节点统计、Top N 商品、新品表现、节点均值、类目基准或 SellerSprite market statistics 时触发此技能。只要用户需要对一个明确的 Amazon 类目节点做量化评估，也应触发此技能。"
 ---
 
 # Wenmai SellerSprite Market Statistics

@@ -1,6 +1,6 @@
 ---
 name: wenmai-alpha-google-trends-scraper
-description: "Use when users need the Wenmai Alpha standard API `alpha_google_trends_scraper` for Google Trends Scraper, including Google Search / SERP / Trends. Sends user parameters as a JSON POST body to `/wmapi/v1/alpha/google-trends-scraper` and returns traceable raw gateway data for ecommerce research, competitor discovery, VOC, social trend analysis, or reporting."
+description: "Google Trends 趋势采集接口，用于查询关键词在指定地区和时间范围内的搜索热度、趋势变化及接口支持的关联数据。当用户提到 Google Trends、关键词热度、需求趋势、季节性、地区兴趣、趋势对比或搜索趋势时触发此技能。只要用户希望用 Google 搜索热度判断市场需求或关键词走势，也应触发此技能。"
 ---
 
 # Wenmai Alpha Google Trends Scraper

@@ -1,6 +1,6 @@
 ---
 name: wenmai-alpha-reddit-scraper-search-fast
-description: "Use when users need the Wenmai Alpha standard API `alpha_reddit_scraper_search_fast` for Reddit Scraper Search Fast, including Reddit 搜索、帖子、评论和舆情. Sends user parameters as a JSON POST body to `/wmapi/v1/alpha/reddit-scraper-search-fast` and returns traceable raw gateway data for ecommerce research, competitor discovery, VOC, social trend analysis, or reporting."
+description: "Reddit 快速搜索采集接口，用于按关键词查找帖子、评论和社区讨论，获取用户观点与接口支持的互动数据。当用户提到 Reddit 搜索、帖子评论、社区舆情、用户痛点、需求洞察、VOC、subreddit 或 Reddit scraper 时触发此技能。即使用户未明确提及 Reddit API，只要希望从 Reddit 讨论中提炼真实用户声音，也应触发此技能。"
 ---
 
 # Wenmai Alpha Reddit Scraper Search Fast

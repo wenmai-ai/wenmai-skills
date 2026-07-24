@@ -1,6 +1,0 @@
-interface:
-  display_name: "稳卖 XYDC ASIN Ad Change Trends"
-  short_description: "调用 XYDC asin广告信息变动趋势（天） API"
-  default_prompt: "Use $wenmai-xydc-asin-ad-change-trends to call the Wenmai XYDC `get_asin_ad_change_trends` standard API."
-policy:
-  allow_implicit_invocation: true

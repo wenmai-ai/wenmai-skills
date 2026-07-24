@@ -1,6 +1,0 @@
-interface:
-  display_name: "稳卖 XYDC ASIN Variations"
-  short_description: "调用 XYDC 获取asin变体接口 API"
-  default_prompt: "Use $wenmai-xydc-asin-variations to call the Wenmai XYDC `get_asin_variations` standard API."
-policy:
-  allow_implicit_invocation: true

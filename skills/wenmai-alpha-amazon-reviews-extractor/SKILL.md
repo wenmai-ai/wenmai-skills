@@ -1,6 +1,6 @@
 ---
 name: wenmai-alpha-amazon-reviews-extractor
-description: "Use when users need the Wenmai Alpha standard API `alpha_amazon_reviews_extractor` for Amazon Reviews Extractor, including Amazon 商品、评论、Listing、竞品或搜索结果. Sends user parameters as a JSON POST body to `/wmapi/v1/alpha/amazon-reviews-extractor` and returns traceable raw gateway data for ecommerce research, competitor discovery, VOC, social trend analysis, or reporting."
+description: "Amazon 评论采集接口，用于按商品评论页或相关参数获取评论内容、评分及可用的评论元数据，为 VOC、用户痛点、卖点验证和竞品口碑分析提供原始数据。当用户提到 Amazon 评论抓取、买家反馈、差评分析、用户痛点、评论数据、竞品口碑或 review mining 时触发此技能。即使用户未明确提及接口名称，只要需要从 Amazon 评论中提取真实用户声音，也应触发此技能。"
 ---
 
 # Wenmai Alpha Amazon Reviews Extractor

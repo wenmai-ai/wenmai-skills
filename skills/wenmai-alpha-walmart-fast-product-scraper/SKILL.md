@@ -1,6 +1,6 @@
 ---
 name: wenmai-alpha-walmart-fast-product-scraper
-description: "Use when users need the Wenmai Alpha standard API `alpha_walmart_fast_product_scraper` for Walmart Fast Product Scraper, including Walmart 商品或评论. Sends user parameters as a JSON POST body to `/wmapi/v1/alpha/walmart-fast-product-scraper` and returns traceable raw gateway data for ecommerce research, competitor discovery, VOC, social trend analysis, or reporting."
+description: "Walmart 商品快速采集接口，用于按商品链接、ID 或接口支持的查询条件获取商品详情、价格、库存、评分等数据。当用户提到 Walmart 商品查询、商品详情、价格对比、库存核验、竞品研究或 Walmart product scraper 时触发此技能。只要用户需要快速获得可追溯的 Walmart 商品数据，也应触发此技能。"
 ---
 
 # Wenmai Alpha Walmart Fast Product Scraper

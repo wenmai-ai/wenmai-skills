@@ -1,6 +1,0 @@
-interface:
-  display_name: "稳卖 Alpha 1688 Wholesale Scraper"
-  short_description: "调用 Alpha 1688 Wholesale Scraper API"
-  default_prompt: "Use $wenmai-alpha-1688-wholesale-scraper to call the Wenmai Alpha `alpha_1688_wholesale_scraper` standard API."
-policy:
-  allow_implicit_invocation: true

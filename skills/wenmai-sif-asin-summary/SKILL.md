@@ -1,6 +1,6 @@
 ---
 name: wenmai-sif-asin-summary
-description: "Use when users need SIF ASIN-level traffic overview through Wenmai standard API, including listing natural versus advertising traffic share, SP/SB/SBV channel breakdown, recommendation source distribution, listing traffic health, or ASIN traffic structure summary."
+description: "SIF ASIN 流量概览接口，用于汇总 Listing 的自然与广告流量占比、SP／SB／SBV 渠道结构、推荐流量来源和整体流量健康度。当用户提到 ASIN 流量概览、自然广告占比、广告渠道结构、Listing 流量健康或 SIF ASIN summary 时触发此技能。只要用户需要先查看 Amazon 商品整体流量结构而非逐关键词明细，也应触发此技能。"
 ---
 
 # Wenmai SIF ASIN Traffic Summary

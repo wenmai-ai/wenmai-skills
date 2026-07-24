@@ -1,6 +1,0 @@
-interface:
-  display_name: "稳卖 Alpha Tweet Scraper"
-  short_description: "调用 Alpha Tweet Scraper API"
-  default_prompt: "Use $wenmai-alpha-tweet-scraper to call the Wenmai Alpha `alpha_tweet_scraper` standard API."
-policy:
-  allow_implicit_invocation: true

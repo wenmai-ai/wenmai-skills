@@ -1,6 +1,6 @@
 ---
 name: wenmai-sellersprite-competitor
-description: "Use when users need SellerSprite competitor lookup through Wenmai standard API, including querying products by ASIN list, brand, seller, category, marketplace, month, keyword, variation setting, and competitor list metrics."
+description: "卖家精灵竞品查询接口，用于按 ASIN、品牌、卖家、类目、站点、月份、关键词或变体条件查找 Amazon 竞品及其指标。当用户提到竞品查询、相似 ASIN、品牌竞品、卖家商品、类目竞品、变体竞品或 SellerSprite competitor lookup 时触发此技能。只要用户需要建立或筛选 Amazon 竞品清单，也应触发此技能。"
 ---
 
 # Wenmai SellerSprite Competitor Lookup

@@ -1,6 +1,6 @@
 ---
 name: wenmai-sellersprite-review
-description: "Use when users need the Wenmai SellerSprite standard API `review` for 查询指定 Amazon ASIN 的商品评论列表，返回评论标题、评论内容、评分、评论人、评论时间等信息，用于获取商品的用户反馈和评价数据. Sends user parameters as a JSON POST body to `/wmapi/v1` and returns traceable raw gateway data for analysis or reporting."
+description: "卖家精灵 Amazon 评论接口，用于按 ASIN 查询评论标题、正文、评分、评论人、评论时间及接口支持的评价数据。当用户提到 Amazon 评论、ASIN 评价、差评分析、用户反馈、竞品口碑、VOC 或 SellerSprite review 时触发此技能。即使用户未明确提及卖家精灵，只要需要获取指定 Amazon 商品的评论列表，也应触发此技能。"
 ---
 
 # Wenmai SellerSprite review

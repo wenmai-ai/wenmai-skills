@@ -1,6 +1,6 @@
 ---
 name: wenmai-sellersprite-asin-detail-with-coupon-trend
-description: "Use when users need the Wenmai SellerSprite standard API `asin_detail_with_coupon_trend` for 查询指定 ASIN 在 Amazon 指定市场下的完整商品详情信息，. Sends user parameters as a JSON POST body to `/wmapi/v1` and returns traceable raw gateway data for analysis or reporting."
+description: "卖家精灵 ASIN 商品详情与 Coupon 趋势接口，用于查询指定 Amazon 市场中的商品完整信息及优惠券变化数据。当用户提到 ASIN 详情、Coupon 趋势、优惠券历史、促销变化、竞品折扣或 SellerSprite coupon analysis 时触发此技能。即使用户未明确提及接口名称，只要需要同时分析商品指标与优惠券趋势，也应触发此技能。"
 ---
 
 # Wenmai SellerSprite asin detail with coupon trend

@@ -1,6 +1,0 @@
-interface:
-  display_name: "稳卖 Alpha Bol Com Scraper"
-  short_description: "调用 Alpha Bol Com Scraper API"
-  default_prompt: "Use $wenmai-alpha-bol-com-scraper to call the Wenmai Alpha `alpha_bol_com_scraper` standard API."
-policy:
-  allow_implicit_invocation: true

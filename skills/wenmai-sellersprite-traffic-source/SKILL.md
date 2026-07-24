@@ -1,6 +1,6 @@
 ---
 name: wenmai-sellersprite-traffic-source
-description: "Use when users need the Wenmai SellerSprite standard API `traffic_source` for Amazon 流量关键词结构分析工具（ASIN / 关键词维度）. Sends user parameters as a JSON POST body to `/wmapi/v1` and returns traceable raw gateway data for analysis or reporting."
+description: "卖家精灵 Amazon 流量来源分析接口，用于从 ASIN 或关键词维度查看流量关键词结构和接口支持的来源指标。当用户提到流量来源、ASIN 流量结构、关键词来源、自然流量与广告流量、竞品流量入口或 SellerSprite traffic source 时触发此技能。只要用户需要判断 Amazon 商品的搜索流量从哪里来，也应触发此技能。"
 ---
 
 # Wenmai SellerSprite traffic source

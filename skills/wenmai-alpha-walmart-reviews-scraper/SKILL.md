@@ -1,6 +1,6 @@
 ---
 name: wenmai-alpha-walmart-reviews-scraper
-description: "Use when users need the Wenmai Alpha standard API `alpha_walmart_reviews_scraper` for Walmart Reviews Scraper, including Walmart 商品或评论. Sends user parameters as a JSON POST body to `/wmapi/v1/alpha/walmart-reviews-scraper` and returns traceable raw gateway data for ecommerce research, competitor discovery, VOC, social trend analysis, or reporting."
+description: "Walmart 评论采集接口，用于获取商品买家评论、评分及接口支持的评论元数据，为 VOC、痛点和竞品口碑分析提供依据。当用户提到 Walmart 评论、买家反馈、差评分析、商品口碑、用户痛点或 Walmart review scraper 时触发此技能。只要用户需要从 Walmart 评论中提炼真实消费者意见，也应触发此技能。"
 ---
 
 # Wenmai Alpha Walmart Reviews Scraper

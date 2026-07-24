@@ -1,6 +1,6 @@
 ---
 name: wenmai-alpha-lazada-scraper
-description: "Use when users need the Wenmai Alpha standard API `alpha_lazada_scraper` for Lazada Scraper, including Lazada 东南亚电商商品. Sends user parameters as a JSON POST body to `/wmapi/v1/alpha/lazada-scraper` and returns traceable raw gateway data for ecommerce research, competitor discovery, VOC, social trend analysis, or reporting."
+description: "Lazada 商品采集接口，用于获取东南亚站点的商品搜索、价格、销量及接口支持的 Listing 数据。当用户提到 Lazada 搜品、东南亚电商选品、Lazada 商品、竞品价格、类目研究或 Lazada scraper 时触发此技能。即使用户未明确提及数据源，只要目标是用 Lazada 商品数据做选品或竞品分析，也应触发此技能。"
 ---
 
 # Wenmai Alpha Lazada Scraper

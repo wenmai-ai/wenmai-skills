@@ -1,6 +1,6 @@
 ---
 name: wenmai-alpha-google-search-scraper
-description: "Use when users need the Wenmai Alpha standard API `alpha_google_search_scraper` for Google Search Scraper, including Google Search / SERP / Trends. Sends user parameters as a JSON POST body to `/wmapi/v1/alpha/google-search-scraper` and returns traceable raw gateway data for ecommerce research, competitor discovery, VOC, social trend analysis, or reporting."
+description: "Google 搜索结果采集接口，用于按关键词获取 SERP 中的网页标题、摘要、链接及接口支持的搜索结果信息。当用户提到 Google 搜索、SERP、网页检索、竞品官网发现、搜索结果采集、品牌舆情或 Google search scraper 时触发此技能。即使用户未明确说“抓取 Google”，只要需要可追溯的 Google 搜索结果数据，也应触发此技能。"
 ---
 
 # Wenmai Alpha Google Search Scraper

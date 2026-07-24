@@ -1,6 +1,6 @@
 ---
 name: wenmai-sellersprite-google-trend
-description: "Use when users need the Wenmai SellerSprite standard API `google_trend` for 用于查询 Google Trends 中指定关键词在特定市场的搜索热度变化趋势. Sends user parameters as a JSON POST body to `/wmapi/v1` and returns traceable raw gateway data for analysis or reporting."
+description: "卖家精灵 Google Trends 关键词趋势接口，用于查询指定关键词在目标市场和时间范围内的搜索热度变化。当用户提到 Google 趋势、关键词热度、需求变化、季节性、市场趋势、关键词对比或 SellerSprite Google Trend 时触发此技能。只要用户希望通过搜索趋势判断 Amazon 市场需求走势，也应触发此技能。"
 ---
 
 # Wenmai SellerSprite google trend

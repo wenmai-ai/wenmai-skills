@@ -1,6 +1,0 @@
-interface:
-  display_name: "稳卖 XYDC ASIN Order Trends"
-  short_description: "调用 XYDC asin订单量趋势（月） API"
-  default_prompt: "Use $wenmai-xydc-asin-order-trends to call the Wenmai XYDC `get_asin_order_trends` standard API."
-policy:
-  allow_implicit_invocation: true

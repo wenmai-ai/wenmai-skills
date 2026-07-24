@@ -1,6 +1,6 @@
 ---
 name: wenmai-alpha-temu-products-scraper
-description: "Use when users need the Wenmai Alpha standard API `alpha_temu_products_scraper` for Temu Products Scraper, including Temu 商品池. Sends user parameters as a JSON POST body to `/wmapi/v1/alpha/temu-products-scraper` and returns traceable raw gateway data for ecommerce research, competitor discovery, VOC, social trend analysis, or reporting."
+description: "Temu 商品采集接口，用于检索 Temu 商品池并获取接口支持的标题、价格、销量、评价和 Listing 数据。当用户提到 Temu 搜品、Temu 爆品、低价商品、竞品价格、商品池或 Temu scraper 时触发此技能。只要用户希望基于 Temu 商品数据开展选品、定价或竞品研究，也应触发此技能。"
 ---
 
 # Wenmai Alpha Temu Products Scraper

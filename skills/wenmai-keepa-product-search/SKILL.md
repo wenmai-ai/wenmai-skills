@@ -1,6 +1,6 @@
 ---
 name: wenmai-keepa-product-search
-description: "Use when users need Amazon product search through Keepa standard API, including keyword product discovery, ASIN search results, lightweight product pools, marketplace-specific product lookup, or asins-only search."
+description: "Keepa Amazon 商品搜索接口，用于按关键词和站点检索商品，返回 ASIN 及接口支持的轻量商品结果，可用于建立候选商品池。当用户提到 Keepa 搜品、Amazon 关键词搜品、ASIN 搜索、商品发现、候选商品池或 marketplace product search 时触发此技能。即使用户未明确提及 Keepa，只要希望按关键词获取 Amazon 商品或 ASIN 列表，也应触发此技能。"
 ---
 
 # Wenmai Keepa Product Search

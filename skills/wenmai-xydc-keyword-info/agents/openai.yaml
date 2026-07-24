@@ -1,6 +1,0 @@
-interface:
-  display_name: "稳卖 XYDC Keyword Info"
-  short_description: "调用 XYDC 关键词信息（最近一周） API"
-  default_prompt: "Use $wenmai-xydc-keyword-info to call the Wenmai XYDC `get_keyword_info` standard API."
-policy:
-  allow_implicit_invocation: true

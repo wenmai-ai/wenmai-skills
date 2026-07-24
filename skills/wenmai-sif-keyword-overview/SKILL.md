@@ -1,6 +1,6 @@
 ---
 name: wenmai-sif-keyword-overview
-description: "Use when users need SIF keyword demand overview through Wenmai standard API, including keyword search volume history, ABA rank history, top-three click or conversion concentration, marketplace keyword demand sizing, and keyword trend snapshots."
+description: "SIF Amazon 关键词需求概览接口，用于查询搜索量历史、ABA 排名历史、Top 3 点击或转化集中度、市场需求规模和关键词趋势。当用户提到关键词搜索量、ABA 排名、点击集中度、转化集中度、需求趋势或 SIF keyword overview 时触发此技能。只要用户需要判断某个 Amazon 关键词的需求大小与变化，也应触发此技能。"
 ---
 
 # Wenmai SIF Keyword Overview

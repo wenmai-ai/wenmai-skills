@@ -1,6 +1,6 @@
 ---
 name: wenmai-sellersprite-traffic-listing
-description: "Use when users need the Wenmai SellerSprite standard API `traffic_listing` for 查询指定 ASIN 在 Amazon 站内的关联商品列表，用于分析竞品结构与关联关系. Sends user parameters as a JSON POST body to `/wmapi/v1` and returns traceable raw gateway data for analysis or reporting."
+description: "卖家精灵 Amazon 关联商品接口，用于查询指定 ASIN 在站内关联的 Listing，分析商品间的竞品和流量关联关系。当用户提到关联商品、相似 Listing、ASIN 竞品关系、流量关联、站内推荐商品或 SellerSprite traffic listing 时触发此技能。只要用户需要扩展某个 ASIN 的关联竞品池，也应触发此技能。"
 ---
 
 # Wenmai SellerSprite traffic listing

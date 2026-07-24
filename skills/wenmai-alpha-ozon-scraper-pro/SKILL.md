@@ -1,6 +1,6 @@
 ---
 name: wenmai-alpha-ozon-scraper-pro
-description: "Use when users need the Wenmai Alpha standard API `alpha_ozon_scraper_pro` for Ozon Scraper Pro, including Ozon 商品池. Sends user parameters as a JSON POST body to `/wmapi/v1/alpha/ozon-scraper-pro` and returns traceable raw gateway data for ecommerce research, competitor discovery, VOC, social trend analysis, or reporting."
+description: "Ozon 商品采集接口，用于检索俄罗斯 Ozon 平台商品并获取接口支持的价格、销量、评价、卖家或商品池数据。当用户提到 Ozon 搜品、俄罗斯电商、Ozon 商品池、竞品分析、类目研究或 Ozon scraper 时触发此技能。只要用户需要基于 Ozon 真实商品数据进行选品或市场判断，也应触发此技能。"
 ---
 
 # Wenmai Alpha Ozon Scraper Pro

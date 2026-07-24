@@ -1,6 +1,6 @@
 ---
 name: wenmai-alpha-instagram-scraper
-description: "Use when users need the Wenmai Alpha standard API `alpha_instagram_scraper` for Instagram Scraper, including Instagram 账号、话题和内容. Sends user parameters as a JSON POST body to `/wmapi/v1/alpha/instagram-scraper` and returns traceable raw gateway data for ecommerce research, competitor discovery, VOC, social trend analysis, or reporting."
+description: "Instagram 内容采集接口，用于获取接口支持的账号、帖子、话题标签和互动数据，服务于社媒趋势、达人和品牌内容研究。当用户提到 Instagram 账号分析、帖子采集、hashtag、品牌内容、达人研究、互动表现或 Instagram scraper 时触发此技能。即使用户未点名接口，只要需要基于 Instagram 公开内容开展社媒分析，也应触发此技能。"
 ---
 
 # Wenmai Alpha Instagram Scraper

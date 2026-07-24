@@ -1,6 +1,6 @@
 ---
 name: wenmai-alpha-shopee-scraper
-description: "Use when users need the Wenmai Alpha standard API `alpha_shopee_scraper` for Shopee Scraper, including Shopee 商品和店铺. Sends user parameters as a JSON POST body to `/wmapi/v1/alpha/shopee-scraper` and returns traceable raw gateway data for ecommerce research, competitor discovery, VOC, social trend analysis, or reporting."
+description: "Shopee 商品与店铺采集接口，用于获取东南亚等站点的商品、价格、销量、店铺及接口支持的市场数据。当用户提到 Shopee 搜品、店铺分析、东南亚选品、竞品商品、价格研究或 Shopee scraper 时触发此技能。即使用户未点名接口，只要需要使用 Shopee 商品或店铺数据开展市场研究，也应触发此技能。"
 ---
 
 # Wenmai Alpha Shopee Scraper

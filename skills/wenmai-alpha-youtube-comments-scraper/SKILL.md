@@ -1,6 +1,6 @@
 ---
 name: wenmai-alpha-youtube-comments-scraper
-description: "Use when users need the Wenmai Alpha standard API `alpha_youtube_comments_scraper` for Youtube Comments Scraper, including YouTube 视频、频道、搜索或评论. Sends user parameters as a JSON POST body to `/wmapi/v1/alpha/youtube-comments-scraper` and returns traceable raw gateway data for ecommerce research, competitor discovery, VOC, social trend analysis, or reporting."
+description: "YouTube 评论采集接口，用于获取指定视频的评论、回复及接口支持的互动元数据，为受众反馈和 VOC 分析提供原始数据。当用户提到 YouTube 评论、视频反馈、观众观点、评论舆情、用户痛点或 YouTube comments scraper 时触发此技能。只要用户希望从 YouTube 评论中提炼真实受众声音，也应触发此技能。"
 ---
 
 # Wenmai Alpha Youtube Comments Scraper

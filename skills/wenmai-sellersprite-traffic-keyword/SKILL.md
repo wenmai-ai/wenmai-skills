@@ -1,6 +1,6 @@
 ---
 name: wenmai-sellersprite-traffic-keyword
-description: "Use when users need SellerSprite traffic keyword analysis through Wenmai standard API, including an ASIN keyword list, organic/ad positions, search volume, purchase rate, traffic percentage, traffic keyword type, conversion keyword type, badges, rank position, and keyword pagination."
+description: "卖家精灵 ASIN 流量关键词接口，用于查询关键词列表、自然位与广告位、搜索量、购买率、流量占比、关键词类型、转化类型和排名位置。当用户提到 ASIN 反查关键词、自然排名、广告排名、流量词、转化词、关键词占比或 SellerSprite traffic keyword 时触发此技能。只要用户需要分析哪些搜索词为 Amazon 商品带来流量，也应触发此技能。"
 ---
 
 # Wenmai SellerSprite Traffic Keyword

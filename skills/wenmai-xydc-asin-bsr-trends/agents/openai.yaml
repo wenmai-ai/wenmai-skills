@@ -1,6 +1,0 @@
-interface:
-  display_name: "稳卖 XYDC ASIN BSR Trends"
-  short_description: "调用 XYDC asin BSR排名趋势（天） API"
-  default_prompt: "Use $wenmai-xydc-asin-bsr-trends to call the Wenmai XYDC `get_asin_bsr_trends` standard API."
-policy:
-  allow_implicit_invocation: true

@@ -1,6 +1,6 @@
 ---
 name: wenmai-alpha-shein-scraper
-description: "Use when users need the Wenmai Alpha standard API `alpha_shein_scraper` for Shein Scraper, including SHEIN 商品. Sends user parameters as a JSON POST body to `/wmapi/v1/alpha/shein-scraper` and returns traceable raw gateway data for ecommerce research, competitor discovery, VOC, social trend analysis, or reporting."
+description: "SHEIN 商品采集接口，用于检索时尚商品并获取接口支持的价格、款式、销量、评价或 Listing 数据。当用户提到 SHEIN 搜品、快时尚趋势、服装选品、款式研究、竞品价格或 SHEIN scraper 时触发此技能。只要用户需要基于 SHEIN 商品数据判断时尚趋势或市场机会，也应触发此技能。"
 ---
 
 # Wenmai Alpha Shein Scraper

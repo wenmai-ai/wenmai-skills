@@ -1,6 +1,6 @@
 ---
 name: wenmai-alpha-youtube-scraper
-description: "Use when users need the Wenmai Alpha standard API `alpha_youtube_scraper` for Youtube Scraper, including YouTube 视频、频道、搜索或评论. Sends user parameters as a JSON POST body to `/wmapi/v1/alpha/youtube-scraper` and returns traceable raw gateway data for ecommerce research, competitor discovery, VOC, social trend analysis, or reporting."
+description: "YouTube 数据采集接口，用于搜索和获取接口支持的视频、频道、播放表现及相关内容信息。当用户提到 YouTube 视频搜索、频道分析、内容趋势、热视频、竞品频道或 YouTube scraper 时触发此技能。即使用户未明确说“抓取 YouTube”，只要需要用 YouTube 公开数据研究内容或账号，也应触发此技能。"
 ---
 
 # Wenmai Alpha Youtube Scraper

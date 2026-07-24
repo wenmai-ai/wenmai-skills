@@ -1,6 +1,6 @@
 ---
 name: wenmai-alpha-wildberries-products-search-scraper
-description: "Use when users need the Wenmai Alpha standard API `alpha_wildberries_products_search_scraper` for Wildberries Products Search Scraper, including Wildberries 商品搜索. Sends user parameters as a JSON POST body to `/wmapi/v1/alpha/wildberries-products-search-scraper` and returns traceable raw gateway data for ecommerce research, competitor discovery, VOC, social trend analysis, or reporting."
+description: "Wildberries 商品搜索采集接口，用于按关键词检索俄罗斯 Wildberries 平台商品并获取接口支持的价格、销量、评价等结果。当用户提到 Wildberries 搜品、俄罗斯电商选品、商品搜索、竞品研究或 Wildberries scraper 时触发此技能。只要用户需要在 Wildberries 商品池中查找或比较商品，也应触发此技能。"
 ---
 
 # Wenmai Alpha Wildberries Products Search Scraper

@@ -1,6 +1,6 @@
 ---
 name: wenmai-alpha-douyin-product-search-scraper
-description: "Use when users need the Wenmai Alpha standard API `alpha_douyin_product_search_scraper` for Douyin Product Search Scraper, including 抖音商品搜索. Sends user parameters as a JSON POST body to `/wmapi/v1/alpha/douyin-product-search-scraper` and returns traceable raw gateway data for ecommerce research, competitor discovery, VOC, social trend analysis, or reporting."
+description: "抖音商品搜索采集接口，用于按关键词检索抖音电商商品并获取可用的商品、价格、销量及相关搜索结果数据。当用户提到抖音搜品、抖音商品搜索、抖音爆品、短视频电商选品、抖音竞品或 Douyin product search 时触发此技能。即使用户未点名 Alpha 接口，只要目标是在抖音商品池中查找或比较商品，也应触发此技能。"
 ---
 
 # Wenmai Alpha Douyin Product Search Scraper
