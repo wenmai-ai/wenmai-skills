@@ -4,6 +4,7 @@
 [![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/)
 [![Agent Skills](https://img.shields.io/badge/Agent%20Skills-Open%20Standard-orange)](https://agentskills.io)
 [![Skills](https://img.shields.io/badge/skills-69-brightgreen)](#skills-catalog)
+[![npm](https://img.shields.io/npm/v/%40wenmai-ai%2Fskills.svg)](https://www.npmjs.com/package/@wenmai-ai/skills)
 
 **Wenmai Skills** 是面向跨境电商的数据型 AI Skill 集合，提供 69 个 API 驱动的原子能力，覆盖多平台商品与内容采集、Amazon 评论、JIIMORE、Keepa、卖家精灵（SellerSprite）、SIF 和 Sorftime 等数据源。
 
@@ -13,43 +14,46 @@
 
 ## Installation
 
-Skill 脚本需要 Python 3.9 或更高版本，且仅依赖 Python 标准库，无需额外安装第三方包。
+请先安装 [Node.js](https://nodejs.org/)，Node.js 会同时提供 `npx`。
 
-### 使用 Skills CLI 安装（推荐）
+### Install all skills
 
-查看全部可用 Skills：
+使用交互式安装器选择目标 Agent 和安装方式：
+
+```bash
+npx skills add wenmai-ai/wenmai-skills
+```
+
+### Install specific skills
+
+```bash
+npx skills add wenmai-ai/wenmai-skills --skill wenmai-sif-asin-keywords wenmai-amazon-reviews
+```
+
+### List available skills
 
 ```bash
 npx skills add wenmai-ai/wenmai-skills --list
 ```
 
-安装单个 Skill 到 Codex：
+### Install for a specific agent
 
 ```bash
-npx skills add wenmai-ai/wenmai-skills \
-  --skill wenmai-sif-asin-keywords \
-  -g -a codex -y
+npx skills add wenmai-ai/wenmai-skills --agent wenmai-agent
+npx skills add wenmai-ai/wenmai-skills --agent codex
+npx skills add wenmai-ai/wenmai-skills --agent claude-code
+npx skills add wenmai-ai/wenmai-skills --agent cursor
 ```
 
-安装全部 Skills 到 Codex：
+### Install the npm package
 
-```bash
-npx skills add wenmai-ai/wenmai-skills \
-  --skill '*' \
-  -g -a codex -y
-```
-
-将 `codex` 替换为 Skills CLI 支持的其他 Agent 名称，即可安装到 Claude Code、Cursor 等平台。
-
-### 使用 npm 获取完整包
-
-安装包含全部 Skills 的 npm 聚合包：
+`@wenmai-ai/skills` 是包含全部 Skills 的 npm 聚合包：
 
 ```bash
 npm install @wenmai-ai/skills
 ```
 
-npm 会把完整集合下载到 `node_modules/@wenmai-ai/skills`，但不会自动注册到 Agent。下载后仍可选择安装其中一个 Skill：
+npm 会把完整集合下载到 `node_modules/@wenmai-ai/skills`，但不会自动注册到 Agent。可以继续使用 Skills CLI 从本地包中安装指定 Skill：
 
 ```bash
 npx skills add ./node_modules/@wenmai-ai/skills \
@@ -57,54 +61,50 @@ npx skills add ./node_modules/@wenmai-ai/skills \
   -g -a codex -y
 ```
 
-### 手动安装
+### Install for Wenmai Agent
 
-下载仓库：
+安装器要求显式指定目标 Agent；不传 `--agent` 时不会执行安装。
 
-```bash
-git clone https://github.com/wenmai-ai/wenmai-skills.git
-cd wenmai-skills
-```
+更新最新的版本的Wenmai Agent。
 
-也可以在 GitHub 仓库页面选择 **Code → Download ZIP**，解压后进入仓库目录。
-
-手动安装单个 Skill：
+安装全部 Skills：
 
 ```bash
-mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
-cp -R skills/wenmai-sif-asin-keywords "${CODEX_HOME:-$HOME/.codex}/skills/"
+npx @wenmai-ai/skills install --agent wenmai-agent
 ```
 
-手动安装全部 Skills：
+安装单个 Skill：
 
 ```bash
-mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
-cp -R skills/wenmai-* "${CODEX_HOME:-$HOME/.codex}/skills/"
+npx @wenmai-ai/skills install wenmai-sif-asin-keywords --agent wenmai-agent
 ```
 
-安装时必须复制完整 Skill 目录，不能只复制 `SKILL.md`：
-
-```text
-wenmai-sif-asin-keywords/
-├── SKILL.md
-├── skill-card.md
-├── agents/
-├── references/
-└── scripts/
-```
-
-如果目标目录中已存在同名 Skill，请先备份旧目录，再用新目录完整替换，避免新旧脚本或参考文件混用。
-
-### 验证安装
-
-确认 `SKILL.md` 和配套文件已复制成功：
+更新已经安装的 Skills：
 
 ```bash
-test -f "${CODEX_HOME:-$HOME/.codex}/skills/wenmai-sif-asin-keywords/SKILL.md" \
-  && echo "Skill installed"
+npx @wenmai-ai/skills install --agent wenmai-agent --force
 ```
 
-安装后新建一次 Agent 任务或重新启动 Agent，使新 Skill 被加载。按照 `SKILL.md` 的触发描述提出需求；也可以在支持显式调用的 Agent 中直接指定 Skill 名称。
+安装器会自动识别系统并使用以下目录：
+
+- macOS：`~/Library/Application Support/Wenmai Agent/wenmai-cli/skills`
+- Windows：`%APPDATA%\wenmaiAgent\wenmai-cli\skills`
+
+### Install for Codex with the npm package
+
+安装全部 Skills：
+
+```bash
+npx @wenmai-ai/skills install --agent codex
+```
+
+安装单个 Skill：
+
+```bash
+npx @wenmai-ai/skills install wenmai-sif-asin-keywords --agent codex
+```
+
+默认安装目录为 `${CODEX_HOME:-~/.codex}/skills`。
 
 ## Setup
 
@@ -239,6 +239,26 @@ skills/<skill-name>/
 
 `SKILL.md` 描述触发条件与工作流，`skill-card.md` 提供简要能力卡片，`references/api.md` 保存接口契约，`scripts/` 提供可直接执行的 Python 客户端。
 
+## Requirements
+
+- **Node.js** — 用于运行 `npx skills` 安装器。
+- **Python 3.9+** — 所有 Skill 脚本仅使用 Python 标准库，无需安装第三方依赖。
+- **环境变量** — 使用前必须设置 `WENMAI_API_KEY`，也兼容 `WENMAI_SECRET_KEY`。
+
+## Compatible Platforms
+
+本项目遵循 [Agent Skills](https://agentskills.io) 开放标准：
+
+| Platform | Status |
+| --- | --- |
+| 稳卖 Agent | Supported |
+| Codex | Supported |
+| Claude Code | Supported |
+| Cursor | Supported |
+| GitHub Copilot | Supported |
+| OpenClaw | Supported |
+| Gemini CLI | Supported |
+
 ## License
 
-[MIT](LICENSE)
+本项目基于 [MIT License](LICENSE) 开源。

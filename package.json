@@ -1,7 +1,7 @@
 {
   "name": "@wenmai-ai/skills",
-  "version": "0.1.0",
-  "description": "Wenmai Agent Skills for cross-border ecommerce data and research",
+  "version": "0.2.0",
+  "description": "Wenmai Agent Skills and cross-platform installer for ecommerce data and research",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -16,13 +16,24 @@
     "codex",
     "ecommerce",
     "amazon",
+    "wenmai-agent",
     "wenmai"
   ],
+  "bin": {
+    "wenmai-skills": "bin/wenmai-skills.js"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
   "files": [
+    "bin",
     "skills",
     "README.md",
     "LICENSE"
   ],
+  "engines": {
+    "node": ">=18"
+  },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
