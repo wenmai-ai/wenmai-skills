@@ -1,6 +1,9 @@
 ---
 name: wenmai-alpha-etsy-scraper
 description: "Etsy 商品采集接口，用于研究手作、设计、小众和个性化商品，返回接口支持的商品与市场结果数据。当用户提到 Etsy 搜品、手工品选品、小众产品、个性化商品、Etsy 竞品、价格研究或 Etsy scraper 时触发此技能。即使用户未明确提及 Etsy API，只要需要基于 Etsy 商品数据开展市场或竞品研究，也应触发此技能。"
+metadata:
+  author: wenmai-ai
+  version: "1.0.0"
 ---
 
 # Wenmai Alpha Etsy Scraper

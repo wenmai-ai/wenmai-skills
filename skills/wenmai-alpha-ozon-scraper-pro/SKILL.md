@@ -1,6 +1,9 @@
 ---
 name: wenmai-alpha-ozon-scraper-pro
 description: "Ozon 商品采集接口，用于检索俄罗斯 Ozon 平台商品并获取接口支持的价格、销量、评价、卖家或商品池数据。当用户提到 Ozon 搜品、俄罗斯电商、Ozon 商品池、竞品分析、类目研究或 Ozon scraper 时触发此技能。只要用户需要基于 Ozon 真实商品数据进行选品或市场判断，也应触发此技能。"
+metadata:
+  author: wenmai-ai
+  version: "1.0.0"
 ---
 
 # Wenmai Alpha Ozon Scraper Pro

@@ -1,6 +1,9 @@
 ---
 name: wenmai-sellersprite-product-search
 description: "卖家精灵 Amazon 商品搜索与商品池筛选接口，可按关键词、类目、销量、销售额、BSR、价格、评分、卖家、品牌、徽章和配送方式等条件筛选商品。当用户提到 Amazon 搜品、商品池、条件选品、竞品筛选、类目商品过滤或 SellerSprite product research 时触发此技能。只要用户希望按经营指标寻找候选 ASIN，也应触发此技能。"
+metadata:
+  author: wenmai-ai
+  version: "1.0.0"
 ---
 
 # Wenmai SellerSprite Product Search

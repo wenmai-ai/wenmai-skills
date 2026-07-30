@@ -1,6 +1,9 @@
 ---
 name: wenmai-jiimore-get-niche-details
 description: "JIIMORE Amazon 细分市场详情接口，用于获取指定 niche 的基础信息、市场指标、竞争情况和机会评估数据。当用户提到 niche 详情、细分市场指标、市场规模、竞争情况、赛道分析或 niche details 时触发此技能。只要用户需要深入查看一个明确的 Amazon 细分市场，也应触发此技能。"
+metadata:
+  author: wenmai-ai
+  version: "1.0.0"
 ---
 
 # Wenmai JIIMORE get niche details

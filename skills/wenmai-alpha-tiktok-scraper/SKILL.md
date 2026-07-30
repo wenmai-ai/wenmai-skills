@@ -1,6 +1,9 @@
 ---
 name: wenmai-alpha-tiktok-scraper
 description: "TikTok 内容采集接口，用于获取接口支持的视频、账号、话题标签、互动表现和趋势数据。当用户提到 TikTok 视频、达人账号、hashtag、热门内容、社媒趋势、爆款内容或 TikTok scraper 时触发此技能。即使用户未明确说“采集 TikTok”，只要需要用 TikTok 公开数据研究内容或趋势，也应触发此技能。"
+metadata:
+  author: wenmai-ai
+  version: "1.0.0"
 ---
 
 # Wenmai Alpha Tiktok Scraper

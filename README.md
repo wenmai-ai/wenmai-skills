@@ -3,9 +3,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/)
 [![Agent Skills](https://img.shields.io/badge/Agent%20Skills-Open%20Standard-orange)](https://agentskills.io)
-[![Skills](https://img.shields.io/badge/skills-56-brightgreen)](#skills-catalog)
+[![Skills](https://img.shields.io/badge/skills-69-brightgreen)](#skills-catalog)
 
-**Wenmai Skills** 是面向跨境电商的数据型 AI Skill 集合，提供 56 个 API 驱动的原子能力，覆盖多平台商品与内容采集、Amazon 评论、JIIMORE、Keepa、卖家精灵（SellerSprite）和 SIF 等数据源。
+**Wenmai Skills** 是面向跨境电商的数据型 AI Skill 集合，提供 69 个 API 驱动的原子能力，覆盖多平台商品与内容采集、Amazon 评论、JIIMORE、Keepa、卖家精灵（SellerSprite）、SIF 和 Sorftime 等数据源。
 
 本仓库遵循 [Agent Skills](https://agentskills.io) 开放标准，可用于稳卖 Agent、Codex、Claude Code、Cursor、GitHub Copilot 等支持 Agent Skills 的 AI 编程与智能体平台。
 
@@ -196,6 +196,24 @@ test -f "${CODEX_HOME:-$HOME/.codex}/skills/wenmai-sif-asin-keywords/SKILL.md" \
 | `wenmai-sif-asin-summary` | 分析 ASIN 自然流量与广告流量结构 |
 | `wenmai-sif-keyword-overview` | 查询关键词搜索量、ABA 排名与点击集中度 |
 | `wenmai-sif-keyword-traffic` | 分析关键词竞争格局与 ASIN 流量份额 |
+
+### Sorftime
+
+| Skill | Description |
+| --- | --- |
+| `wenmai-sorftime-ali1688-product-search` | 多维度搜索 1688 货源商品 |
+| `wenmai-sorftime-ali1688-product-search-from-image` | 根据图片搜索 1688 相同或相似商品 |
+| `wenmai-sorftime-keyword-extends` | 围绕种子词扩展 Amazon 相关关键词 |
+| `wenmai-sorftime-product-customers-say` | 汇总 Amazon 商品评论与买家反馈 |
+| `wenmai-sorftime-product-detail` | 查询 Amazon 商品详情 |
+| `wenmai-sorftime-product-ranking-trend-by-keyword` | 查询商品关键词排名趋势 |
+| `wenmai-sorftime-product-report` | 获取 Amazon 产品分析报告 |
+| `wenmai-sorftime-product-reviews` | 查询 Amazon 商品评论 |
+| `wenmai-sorftime-product-search` | 实时搜索和筛选 Amazon 商品 |
+| `wenmai-sorftime-product-search-from-history` | 按历史月份搜索和筛选 Amazon 商品 |
+| `wenmai-sorftime-product-traffic-terms` | 反查 Amazon 商品流量关键词 |
+| `wenmai-sorftime-product-trend` | 查询 Amazon 商品历史趋势 |
+| `wenmai-sorftime-product-variations` | 查询 Amazon 商品父子变体 |
 
 ## Skill Structure
 

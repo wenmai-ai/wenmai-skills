@@ -1,6 +1,9 @@
 ---
 name: wenmai-jiimore-search-keywords-by-asin
 description: "JIIMORE ASIN 关联关键词接口，用于根据 Amazon 商品发现相关搜索词并构建竞品关键词池。当用户提到 ASIN 反查关键词、商品关联词、竞品关键词池、按 ASIN 找搜索词或 keywords by ASIN 时触发此技能。即使用户未明确提及 JIIMORE，只要需要从一个 ASIN 出发发现相关关键词，也应触发此技能。"
+metadata:
+  author: wenmai-ai
+  version: "1.0.0"
 ---
 
 # Wenmai JIIMORE search keywords by asin

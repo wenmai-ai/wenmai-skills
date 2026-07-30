@@ -1,6 +1,9 @@
 ---
 name: wenmai-alpha-amazon-reviews-extractor
 description: "Amazon 评论采集接口，用于按商品评论页或相关参数获取评论内容、评分及可用的评论元数据，为 VOC、用户痛点、卖点验证和竞品口碑分析提供原始数据。当用户提到 Amazon 评论抓取、买家反馈、差评分析、用户痛点、评论数据、竞品口碑或 review mining 时触发此技能。即使用户未明确提及接口名称，只要需要从 Amazon 评论中提取真实用户声音，也应触发此技能。"
+metadata:
+  author: wenmai-ai
+  version: "1.0.0"
 ---
 
 # Wenmai Alpha Amazon Reviews Extractor

@@ -1,6 +1,9 @@
 ---
 name: wenmai-jiimore-find-asins-batch
 description: "JIIMORE ASIN 批量查询接口，用于一次获取多个 Amazon 商品的摘要信息和接口支持的关键指标。当用户提到批量 ASIN、商品摘要、批量核验商品、补全竞品清单或多个 ASIN 对比时触发此技能。即使用户未明确提及 JIIMORE，只要需要批量查询 Amazon ASIN 基础数据，也应触发此技能。"
+metadata:
+  author: wenmai-ai
+  version: "1.0.0"
 ---
 
 # Wenmai JIIMORE find asins batch

@@ -1,6 +1,9 @@
 ---
 name: wenmai-sellersprite-market-research
 description: "卖家精灵 Amazon 类目市场研究接口，用于分析市场规模、商品数量、销量、销售额、均价、评分、BSR、品牌与卖家集中度、新品占比和配送结构。当用户提到类目市场分析、市场容量、竞争集中度、新品机会、FBA 占比、选品赛道或 SellerSprite market research 时触发此技能。只要需要评估某个 Amazon 类目的进入机会，也应触发此技能。"
+metadata:
+  author: wenmai-ai
+  version: "1.0.0"
 ---
 
 # Wenmai SellerSprite Market Research

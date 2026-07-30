@@ -1,6 +1,9 @@
 ---
 name: wenmai-jiimore-find-niches-by-asin
 description: "JIIMORE ASIN 细分市场查询接口，用于查找某个 Amazon 商品所属或相关的 niche，判断市场归属并映射竞品市场。当用户提到按 ASIN 找细分市场、商品属于哪个 niche、市场归属、竞品市场或细分机会时触发此技能。只要用户需要从一个 ASIN 反查相关细分市场，也应触发此技能。"
+metadata:
+  author: wenmai-ai
+  version: "1.0.0"
 ---
 
 # Wenmai JIIMORE find niches by asin

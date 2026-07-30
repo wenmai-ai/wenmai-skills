@@ -1,6 +1,9 @@
 ---
 name: wenmai-alpha-shein-scraper
 description: "SHEIN 商品采集接口，用于检索时尚商品并获取接口支持的价格、款式、销量、评价或 Listing 数据。当用户提到 SHEIN 搜品、快时尚趋势、服装选品、款式研究、竞品价格或 SHEIN scraper 时触发此技能。只要用户需要基于 SHEIN 商品数据判断时尚趋势或市场机会，也应触发此技能。"
+metadata:
+  author: wenmai-ai
+  version: "1.0.0"
 ---
 
 # Wenmai Alpha Shein Scraper

@@ -1,6 +1,9 @@
 ---
 name: wenmai-sif-keyword-traffic
 description: "SIF 关键词流量与竞争分析接口，用于查看头部 ASIN 的流量份额、自然／SP／SB／SBV 占比、集中度、竞争位置和关键词机会。当用户提到关键词竞争、流量份额、头部 ASIN、自然广告结构、关键词垄断、竞争强度或 SIF keyword traffic 时触发此技能。只要用户需要判断 Amazon 关键词是否拥挤或仍有进入机会，也应触发此技能。"
+metadata:
+  author: wenmai-ai
+  version: "1.0.0"
 ---
 
 # Wenmai SIF Keyword Traffic

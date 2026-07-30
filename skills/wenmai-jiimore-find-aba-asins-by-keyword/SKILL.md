@@ -1,6 +1,9 @@
 ---
 name: wenmai-jiimore-find-aba-asins-by-keyword
 description: "JIIMORE ABA 商品查询接口，用于按 Amazon 关键词查找 ABA 关联商品或 ASIN，发现关键词下的头部点击商品和竞品。当用户提到按关键词找 ASIN、ABA 点击商品、关键词头部商品、竞品发现或 ABA 商品分析时触发此技能。只要用户需要确认某个关键词对应哪些 Amazon 商品，也应触发此技能。"
+metadata:
+  author: wenmai-ai
+  version: "1.0.0"
 ---
 
 # Wenmai JIIMORE find aba asins by keyword

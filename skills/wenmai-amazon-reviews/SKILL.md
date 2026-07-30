@@ -1,6 +1,9 @@
 ---
 name: wenmai-amazon-reviews
 description: "Amazon ASIN 评论查询接口，可按评分、时间或有用性等条件获取评论，用于分析买家抱怨、正向反馈、Verified Purchase、竞品口碑和 VOC。当用户提到 Amazon 评论、ASIN 评论、差评分析、用户痛点、好评卖点、评论筛选、竞品评论或 customer feedback 时触发此技能。即使用户未明确提及评论接口，只要目标是基于 Amazon 买家评论进行用户研究，也应触发此技能。"
+metadata:
+  author: wenmai-ai
+  version: "1.0.0"
 ---
 
 # Wenmai Amazon Reviews

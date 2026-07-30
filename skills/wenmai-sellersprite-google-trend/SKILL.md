@@ -1,6 +1,9 @@
 ---
 name: wenmai-sellersprite-google-trend
 description: "卖家精灵 Google Trends 关键词趋势接口，用于查询指定关键词在目标市场和时间范围内的搜索热度变化。当用户提到 Google 趋势、关键词热度、需求变化、季节性、市场趋势、关键词对比或 SellerSprite Google Trend 时触发此技能。只要用户希望通过搜索趋势判断 Amazon 市场需求走势，也应触发此技能。"
+metadata:
+  author: wenmai-ai
+  version: "1.0.0"
 ---
 
 # Wenmai SellerSprite google trend

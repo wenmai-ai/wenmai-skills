@@ -1,6 +1,9 @@
 ---
 name: wenmai-alpha-wildberries-products-search-scraper
 description: "Wildberries 商品搜索采集接口，用于按关键词检索俄罗斯 Wildberries 平台商品并获取接口支持的价格、销量、评价等结果。当用户提到 Wildberries 搜品、俄罗斯电商选品、商品搜索、竞品研究或 Wildberries scraper 时触发此技能。只要用户需要在 Wildberries 商品池中查找或比较商品，也应触发此技能。"
+metadata:
+  author: wenmai-ai
+  version: "1.0.0"
 ---
 
 # Wenmai Alpha Wildberries Products Search Scraper

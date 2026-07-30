@@ -1,6 +1,9 @@
 ---
 name: wenmai-sellersprite-traffic-keyword-stat
 description: "卖家精灵 ASIN 流量关键词概览统计接口，用于汇总自然词、广告词、流量词和转化词等关键词结构指标。当用户提到关键词结构、流量词统计、自然与广告关键词占比、ASIN 关键词概览或 traffic keyword stat 时触发此技能。只要用户想先查看 Amazon 商品关键词结构的总体盘面而非逐词明细，也应触发此技能。"
+metadata:
+  author: wenmai-ai
+  version: "1.0.0"
 ---
 
 # Wenmai SellerSprite traffic keyword stat

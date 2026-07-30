@@ -1,6 +1,9 @@
 ---
 name: wenmai-alpha-xiaohongshu-pro-scraper
 description: "小红书内容采集接口，用于查询笔记、关键词、账号及接口支持的互动和内容趋势数据。当用户提到小红书笔记、关键词热度、种草内容、达人研究、用户反馈、内容趋势或小红书数据采集时触发此技能。即使用户未明确提及接口，只要需要基于小红书公开内容开展消费者或趋势研究，也应触发此技能。"
+metadata:
+  author: wenmai-ai
+  version: "1.0.0"
 ---
 
 # Wenmai Alpha Xiaohongshu Pro Scraper

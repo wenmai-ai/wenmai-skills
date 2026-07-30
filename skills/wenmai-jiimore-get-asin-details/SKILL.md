@@ -1,6 +1,9 @@
 ---
 name: wenmai-jiimore-get-asin-details
 description: "JIIMORE Amazon ASIN 商品详情接口，用于查询一个或多个商品的基础信息、类目和接口支持的市场指标。当用户提到 ASIN 详情、商品信息、批量商品详情、候选商品核验、竞品资料或 JIIMORE 商品查询时触发此技能。只要用户需要获取指定 Amazon ASIN 的详细数据，也应触发此技能。"
+metadata:
+  author: wenmai-ai
+  version: "1.0.0"
 ---
 
 # Wenmai JIIMORE get asin details
