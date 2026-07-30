@@ -1,6 +1,9 @@
 ---
 name: wenmai-sellersprite-asin-detail
 description: "卖家精灵 Amazon ASIN 商品详情接口，用于查询单个商品的标题、品牌、类目、价格、销量、收入、评分、BSR 及接口支持的完整指标。当用户提到 ASIN 详情、商品数据、销量收入、BSR、竞品详情、Listing 基础指标或 SellerSprite 商品查询时触发此技能。只要用户需要核验某个 Amazon ASIN 的完整经营数据，也应触发此技能。"
+metadata:
+  author: wenmai-ai
+  version: "1.0.0"
 ---
 
 # Wenmai SellerSprite asin detail

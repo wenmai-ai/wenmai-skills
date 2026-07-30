@@ -1,6 +1,9 @@
 ---
 name: wenmai-jiimore-find-niches-by-keyword
 description: "JIIMORE 关键词细分市场查询接口，用于按 Amazon 关键词查找相关 niche，发现市场并筛选类目机会。当用户提到按关键词找细分市场、关键词对应 niche、市场发现、类目机会或细分赛道研究时触发此技能。只要用户希望从一个搜索词定位相关 Amazon 细分市场，也应触发此技能。"
+metadata:
+  author: wenmai-ai
+  version: "1.0.0"
 ---
 
 # Wenmai JIIMORE find niches by keyword

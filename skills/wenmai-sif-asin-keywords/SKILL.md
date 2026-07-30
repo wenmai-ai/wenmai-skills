@@ -1,6 +1,9 @@
 ---
 name: wenmai-sif-asin-keywords
 description: "SIF ASIN 反查关键词接口，用于获取流量关键词、自然排名、广告排名、关键词贡献变化、排名差距以及上升或下降关键词。当用户提到 SIF 反查、ASIN 关键词、自然位、广告位、流量词、关键词涨跌、竞品关键词或 reverse ASIN 时触发此技能。即使用户未明确提及 SIF，只要需要查找与某个 Amazon ASIN 关联并带来流量的关键词，也应触发此技能。"
+metadata:
+  author: wenmai-ai
+  version: "1.0.0"
 ---
 
 # Wenmai SIF ASIN Keywords

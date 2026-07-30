@@ -1,6 +1,9 @@
 ---
 name: wenmai-jiimore-search-keywords-by-keyword
 description: "JIIMORE Amazon 普通关键词扩展接口，用于围绕种子词发现相关词、长尾词和可用于商品研究的搜索词。当用户提到关键词扩词、长尾词、相关关键词、搜索词挖掘、关键词池或 keywords by keyword 时触发此技能。只要用户需要从一个 Amazon 关键词扩展普通相关词而非限定 ABA 数据，也应触发此技能。"
+metadata:
+  author: wenmai-ai
+  version: "1.0.0"
 ---
 
 # Wenmai JIIMORE search keywords by keyword

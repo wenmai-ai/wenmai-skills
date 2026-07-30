@@ -1,6 +1,9 @@
 ---
 name: wenmai-jiimore-find-same-niche-asins
 description: "JIIMORE 同细分市场商品接口，用于根据 Amazon ASIN 查找同一 niche 中的其他商品，扩展直接竞品池。当用户提到同 niche 商品、同细分市场竞品、相同赛道 ASIN、竞品扩展或细分市场对标时触发此技能。只要用户需要围绕一个 ASIN 寻找同市场商品，也应触发此技能。"
+metadata:
+  author: wenmai-ai
+  version: "1.0.0"
 ---
 
 # Wenmai JIIMORE find same niche asins

@@ -1,6 +1,9 @@
 ---
 name: wenmai-sellersprite-asin-detail-with-coupon-trend
 description: "卖家精灵 ASIN 商品详情与 Coupon 趋势接口，用于查询指定 Amazon 市场中的商品完整信息及优惠券变化数据。当用户提到 ASIN 详情、Coupon 趋势、优惠券历史、促销变化、竞品折扣或 SellerSprite coupon analysis 时触发此技能。即使用户未明确提及接口名称，只要需要同时分析商品指标与优惠券趋势，也应触发此技能。"
+metadata:
+  author: wenmai-ai
+  version: "1.0.0"
 ---
 
 # Wenmai SellerSprite asin detail with coupon trend

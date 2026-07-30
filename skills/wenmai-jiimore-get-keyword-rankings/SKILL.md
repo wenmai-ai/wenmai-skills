@@ -1,6 +1,9 @@
 ---
 name: wenmai-jiimore-get-keyword-rankings
 description: "JIIMORE ASIN 关键词排名接口，用于反查 Amazon 商品的关联关键词及其排名表现。当用户提到 ASIN 关键词排名、自然排名、关键词位置、竞品排名、反查排名词或 keyword rankings 时触发此技能。即使用户未明确提及 JIIMORE，只要需要查看某个 ASIN 在相关关键词下的排名，也应触发此技能。"
+metadata:
+  author: wenmai-ai
+  version: "1.0.0"
 ---
 
 # Wenmai JIIMORE get keyword rankings

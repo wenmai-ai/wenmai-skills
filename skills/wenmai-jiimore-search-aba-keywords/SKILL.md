@@ -1,6 +1,9 @@
 ---
 name: wenmai-jiimore-search-aba-keywords
 description: "JIIMORE ASIN ABA 关键词接口，用于按 Amazon 商品反查 ABA 搜索词，分析商品点击关键词和流量来源。当用户提到 ASIN 的 ABA 词、ABA 搜索词、点击关键词、竞品 ABA 关键词、流量来源或 ABA reverse lookup 时触发此技能。只要需要查找与某个 ASIN 关联的 ABA 关键词，也应触发此技能。"
+metadata:
+  author: wenmai-ai
+  version: "1.0.0"
 ---
 
 # Wenmai JIIMORE search aba keywords

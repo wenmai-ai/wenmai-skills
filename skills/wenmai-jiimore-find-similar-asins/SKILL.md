@@ -1,6 +1,9 @@
 ---
 name: wenmai-jiimore-find-similar-asins
 description: "JIIMORE ABA 相似商品接口，用于基于 ABA 关联关系查找与指定 Amazon ASIN 相似的商品。当用户提到相似 ASIN、ABA 相似商品、关联竞品、替代商品、相似竞品或扩展竞品样本时触发此技能。只要用户希望利用 ABA 数据寻找相似 Amazon 商品，也应触发此技能。"
+metadata:
+  author: wenmai-ai
+  version: "1.0.0"
 ---
 
 # Wenmai JIIMORE find similar asins

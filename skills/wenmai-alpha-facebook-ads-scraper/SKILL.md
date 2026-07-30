@@ -1,6 +1,9 @@
 ---
 name: wenmai-alpha-facebook-ads-scraper
 description: "Facebook／Meta 广告库采集接口，用于检索品牌或关键词相关广告，获取广告素材、文案、投放主体及接口可返回的投放信息。当用户提到 Facebook Ads Library、Meta 广告素材、竞品广告、广告创意拆解、品牌投放监控或 Facebook ads scraper 时触发此技能。只要用户需要用真实 Meta 广告数据研究竞品投放或创意趋势，也应触发此技能。"
+metadata:
+  author: wenmai-ai
+  version: "1.0.0"
 ---
 
 # Wenmai Alpha Facebook Ads Scraper

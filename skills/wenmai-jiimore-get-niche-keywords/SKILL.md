@@ -1,6 +1,9 @@
 ---
 name: wenmai-jiimore-get-niche-keywords
 description: "JIIMORE 细分市场关键词接口，用于获取指定 Amazon niche 的关键词池，分析搜索需求和流量词。当用户提到 niche 关键词、细分市场流量词、赛道关键词、市场搜索词、关键词池或 niche keywords 时触发此技能。只要用户希望获取某个细分市场对应的 Amazon 关键词列表，也应触发此技能。"
+metadata:
+  author: wenmai-ai
+  version: "1.0.0"
 ---
 
 # Wenmai JIIMORE get niche keywords

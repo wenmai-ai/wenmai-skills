@@ -1,6 +1,9 @@
 ---
 name: wenmai-jiimore-find-asins-by-keyword
 description: "JIIMORE Amazon 商品搜索接口，用于按关键词查找商品或 ASIN，建立候选商品池并发现竞品。当用户提到关键词搜品、按词找 ASIN、Amazon 商品搜索、候选商品池、竞品发现或选品研究时触发此技能。只要用户希望根据搜索词获取 Amazon 商品列表，也应触发此技能。"
+metadata:
+  author: wenmai-ai
+  version: "1.0.0"
 ---
 
 # Wenmai JIIMORE find asins by keyword

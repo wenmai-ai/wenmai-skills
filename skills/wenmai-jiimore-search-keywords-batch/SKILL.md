@@ -1,6 +1,9 @@
 ---
 name: wenmai-jiimore-search-keywords-batch
 description: "JIIMORE Amazon 关键词批量查询接口，用于一次获取多个关键词的搜索与接口支持的市场指标，便于横向比较。当用户提到批量关键词、关键词指标对比、多个搜索词、关键词数据表、批量查词或 keyword batch 时触发此技能。只要用户需要同时核验一组 Amazon 关键词的数据，也应触发此技能。"
+metadata:
+  author: wenmai-ai
+  version: "1.0.0"
 ---
 
 # Wenmai JIIMORE search keywords batch

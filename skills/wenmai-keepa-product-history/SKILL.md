@@ -1,6 +1,9 @@
 ---
 name: wenmai-keepa-product-history
 description: "Keepa 商品历史接口，用于按 Amazon ASIN 查询价格、BSR、Buy Box、报价、评分、评论数、卖家数量和月销量等时间序列。当用户提到 Keepa 历史、价格走势、BSR 趋势、Buy Box 变化、销量历史、评论增长或 ASIN 时间序列时触发此技能。只要用户需要判断 Amazon 商品在一段时间内的变化趋势，也应触发此技能。"
+metadata:
+  author: wenmai-ai
+  version: "1.0.0"
 ---
 
 # Wenmai Keepa Product History

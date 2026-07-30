@@ -1,6 +1,9 @@
 ---
 name: wenmai-jiimore-expand-aba-keywords-by-keyword
 description: "JIIMORE ABA 关键词扩展接口，用于根据一个种子关键词发现相关 Amazon ABA 搜索词并扩充关键词池。当用户提到 ABA 扩词、关键词拓展、相关搜索词、选品关键词、搜索词机会或按关键词找 ABA 词时触发此技能。即使用户未明确提及 JIIMORE，只要需要围绕种子词扩展 ABA 关键词，也应触发此技能。"
+metadata:
+  author: wenmai-ai
+  version: "1.0.0"
 ---
 
 # Wenmai JIIMORE expand aba keywords by keyword

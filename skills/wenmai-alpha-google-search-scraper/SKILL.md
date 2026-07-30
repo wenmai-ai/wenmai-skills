@@ -1,6 +1,9 @@
 ---
 name: wenmai-alpha-google-search-scraper
 description: "Google 搜索结果采集接口，用于按关键词获取 SERP 中的网页标题、摘要、链接及接口支持的搜索结果信息。当用户提到 Google 搜索、SERP、网页检索、竞品官网发现、搜索结果采集、品牌舆情或 Google search scraper 时触发此技能。即使用户未明确说“抓取 Google”，只要需要可追溯的 Google 搜索结果数据，也应触发此技能。"
+metadata:
+  author: wenmai-ai
+  version: "1.0.0"
 ---
 
 # Wenmai Alpha Google Search Scraper

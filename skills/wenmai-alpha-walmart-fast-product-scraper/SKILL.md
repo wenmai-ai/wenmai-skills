@@ -1,6 +1,9 @@
 ---
 name: wenmai-alpha-walmart-fast-product-scraper
 description: "Walmart 商品快速采集接口，用于按商品链接、ID 或接口支持的查询条件获取商品详情、价格、库存、评分等数据。当用户提到 Walmart 商品查询、商品详情、价格对比、库存核验、竞品研究或 Walmart product scraper 时触发此技能。只要用户需要快速获得可追溯的 Walmart 商品数据，也应触发此技能。"
+metadata:
+  author: wenmai-ai
+  version: "1.0.0"
 ---
 
 # Wenmai Alpha Walmart Fast Product Scraper
