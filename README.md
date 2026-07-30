@@ -13,9 +13,53 @@
 
 ## Installation
 
-当前仓库暂不支持通过 `npx skills add` 安装。请下载仓库，并把需要的完整 Skill 目录复制到 Agent 的 Skills 目录。Skill 脚本需要 Python 3.9 或更高版本，且仅依赖 Python 标准库，无需额外安装第三方包。
+Skill 脚本需要 Python 3.9 或更高版本，且仅依赖 Python 标准库，无需额外安装第三方包。
 
-### 1. 下载仓库
+### 使用 Skills CLI 安装（推荐）
+
+查看全部可用 Skills：
+
+```bash
+npx skills add wenmai-ai/wenmai-skills --list
+```
+
+安装单个 Skill 到 Codex：
+
+```bash
+npx skills add wenmai-ai/wenmai-skills \
+  --skill wenmai-sif-asin-keywords \
+  -g -a codex -y
+```
+
+安装全部 Skills 到 Codex：
+
+```bash
+npx skills add wenmai-ai/wenmai-skills \
+  --skill '*' \
+  -g -a codex -y
+```
+
+将 `codex` 替换为 Skills CLI 支持的其他 Agent 名称，即可安装到 Claude Code、Cursor 等平台。
+
+### 使用 npm 获取完整包
+
+安装包含全部 Skills 的 npm 聚合包：
+
+```bash
+npm install @wenmai-ai/skills
+```
+
+npm 会把完整集合下载到 `node_modules/@wenmai-ai/skills`，但不会自动注册到 Agent。下载后仍可选择安装其中一个 Skill：
+
+```bash
+npx skills add ./node_modules/@wenmai-ai/skills \
+  --skill wenmai-sif-asin-keywords \
+  -g -a codex -y
+```
+
+### 手动安装
+
+下载仓库：
 
 ```bash
 git clone https://github.com/wenmai-ai/wenmai-skills.git
@@ -24,53 +68,21 @@ cd wenmai-skills
 
 也可以在 GitHub 仓库页面选择 **Code → Download ZIP**，解压后进入仓库目录。
 
-### 2. 让 Agent 代为安装（可选）
-
-如果当前 Agent 支持联网、GitHub 下载和本地文件操作，也可以直接把安装任务交给 Agent。以下提示词可以直接复制使用。
-
-安装单个 Skill：
-
-```text
-请从 GitHub 仓库 https://github.com/wenmai-ai/wenmai-skills 安装
-skills/wenmai-sif-asin-keywords 到当前 Agent 的标准用户级 Skills 目录。
-请安装完整目录，保留 SKILL.md、skill-card.md、agents、references 和 scripts。
-如果目标目录已存在同名 Skill，请不要直接覆盖，先告诉我当前状态并询问是否替换。
-安装后请验证 SKILL.md 和配套文件均存在，并告诉我该 Skill 何时可以使用。
-```
-
-安装全部 Skills：
-
-```text
-请从 GitHub 仓库 https://github.com/wenmai-ai/wenmai-skills 读取 skills/ 目录，
-列出所有 wenmai-* Skill 及当前安装状态，然后把尚未安装的 Skill
-完整安装到当前 Agent 的标准用户级 Skills 目录。
-不要只复制 SKILL.md；必须同时保留 skill-card.md、agents、references 和 scripts。
-遇到已存在的同名 Skill 时不要直接覆盖，请先汇总冲突并询问我如何处理。
-安装后请验证已安装数量和目录完整性，并告诉我这些 Skill 何时可以使用。
-```
-
-如果 Agent 支持显式调用安装 Skill，也可以在提示词开头加上“使用 `$skill-installer`”。Agent 通常会把 Skill 安装到自己的标准目录；以 Codex 为例，目标为 `$CODEX_HOME/skills`，未设置时为 `~/.codex/skills`。新安装的 Skill 通常从下一轮任务开始可用。
-
-### 3. 确认安装目录
-
-Codex 默认从以下目录加载用户级 Skills：
-
-```text
-${CODEX_HOME:-$HOME/.codex}/skills
-```
-
-未设置 `CODEX_HOME` 时，实际目录为 `~/.codex/skills`。其他 Agent 的安装目录可能不同，请将下方命令中的目标目录替换为对应 Agent 文档指定的 Skills 目录。
-
-### 4. 手动安装单个 Skill
-
-下面以安装 `wenmai-sif-asin-keywords` 到 Codex 为例：
+手动安装单个 Skill：
 
 ```bash
 mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
 cp -R skills/wenmai-sif-asin-keywords "${CODEX_HOME:-$HOME/.codex}/skills/"
 ```
 
-安装时必须复制完整 Skill 目录，不能只复制 `SKILL.md`。完整目录还包含接口参考、执行脚本和 Agent 元数据：
+手动安装全部 Skills：
+
+```bash
+mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
+cp -R skills/wenmai-* "${CODEX_HOME:-$HOME/.codex}/skills/"
+```
+
+安装时必须复制完整 Skill 目录，不能只复制 `SKILL.md`：
 
 ```text
 wenmai-sif-asin-keywords/
@@ -81,16 +93,9 @@ wenmai-sif-asin-keywords/
 └── scripts/
 ```
 
-### 5. 手动安装全部 Skills
-
-```bash
-mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
-cp -R skills/wenmai-* "${CODEX_HOME:-$HOME/.codex}/skills/"
-```
-
 如果目标目录中已存在同名 Skill，请先备份旧目录，再用新目录完整替换，避免新旧脚本或参考文件混用。
 
-### 6. 验证安装
+### 验证安装
 
 确认 `SKILL.md` 和配套文件已复制成功：
 
