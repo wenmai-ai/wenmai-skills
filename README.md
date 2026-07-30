@@ -4,7 +4,7 @@
 [![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/)
 [![Agent Skills](https://img.shields.io/badge/Agent%20Skills-Open%20Standard-orange)](https://agentskills.io)
 [![Skills](https://img.shields.io/badge/skills-69-brightgreen)](#skills-catalog)
-[![npm](https://img.shields.io/npm/v/%40wenmai-ai%2Fskills.svg)](https://www.npmjs.com/package/@wenmai-ai/skills)
+[![npm](https://img.shields.io/npm/v/%40wenmai-ai%2Fwenmai-skills.svg)](https://www.npmjs.com/package/@wenmai-ai/wenmai-skills)
 
 **Wenmai Skills** 是面向跨境电商的数据型 AI Skill 集合，提供 69 个 API 驱动的原子能力，覆盖多平台商品与内容采集、Amazon 评论、JIIMORE、Keepa、卖家精灵（SellerSprite）、SIF 和 Sorftime 等数据源。
 
@@ -47,16 +47,16 @@ npx skills add wenmai-ai/wenmai-skills --agent cursor
 
 ### Install the npm package
 
-`@wenmai-ai/skills` 是包含全部 Skills 的 npm 聚合包：
+`@wenmai-ai/wenmai-skills` 是包含全部 Skills 的 npm 聚合包：
 
 ```bash
-npm install @wenmai-ai/skills
+npm install @wenmai-ai/wenmai-skills
 ```
 
-npm 会把完整集合下载到 `node_modules/@wenmai-ai/skills`，但不会自动注册到 Agent。可以继续使用 Skills CLI 从本地包中安装指定 Skill：
+npm 会把完整集合下载到 `node_modules/@wenmai-ai/wenmai-skills`，但不会自动注册到 Agent。可以继续使用 Skills CLI 从本地包中安装指定 Skill：
 
 ```bash
-npx skills add ./node_modules/@wenmai-ai/skills \
+npx skills add ./node_modules/@wenmai-ai/wenmai-skills \
   --skill wenmai-sif-asin-keywords \
   -g -a codex -y
 ```
@@ -70,19 +70,19 @@ npx skills add ./node_modules/@wenmai-ai/skills \
 安装全部 Skills：
 
 ```bash
-npx @wenmai-ai/skills install --agent wenmai-agent
+npx @wenmai-ai/wenmai-skills install --agent wenmai-agent
 ```
 
 安装单个 Skill：
 
 ```bash
-npx @wenmai-ai/skills install wenmai-sif-asin-keywords --agent wenmai-agent
+npx @wenmai-ai/wenmai-skills install wenmai-sif-asin-keywords --agent wenmai-agent
 ```
 
 更新已经安装的 Skills：
 
 ```bash
-npx @wenmai-ai/skills install --agent wenmai-agent --force
+npx @wenmai-ai/wenmai-skills install --agent wenmai-agent --force
 ```
 
 安装器会自动识别系统并使用以下目录：
@@ -95,13 +95,13 @@ npx @wenmai-ai/skills install --agent wenmai-agent --force
 安装全部 Skills：
 
 ```bash
-npx @wenmai-ai/skills install --agent codex
+npx @wenmai-ai/wenmai-skills install --agent codex
 ```
 
 安装单个 Skill：
 
 ```bash
-npx @wenmai-ai/skills install wenmai-sif-asin-keywords --agent codex
+npx @wenmai-ai/wenmai-skills install wenmai-sif-asin-keywords --agent codex
 ```
 
 默认安装目录为 `${CODEX_HOME:-~/.codex}/skills`。
