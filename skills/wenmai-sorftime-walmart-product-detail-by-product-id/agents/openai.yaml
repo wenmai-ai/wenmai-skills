@@ -1,0 +1,6 @@
+interface:
+  display_name: "Sorftime 产品详情"
+  short_description: "调用 Sorftime standard API：产品详情"
+  default_prompt: "Use $wenmai-sorftime-walmart-product-detail-by-product-id to call walmart_product_detail_by_product_id and return traceable results."
+policy:
+  allow_implicit_invocation: true

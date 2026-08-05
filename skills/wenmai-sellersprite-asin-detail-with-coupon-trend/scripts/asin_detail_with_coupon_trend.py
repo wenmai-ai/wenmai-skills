@@ -9,5 +9,6 @@ if __name__ == "__main__":
         script_name='asin_detail_with_coupon_trend.py',
         path='/sellersprite/asin-detail-with-coupon-trend',
         required_fields=['marketplace', 'asin'],
+        enum_fields={'marketplace': ['US', 'JP', 'UK', 'DE', 'FR', 'IT', 'ES', 'CA', 'IN', 'MX', 'BR', 'AU', 'AE']},
         sample_params={'marketplace': 'US', 'asin': 'B08GHW4TBS'},
     )

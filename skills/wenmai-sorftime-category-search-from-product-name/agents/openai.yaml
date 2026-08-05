@@ -1,0 +1,6 @@
+interface:
+  display_name: "Sorftime Amazon（亚马逊） 按产品名称搜类目"
+  short_description: "调用 Sorftime Amazon（亚马逊） standard API：按产品名称搜类目"
+  default_prompt: "Use $wenmai-sorftime-category-search-from-product-name to call category_search_from_product_name and return traceable results."
+policy:
+  allow_implicit_invocation: true

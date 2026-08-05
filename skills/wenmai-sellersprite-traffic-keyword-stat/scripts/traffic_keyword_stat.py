@@ -9,5 +9,6 @@ if __name__ == "__main__":
         script_name='traffic_keyword_stat.py',
         path='/sellersprite/traffic-keyword-stat',
         required_fields=['marketplace', 'asin'],
+        enum_fields={'marketplace': ['US', 'JP', 'UK', 'DE', 'FR', 'IT', 'ES', 'CA', 'IN', 'MX', 'BR', 'AU', 'AE']},
         sample_params={'marketplace': 'US', 'asin': 'B08GHW4TBS'},
     )

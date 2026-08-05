@@ -4,7 +4,7 @@
 
 - **请求地址**：`${WENMAI_API_ORIGIN:-https://all-api.wenmai-ai.com}/wmapi/v1/sellersprite/google-trend`
 - **请求方式**：POST，`Content-Type: application/json`
-- **认证方式**：Header `secret-key: $WENMAI_API_KEY`，也兼容 `WENMAI_SECRET_KEY`；secret-key 获取与充值指引见 https://skill.wenmai-ai.com/wenmaiskills/use_guide.html。
+- **认证方式**：Header `secret-key: $WENMAI_API_KEY`，也兼容 `WENMAI_SECRET_KEY`；secret-key 在 https://agent.wenmai-ai.com/app/account 的个人中心获取，充值也在同一入口完成。
 - **接口编码**：`google_trend`
 - **脚本入口**：`scripts/google_trend.py`，脚本参数即标准 API POST Body JSON
 
@@ -23,7 +23,7 @@ POST Body（JSON）：
 | 参数 | 类型 | 必填 | 说明 |
 |------|------|------|------|
 | `request` | object | 是 | 业务请求对象。 |
-| `request.marketplace` | string | 是 | 站点编码，例如 US |
+| `request.marketplace` | string | 是 | 站点编码。可选值：`US`、`JP`、`UK`、`DE`、`FR`、`IT`、`ES`、`CA`、`IN`。 |
 | `request.keyword` | string | 否 | 关键字；iphone stand |
 | `request.googleProp` | string | 否 | 类别；web:google网页搜索shoppingCart:google购物搜索 |
 | `request.monthly` | boolean | 否 | 按照月份；false（默认值） |
@@ -63,8 +63,8 @@ POST Body（JSON）：
 
 | 场景 | 处理建议 |
 |------|----------|
-| 缺少 API Key | 参考 https://skill.wenmai-ai.com/wenmaiskills/use_guide.html 获取 secret-key，并设置为 `WENMAI_API_KEY`（或 `WENMAI_SECRET_KEY`）；不要把 Key 写进 Skill 文件或对话。 |
-| 余额或额度不足 | 参考 https://skill.wenmai-ai.com/wenmaiskills/use_guide.html 完成充值后重试。 |
+| 缺少 API Key | 到 https://agent.wenmai-ai.com/app/account 的个人中心获取 secret-key，并设置为 `WENMAI_API_KEY`（或 `WENMAI_SECRET_KEY`）；不要把 Key 写进 Skill 文件或对话。 |
+| 余额或额度不足 | 到 https://agent.wenmai-ai.com/app/account 的个人中心充值后重试。 |
 | 参数错误 | 按请求参数表修正必填字段、枚举值、日期格式、分页范围。 |
 | 非 OK 响应 | 读取响应 `message` 与 `requestId`，按接口文档或联系网关排查。 |
 
@@ -79,4 +79,4 @@ curl -sS -X POST \
 ```
 
 ---
-来源：Wenmai WMAPI 文档 https://all-api.wenmai-ai.com/wmapi/docs。
+来源：Wenmai WMAPI 文档 https://all-api.wenmai-ai.com/wmapi/docs（2026-07-23 访问）。

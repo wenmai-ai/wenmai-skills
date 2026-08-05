@@ -1,0 +1,6 @@
+interface:
+  display_name: "SellerSprite 查询指定 ASIN 在 Amazon 指定市场下的优惠价格信息。"
+  short_description: "调用 SellerSprite standard API：查询指定 ASIN 在 Amazon 指定市场下的优惠价格信息。"
+  default_prompt: "Use $wenmai-sellersprite-asin-coupon-trend to call asin_coupon_trend and return traceable results."
+policy:
+  allow_implicit_invocation: true

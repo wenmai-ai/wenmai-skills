@@ -9,5 +9,6 @@ if __name__ == "__main__":
         script_name='traffic_source.py',
         path='/sellersprite/traffic-source',
         required_fields=['request', 'request.marketplace', 'request.q', 'request.month'],
+        enum_fields={'request.marketplace': ['US', 'JP', 'UK', 'DE', 'FR', 'IT', 'ES', 'CA', 'IN']},
         sample_params={'request': {'marketplace': 'US', 'q': 'B08GHW4TBS', 'month': '202203'}},
     )

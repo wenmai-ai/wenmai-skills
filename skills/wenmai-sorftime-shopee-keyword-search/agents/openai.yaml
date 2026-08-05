@@ -1,0 +1,6 @@
+interface:
+  display_name: "Sorftime 热搜关键词榜单"
+  short_description: "调用 Sorftime standard API：热搜关键词榜单"
+  default_prompt: "Use $wenmai-sorftime-shopee-keyword-search to call shopee_keyword_search and return traceable results."
+policy:
+  allow_implicit_invocation: true

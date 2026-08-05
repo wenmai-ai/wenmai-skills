@@ -1,6 +1,6 @@
 interface:
-  display_name: "Sorftime 选产品（历史）"
-  short_description: "调用 Sorftime standard API：选产品（历史）"
+  display_name: "Sorftime Amazon（亚马逊） 选产品（历史）"
+  short_description: "调用 Sorftime Amazon（亚马逊） standard API：选产品（历史）"
   default_prompt: "Use $wenmai-sorftime-product-search-from-history to call product_search_from_history and return traceable results."
 policy:
   allow_implicit_invocation: true

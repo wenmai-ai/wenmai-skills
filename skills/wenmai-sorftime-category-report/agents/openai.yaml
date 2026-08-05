@@ -1,0 +1,6 @@
+interface:
+  display_name: "Sorftime Amazon（亚马逊） 类目实时市场报告"
+  short_description: "调用 Sorftime Amazon（亚马逊） standard API：类目实时市场报告"
+  default_prompt: "Use $wenmai-sorftime-category-report to call category_report and return traceable results."
+policy:
+  allow_implicit_invocation: true

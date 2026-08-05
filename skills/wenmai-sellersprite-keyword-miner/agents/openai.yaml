@@ -1,0 +1,6 @@
+interface:
+  display_name: "SellerSprite Amazon 高级关键词流量与竞争分析工具（卖家决策级）。"
+  short_description: "调用 SellerSprite standard API：Amazon 高级关键词流量与竞争分析工具（卖家决策级）。"
+  default_prompt: "Use $wenmai-sellersprite-keyword-miner to call keyword_miner and return traceable results."
+policy:
+  allow_implicit_invocation: true

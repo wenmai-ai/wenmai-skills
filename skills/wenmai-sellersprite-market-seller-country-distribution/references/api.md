@@ -1,0 +1,78 @@
+# Wenmai SellerSprite `market_seller_country_distribution` API 参考
+
+用于分析指定 Amazon 市场类目节点下的卖家所属地分布情况。。
+
+## 调用规范
+
+- **standard API 地址**：`${WENMAI_API_ORIGIN:-https://all-api.wenmai-ai.com}/wmapi/v1/sellersprite/market-seller-country-distribution`
+- **请求方式**：POST，`Content-Type: application/json`
+- **认证方式**：Header `secret-key: $WENMAI_API_KEY`，兼容 `WENMAI_SECRET_KEY`
+- **接口代码**：`market_seller_country_distribution`
+- **脚本入口**：`scripts/market_seller_country_distribution.py`
+- **API key 与充值**：https://agent.wenmai-ai.com/
+
+## 请求参数
+
+| 参数 | 类型 | 必填 | 说明 |
+|---|---|---|---|
+| `request` | object | 是 | 业务请求对象。 |
+| `request.marketplace` | string；可选值：US、JP、UK、DE、FR、IT、ES、CA、IN | 是 | 供应商返回的扩展属性；当前契约未定义可供调用方依赖的稳定业务语义。 |
+| `request.month` | string | 否 | 筛选日期，默认最近30天，格式 yyyyMM |
+| `request.topN` | integer | 否 | 头部Listing数量；示例：10。 |
+| `request.newProduct` | integer | 否 | 新品定义；示例：6。 |
+| `request.nodeIdPath` | string | 是 | 节点 id 路径字符串；示例：1064954:1069242:1069784:1069820:1069838:1069828。 |
+
+## 请求示例
+
+```json
+{
+  "request": {
+    "nodeIdPath": "172282:281407",
+    "marketplace": "US"
+  }
+}
+```
+
+## 响应结构
+
+Wenmai 网关外层通常包含 `code`、`message`、`requestId`、`supplier`、`apiCode` 和 `data`。下表忠实保留源文档列出的业务字段。
+
+| 字段 | 类型 | 说明 |
+|---|---|---|
+| `label` | string | 类型说明；官方示例值：美国。 |
+| `country` | string | 国家或地区；官方示例值：美国。 |
+| `asins` | array | 包含的asin列表；官方示例值：["B00P19MFYE"]。 |
+| `products` | integer | 产品数；官方示例值：3。 |
+| `revenue` | number | 销售额；官方示例值：47492.83。 |
+| `units` | integer | 销量；官方示例值：4107。 |
+| `unitsRatio` | number | 销量占比；官方示例值：0.7313。 |
+
+## 使用要点
+
+- 必填字段：`request`, `request.marketplace`, `request.nodeIdPath`。
+- 保留源文档字段名、类型和层级；数组字段以 `[]` 标识。
+- 结果摘要必须保留到原始响应字段的映射，不推断缺失值。
+
+## 错误处理
+
+| 场景 | 处理建议 |
+|---|---|
+| 缺少 API Key | 设置 `WENMAI_API_KEY` 或兼容的 `WENMAI_SECRET_KEY`，不要在文件、日志或对话中写入密钥。 |
+| 余额或额度不足 | 前往 https://agent.wenmai-ai.com/ 充值。 |
+| 参数错误 | 按请求表检查必填字段、字段类型、站点、日期和分页范围。 |
+| HTTP、网络或超时错误 | 保留状态码和脱敏错误摘要，检查网关地址、网络和超时配置。 |
+| 响应不是 JSON | 停止解析并报告响应格式错误，不把异常正文当作业务数据。 |
+
+## curl 示例
+
+```bash
+curl -sS -X POST \
+  "${WENMAI_API_ORIGIN:-https://all-api.wenmai-ai.com}/wmapi/v1/sellersprite/market-seller-country-distribution" \
+  -H "secret-key: $WENMAI_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"request":{"nodeIdPath":"172282:281407","marketplace":"US"}}'
+```
+
+---
+
+来源：Wenmai WMAPI 文档 https://all-api.wenmai-ai.com/wmapi/docs（来源日期：2026-08-05）。

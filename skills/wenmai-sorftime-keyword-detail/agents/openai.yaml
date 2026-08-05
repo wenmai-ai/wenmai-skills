@@ -1,0 +1,6 @@
+interface:
+  display_name: "Sorftime Amazon（亚马逊） 关键词详情"
+  short_description: "调用 Sorftime Amazon（亚马逊） standard API：关键词详情"
+  default_prompt: "Use $wenmai-sorftime-keyword-detail to call keyword_detail and return traceable results."
+policy:
+  allow_implicit_invocation: true

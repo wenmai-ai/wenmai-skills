@@ -21,7 +21,7 @@ test('lists all packaged skills', () => {
   const skills = result.stdout.trim().split('\n');
 
   assert.equal(result.status, 0, result.stderr);
-  assert.equal(skills.length, 69);
+  assert.equal(skills.length, 189);
   assert.ok(skills.includes('wenmai-sif-asin-keywords'));
 });
 
@@ -73,7 +73,7 @@ test('installs all skills', (context) => {
     .filter((entry) => entry.isDirectory());
 
   assert.equal(result.status, 0, result.stderr);
-  assert.equal(installedSkills.length, 69);
+  assert.equal(installedSkills.length, 189);
 });
 
 test('installs into the Codex user directory', (context) => {

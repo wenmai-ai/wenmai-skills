@@ -1,0 +1,6 @@
+interface:
+  display_name: "Sorftime 相似产品查询"
+  short_description: "调用 Sorftime standard API：相似产品查询"
+  default_prompt: "Use $wenmai-sorftime-tiktok-similar-product to call tiktok_similar_product and return traceable results."
+policy:
+  allow_implicit_invocation: true

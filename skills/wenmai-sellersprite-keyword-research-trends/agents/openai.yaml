@@ -1,0 +1,6 @@
+interface:
+  display_name: "SellerSprite 关键词选品-关键词的趋势数据，包含：搜索量，购买量，购买率，同比增长率，环比增长率，三个月增长率"
+  short_description: "调用 SellerSprite standard API：关键词选品-关键词的趋势数据，包含：搜索量，购买量，购买率，同比增长率"
+  default_prompt: "Use $wenmai-sellersprite-keyword-research-trends to call keyword_research_trends and return traceable results."
+policy:
+  allow_implicit_invocation: true

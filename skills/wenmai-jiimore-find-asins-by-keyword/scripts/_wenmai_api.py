@@ -33,8 +33,8 @@ def require_api_key() -> str:
     key = os.environ.get("WENMAI_API_KEY") or os.environ.get("WENMAI_SECRET_KEY")
     if not key:
         die(
-            "缺少 WENMAI_API_KEY。"
-            "请参考 https://skill.wenmai-ai.com/wenmaiskills/use_guide.html 获取 secret-key，并导出为 WENMAI_API_KEY；"
+            "缺少 WENMAI_API_KEY。请在 "
+            "https://agent.wenmai-ai.com/app/account 的个人中心获取 secret-key，并导出为 WENMAI_API_KEY；"
             "额度不足时也在同一入口充值。"
             "示例：export WENMAI_API_KEY=sk-...",
             code=2,

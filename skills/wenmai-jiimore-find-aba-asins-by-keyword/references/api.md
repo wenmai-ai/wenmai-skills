@@ -7,7 +7,7 @@
 - **认证方式**：Header `secret-key: $WENMAI_API_KEY`，也兼容 `WENMAI_SECRET_KEY`
 - **接口代码**：`jiimore_find_aba_asins_by_keyword`
 - **脚本入口**：`scripts/jiimore_find_aba_asins_by_keyword.py`
-- **凭据与充值**：参考 https://skill.wenmai-ai.com/wenmaiskills/use_guide.html 获取 `secret-key`，额度不足时在同一入口充值
+- **凭据与充值**：在 https://agent.wenmai-ai.com/app/account 获取 `secret-key`，额度不足时在同一入口充值
 
 ## 请求参数
 
@@ -75,7 +75,7 @@ Wenmai 网关外层通常包含 `code`、`message`、`requestId`、`supplier`、
 | 场景 | 处理建议 |
 |---|---|
 | 缺少 API Key | 设置 `WENMAI_API_KEY`，不要把 key 写入 Skill、日志或对话。 |
-| 余额或额度不足 | 参考 https://skill.wenmai-ai.com/wenmaiskills/use_guide.html 完成充值。 |
+| 余额或额度不足 | 前往 https://agent.wenmai-ai.com/app/account 充值。 |
 | 参数错误 | 检查必填字段、数组数量、ASIN 格式、分页范围和国家码。 |
 | HTTP 或网关错误 | 保留状态码、`requestId` 和脱敏后的错误消息用于排查。 |
 

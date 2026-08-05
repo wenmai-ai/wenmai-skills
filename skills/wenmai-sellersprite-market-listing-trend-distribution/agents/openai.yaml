@@ -1,0 +1,6 @@
+interface:
+  display_name: "SellerSprite 用于分析指定 Amazon 市场类目节点下的商品上架时间分布与生命周期。"
+  short_description: "调用 SellerSprite standard API：用于分析指定 Amazon 市场类目节点下的商品上架时间分布与生命周期"
+  default_prompt: "Use $wenmai-sellersprite-market-listing-trend-distribution to call market_listing_trend_distribution and return traceable results."
+policy:
+  allow_implicit_invocation: true

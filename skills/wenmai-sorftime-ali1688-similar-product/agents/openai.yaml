@@ -1,0 +1,6 @@
+interface:
+  display_name: "Sorftime 1688平台查询货源"
+  short_description: "调用 Sorftime standard API：1688平台查询货源"
+  default_prompt: "Use $wenmai-sorftime-ali1688-similar-product to call ali1688_similar_product and return traceable results."
+policy:
+  allow_implicit_invocation: true

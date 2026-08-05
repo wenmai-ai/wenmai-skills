@@ -1,0 +1,6 @@
+interface:
+  display_name: "SellerSprite 用于在指定 Amazon 站点中，根据 ASIN、时间范围及多维筛选条件，"
+  short_description: "调用 SellerSprite standard API：用于在指定 Amazon 站点中，根据 ASIN、时间范围及多维筛选条"
+  default_prompt: "Use $wenmai-sellersprite-traffic-extend to call traffic_extend and return traceable results."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Sorftime 关键词搜索结果"
+  short_description: "调用 Sorftime standard API：关键词搜索结果"
+  default_prompt: "Use $wenmai-sorftime-walmart-keyword-search-results to call walmart_keyword_search_results and return traceable results."
+policy:
+  allow_implicit_invocation: true

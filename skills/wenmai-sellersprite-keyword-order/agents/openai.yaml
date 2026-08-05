@@ -1,0 +1,6 @@
+interface:
+  display_name: "SellerSprite 基于 ASIN 的关键词反查工具，用于分析某个或多个 ASIN"
+  short_description: "调用 SellerSprite standard API：基于 ASIN 的关键词反查工具，用于分析某个或多个 ASIN"
+  default_prompt: "Use $wenmai-sellersprite-keyword-order to call keyword_order and return traceable results."
+policy:
+  allow_implicit_invocation: true

@@ -9,5 +9,6 @@ if __name__ == "__main__":
         script_name='sellersprite_market_statistics.py',
         path='/sellersprite/market-research-statistics',
         required_fields=['request'],
+        enum_fields={'request.marketplace': ['US', 'JP', 'UK', 'DE', 'FR', 'IT', 'ES', 'CA', 'IN']},
         sample_params={'request': {'marketplace': 'US', 'nodeIdPath': '172282:281407', 'topN': 10}},
     )

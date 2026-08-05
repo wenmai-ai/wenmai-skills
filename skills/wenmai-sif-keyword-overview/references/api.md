@@ -4,7 +4,7 @@
 
 - **请求地址**：`${WENMAI_API_ORIGIN:-https://all-api.wenmai-ai.com}/wmapi/v1/sif/market-get-keyword-history`
 - **请求方式**：POST，`Content-Type: application/json`
-- **认证方式**：Header `secret-key: $WENMAI_API_KEY`，也兼容 `WENMAI_SECRET_KEY`；secret-key 获取与充值指引见 https://skill.wenmai-ai.com/wenmaiskills/use_guide.html。
+- **认证方式**：Header `secret-key: $WENMAI_API_KEY`，也兼容 `WENMAI_SECRET_KEY`；在 https://agent.wenmai-ai.com/ 获取 secret-key，额度不足时在同一入口充值。
 - **接口编码**：`market_get_keyword_history`
 - **脚本入口**：`scripts/sif_keyword_overview.py`，脚本参数即标准 API POST Body JSON
 

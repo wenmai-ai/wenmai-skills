@@ -1,0 +1,6 @@
+interface:
+  display_name: "SellerSprite 查询指定 ASIN 在 Amazon 对应市场的商品基础信息及销量与销售额预测数据。"
+  short_description: "调用 SellerSprite standard API：查询指定 ASIN 在 Amazon 对应市场的商品基础信息及销量与销"
+  default_prompt: "Use $wenmai-sellersprite-asin-prediction to call asin_prediction and return traceable results."
+policy:
+  allow_implicit_invocation: true

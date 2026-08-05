@@ -1,6 +1,6 @@
 interface:
-  display_name: "Sorftime 产品历史趋势"
-  short_description: "调用 Sorftime standard API：产品历史趋势"
+  display_name: "Sorftime Amazon（亚马逊） 产品历史趋势"
+  short_description: "调用 Sorftime Amazon（亚马逊） standard API：产品历史趋势"
   default_prompt: "Use $wenmai-sorftime-product-trend to call product_trend and return traceable results."
 policy:
   allow_implicit_invocation: true

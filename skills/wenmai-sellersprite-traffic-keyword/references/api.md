@@ -4,7 +4,7 @@
 
 - **请求地址**：`${WENMAI_API_ORIGIN:-https://all-api.wenmai-ai.com}/wmapi/v1/sellersprite/traffic-keyword`
 - **请求方式**：POST，`Content-Type: application/json`
-- **认证方式**：Header `secret-key: $WENMAI_API_KEY`，也兼容 `WENMAI_SECRET_KEY`；secret-key 获取与充值指引见 https://skill.wenmai-ai.com/wenmaiskills/use_guide.html。
+- **认证方式**：Header `secret-key: $WENMAI_API_KEY`，也兼容 `WENMAI_SECRET_KEY`；secret-key 在 https://agent.wenmai-ai.com/app/account 的个人中心获取，充值也在同一入口完成。
 - **接口编码**：`traffic_keyword`
 - **脚本入口**：`scripts/sellersprite_traffic_keyword.py`，脚本参数即标准 API POST Body JSON
 
@@ -22,7 +22,7 @@ POST Body（JSON）：
 
 | 参数 | 类型 | 必填 | 说明 |
 |------|------|------|------|
-| `request.marketplace` | string | 是 | 站点编码，示例 `US`；常用值参考卖家精灵站点：`US`、`UK`、`DE`、`FR`、`JP`、`CA`、`IT`、`ES`、`MX`、`IN`。 |
+| `request.marketplace` | string | 是 | 站点编码。可选值：`US`、`JP`、`UK`、`DE`、`FR`、`IT`、`ES`、`CA`、`IN`。 |
 | `request.asin` | string | 是 | ASIN，示例 `B07Z82895W`。 |
 | `request.keyword` | string | 否 | 关键词筛选，示例 `phone stand`。 |
 | `request.month` | string | 否 | 历史月份，格式 `yyyyMM`；不传默认最近 `30` 天，示例 `202308`。 |
@@ -74,8 +74,8 @@ Wenmai 标准 API 返回统一响应。成功时 `code` 为 `OK`，业务数据�
 
 | 场景 | 处理建议 |
 |------|----------|
-| 缺少 API Key | 参考 https://skill.wenmai-ai.com/wenmaiskills/use_guide.html 获取 secret-key，并设置为 `WENMAI_API_KEY`（或 `WENMAI_SECRET_KEY`）；不要把 Key 写进 Skill 文件或对话。 |
-| 余额或额度不足 | 参考 https://skill.wenmai-ai.com/wenmaiskills/use_guide.html 完成充值后重试。 |
+| 缺少 API Key | 到 https://agent.wenmai-ai.com/app/account 的个人中心获取 secret-key，并设置为 `WENMAI_API_KEY`（或 `WENMAI_SECRET_KEY`）；不要把 Key 写进 Skill 文件或对话。 |
+| 余额或额度不足 | 到 https://agent.wenmai-ai.com/app/account 的个人中心充值后重试。 |
 | 参数错误 | 按上方请求参数表修正枚举值、日期格式、分页范围或必填字段。 |
 | 非 OK 响应 | 读取响应 `message` 与 `requestId`，按接口文档或联系网关排查。 |
 
@@ -91,4 +91,4 @@ curl -sS -X POST \
 
 ---
 
-来源：Wenmai WMAPI 文档 https://all-api.wenmai-ai.com/wmapi/docs。
+来源：Wenmai WMAPI 文档 https://all-api.wenmai-ai.com/wmapi/docs（2026-07-23 访问）。

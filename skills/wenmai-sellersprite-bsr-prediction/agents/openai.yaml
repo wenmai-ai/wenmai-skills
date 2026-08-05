@@ -1,0 +1,6 @@
+interface:
+  display_name: "SellerSprite 根据 Amazon 指定市场下的一级类目节点和大类 BSR 排名，"
+  short_description: "调用 SellerSprite standard API：根据 Amazon 指定市场下的一级类目节点和大类 BSR 排名，"
+  default_prompt: "Use $wenmai-sellersprite-bsr-prediction to call bsr_prediction and return traceable results."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Sorftime Amazon（亚马逊） 实时热搜关键词榜"
+  short_description: "调用 Sorftime Amazon（亚马逊） standard API：实时热搜关键词榜"
+  default_prompt: "Use $wenmai-sorftime-keyword-list to call keyword_list and return traceable results."
+policy:
+  allow_implicit_invocation: true

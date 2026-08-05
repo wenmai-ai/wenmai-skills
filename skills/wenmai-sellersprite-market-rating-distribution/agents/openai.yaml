@@ -1,0 +1,6 @@
+interface:
+  display_name: "SellerSprite 用于分析指定 Amazon 市场类目节点下的商品评分值分布与市场成熟度评估。"
+  short_description: "调用 SellerSprite standard API：用于分析指定 Amazon 市场类目节点下的商品评分值分布与市场成熟度"
+  default_prompt: "Use $wenmai-sellersprite-market-rating-distribution to call market_rating_distribution and return traceable results."
+policy:
+  allow_implicit_invocation: true

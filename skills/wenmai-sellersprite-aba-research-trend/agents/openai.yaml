@@ -1,0 +1,6 @@
+interface:
+  display_name: "SellerSprite ABA选品-关键词的趋势数据，包含：ABA排名和搜索量"
+  short_description: "调用 SellerSprite standard API：ABA选品-关键词的趋势数据，包含：ABA排名和搜索量"
+  default_prompt: "Use $wenmai-sellersprite-aba-research-trend to call aba_research_trend and return traceable results."
+policy:
+  allow_implicit_invocation: true

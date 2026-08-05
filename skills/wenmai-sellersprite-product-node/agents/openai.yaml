@@ -1,0 +1,6 @@
+interface:
+  display_name: "SellerSprite 查询 Amazon 产品类目信息的工具。"
+  short_description: "调用 SellerSprite standard API：查询 Amazon 产品类目信息的工具。"
+  default_prompt: "Use $wenmai-sellersprite-product-node to call product_node and return traceable results."
+policy:
+  allow_implicit_invocation: true

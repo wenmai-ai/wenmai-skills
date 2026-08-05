@@ -1,39 +1,63 @@
 ---
 name: wenmai-jiimore-search-keywords-batch
-description: "JIIMORE Amazon 关键词批量查询接口，用于一次获取多个关键词的搜索与接口支持的市场指标，便于横向比较。当用户提到批量关键词、关键词指标对比、多个搜索词、关键词数据表、批量查词或 keyword batch 时触发此技能。只要用户需要同时核验一组 Amazon 关键词的数据，也应触发此技能。"
+description: "极目数据（JIIMORE）Amazon 关键词批量指标接口，支持一次查询 1～20 个关键词，返回搜索量、点击、销量、搜索/点击转化、CPC/CPR、ABA 排名变化、增长率、Top 3 集中度及关联 niche。用于批量查词、关键词指标对比、搜索词数据表或关键词机会筛选。即使用户未明确提及 JIIMORE，只要任务需要上述接口能力，也应触发此技能。"
 metadata:
   author: wenmai-ai
   version: "1.0.0"
 ---
 
-# Wenmai JIIMORE search keywords batch
+# 极目数据（JIIMORE）Amazon 关键词批量指标
 
-## Purpose
-Use this Skill to call the Wenmai JIIMORE standard API `jiimore_search_keywords_batch` for 批量查询关键词指标.
+## Overview
 
-The Skill calls exactly one fixed standard API endpoint:
+调用 Wenmai 极目数据（JIIMORE）standard API `jiimore_search_keywords_batch`。只调用以下固定端点，不接受动态端点或其他操作：
 
 - Endpoint: `POST /wmapi/v1/jiimore/keywords-batch`
 - Auth: Header `secret-key: $WENMAI_API_KEY`
 - Script: `scripts/jiimore_search_keywords_batch.py`
+- API contract: [`references/api.md`](references/api.md)
+
+在构造请求或解释字段前阅读 `references/api.md`，以其中的参数、限制、响应字段和错误定义为事实来源。
+
+## Workflow
+
+1. 提取并校验用户输入，保留用户指定的 Amazon 市场和查询范围。
+2. 使用必需的 `request` 包装层构造请求，不把内部字段提升到顶层。
+3. 对照 API 契约处理数量、长度、分页和枚举限制；不静默截断或添加未定义字段。
+4. 运行固定脚本并保留原始 JSON 响应。
+5. 检查网关状态、`requestId`、实际 `countryCode`、分页/返回数量及 `warnings`。
+6. 将结果映射回响应字段，按用户决策目的输出紧凑、可追溯的摘要。
 
 ## How To Run
 
-请参考 https://skill.wenmai-ai.com/wenmaiskills/use_guide.html 获取 `secret-key`；额度或余额不足时，按该指南完成充值。运行脚本前，把复制的 key 导出为 `WENMAI_API_KEY`（或 `WENMAI_SECRET_KEY`）。
+请参考 https://skill.wenmai-ai.com/wenmaiskills/use_guide.html 获取 `secret-key`；额度或余额不足时，按该指南完成充值。运行脚本前，将 key 导出为 `WENMAI_API_KEY`（或兼容的 `WENMAI_SECRET_KEY`）。
 
 ```bash
 export WENMAI_API_KEY=sk-...
 python3 scripts/jiimore_search_keywords_batch.py '{"request": {"keywords": ["neck fan"], "countryCode": "US"}}'
 ```
 
-The script prints the raw Wenmai API response as formatted JSON. Read `references/api.md` for the exact request and response contract.
+脚本将 Wenmai API 原始响应输出为格式化 JSON。不得把 API Key 写入文件、日志或回答。
 
-## Parameter Rules
+## Request Rules
 
-Required fields: `request, request.keywords`.
-
-Preserve the user's ASINs, keywords, marketplace country code, niche ID, ranking window, pagination, filters, and sort order. Do not flatten the required `request` object.
+- 必须保留 `request` 包装层。
+- `request.keywords` 必填，必须是 1～20 个关键词；每个关键词最多 200 字符，超限时明确分批，不静默截断。
+- `request.countryCode` 可选；如用户未指定则省略，使用服务端默认市场，不自行假设。
+- 若接口支持 `request.page` 和 `request.pageSize`，页码从 1 开始，`pageSize` 范围为 1～50；保留用户指定值。
+- 仅发送 `references/api.md` 定义的字段。
 
 ## Response Rules
 
-Return compact tables or summaries while keeping values traceable to response fields. If the API returns `error` or a non-`OK` code, report the gateway message and suggest parameter corrections. Never invent missing data.
+- 按搜索词展示搜索/点击/销量、转化、CPC/CPR、ABA 排名变化、增长率、Top 3 集中度和关联 niche。
+- 明确区分响应中的时间窗口、币种、单位和指标口径，不混用不同周期。
+- 保留实际市场、分页、`returnedRows`、规范化标识符和数据完整性字段；仅在响应存在时展示。
+- 始终报告 `warnings`；将未解析输入、截断、部分失败或数据不完整与成功结果区分开。
+- 所有摘要值必须能追溯到原始响应字段；缺失字段标记为缺失，不估算或补造。
+
+## Error Handling
+
+- 缺少凭据时，提示设置 `WENMAI_API_KEY` 或 `WENMAI_SECRET_KEY`，不要要求用户在对话中粘贴密钥。
+- 参数错误时，检查 `request` 包装层、必填字段、格式及接口限制。
+- HTTP、网关错误、`error` 或非 `OK` 状态发生时，报告脱敏后的状态码、消息和 `requestId`，并给出可操作的参数修正建议。
+- 额度或余额不足时，引导用户参考上述使用指南完成充值。

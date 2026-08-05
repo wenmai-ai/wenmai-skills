@@ -1,0 +1,6 @@
+interface:
+  display_name: "SIF 功能：查询单个 campaign 的历史广告组结构，列出该 campaign 下所有广告组的详情。"
+  short_description: "调用 SIF standard API：功能：查询单个 campaign 的历史广告组结构，列出该 campaign 下所有广告"
+  default_prompt: "Use $wenmai-sif-ads-get-campaign-structure to call ads_get_campaign_structure and return traceable results."
+policy:
+  allow_implicit_invocation: true

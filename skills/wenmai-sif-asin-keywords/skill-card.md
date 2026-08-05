@@ -1,10 +1,18 @@
-# 稳卖 SIF ASIN 关键词
+# SIF ASIN Keywords
 
-反查 ASIN 关键词流量信号
+SIF ASIN 反查关键词接口，用于获取流量关键词、自然排名、广告排名、关键词贡献变化、排名差距以及上升或下降关键词。
 
-- Runtime: Wenmai standard API `POST /wmapi/v1/sif/market-get-asin-keyword-signals`
-- API: `market_get_asin_keyword_signals`
+固定调用 Wenmai SIF standard API `market_get_asin_keyword_signals`，不接受动态端点或其他操作。
+
+- Provider: SIF
+- Platform: Amazon（亚马逊）
+- Operation: `market_get_asin_keyword_signals`
+- Endpoint: `POST /wmapi/v1/sif/market-get-asin-keyword-signals`
 - Script: `scripts/sif_asin_keywords.py`
-- Auth: `WENMAI_API_KEY` sent as `secret-key`; see the usage guide at https://skill.wenmai-ai.com/wenmaiskills/use_guide.html to get the key and recharge
-
-This Skill is designed for direct user-facing use through a fixed Wenmai standard API endpoint.
+- Authentication: `WENMAI_API_KEY`（兼容 `WENMAI_SECRET_KEY`）作为 `secret-key`
+- Inputs: JSON 对象；必填字段、包装层、默认值和限制以 API 契约为准
+- Output: 原始 JSON 响应；摘要必须可追溯并映射到响应字段，同时保留存在的 `requestId` 和 `warnings`
+- Limitations: 不接受动态端点；不静默截断或补造数据；不绕过上游额度、参数、市场或分页限制
+- API contract: [`references/api.md`](references/api.md)
+- 使用指南: https://skill.wenmai-ai.com/wenmaiskills/use_guide.html
+- API key / 充值: https://agent.wenmai-ai.com/
