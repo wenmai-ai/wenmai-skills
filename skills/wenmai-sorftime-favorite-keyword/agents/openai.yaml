@@ -1,6 +1,0 @@
-interface:
-  display_name: "Sorftime Amazon（亚马逊） 收藏关键词"
-  short_description: "调用 Sorftime Amazon（亚马逊） standard API：收藏关键词"
-  default_prompt: "Use $wenmai-sorftime-favorite-keyword to call favorite_keyword and return traceable results."
-policy:
-  allow_implicit_invocation: true

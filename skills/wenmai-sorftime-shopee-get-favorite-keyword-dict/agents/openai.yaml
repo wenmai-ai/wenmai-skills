@@ -1,6 +1,0 @@
-interface:
-  display_name: "Sorftime 查询收藏夹列表"
-  short_description: "调用 Sorftime standard API：查询收藏夹列表"
-  default_prompt: "Use $wenmai-sorftime-shopee-get-favorite-keyword-dict to call shopee_get_favorite_keyword_dict and return traceable results."
-policy:
-  allow_implicit_invocation: true

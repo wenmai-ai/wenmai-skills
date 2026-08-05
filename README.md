@@ -3,10 +3,10 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/)
 [![Agent Skills](https://img.shields.io/badge/Agent%20Skills-Open%20Standard-orange)](https://agentskills.io)
-[![Skills](https://img.shields.io/badge/skills-189-brightgreen)](#skills-catalog)
+[![Skills](https://img.shields.io/badge/skills-174-brightgreen)](#skills-catalog)
 [![npm](https://img.shields.io/npm/v/%40wenmai-ai%2Fwenmai-skills.svg)](https://www.npmjs.com/package/@wenmai-ai/wenmai-skills)
 
-**Wenmai Skills** 是面向跨境电商的数据型 AI Skill 集合，提供 189 个 API 驱动的原子能力，覆盖多平台商品与内容采集、Amazon 评论、JIIMORE、Keepa、卖家精灵（SellerSprite）、SIF 和 Sorftime 等数据源。
+**Wenmai Skills** 是面向跨境电商的数据型 AI Skill 集合，提供 174 个 API 驱动的原子能力，覆盖多平台商品与内容采集、Amazon 评论、JIIMORE、Keepa、卖家精灵（SellerSprite）、SIF 和 Sorftime 等数据源。
 
 本仓库遵循 [Agent Skills](https://agentskills.io) 开放标准，可用于稳卖 Agent、Codex、Claude Code、Cursor、GitHub Copilot 等支持 Agent Skills 的 AI 编程与智能体平台。
 
@@ -121,7 +121,7 @@ npx @wenmai-ai/wenmai-skills install wenmai-sif-asin-keywords --agent codex
 
 ## Skills Catalog
 
-以下按数据源完整列出当前 189 个 Skill。
+以下按数据源完整列出当前 174 个 Skill。
 
 ### Alpha 多平台采集
 
@@ -269,12 +269,7 @@ npx @wenmai-ai/wenmai-skills install wenmai-sif-asin-keywords --agent codex
 | `wenmai-sorftime-category-search-from-top-node` | Amazon 平台：查大类下的细分类目市场 |
 | `wenmai-sorftime-category-tree` | Amazon 平台：类目树查询 |
 | `wenmai-sorftime-category-trend` | Amazon 平台：类目市场趋势 |
-| `wenmai-sorftime-change-favorite-keyword` | Amazon 平台：移动收藏关键词 |
 | `wenmai-sorftime-competitor-product-keywords` | Amazon 平台：竞品关键词分析 |
-| `wenmai-sorftime-del-favorite-keyword` | Amazon 平台：删除收藏关键词 |
-| `wenmai-sorftime-favorite-keyword` | Amazon 平台：收藏关键词 |
-| `wenmai-sorftime-get-favorite-keyword` | Amazon 平台：查询收藏关键词 |
-| `wenmai-sorftime-get-favorite-keyword-dict` | Amazon 平台：查询收藏夹列表 |
 | `wenmai-sorftime-keyword-detail` | Amazon 平台：关键词详情 |
 | `wenmai-sorftime-keyword-extends` | Amazon 平台：查延伸关键词 |
 | `wenmai-sorftime-keyword-list` | Amazon 平台：实时热搜关键词榜 |
@@ -296,11 +291,6 @@ npx @wenmai-ai/wenmai-skills install wenmai-sif-asin-keywords --agent codex
 | `wenmai-sorftime-shopee-category-request` | Shopee 平台：类目Best Seller查询 |
 | `wenmai-sorftime-shopee-category-search-from-name` | Shopee 平台：类目名称搜索 |
 | `wenmai-sorftime-shopee-category-trend` | Shopee 平台：类目市场趋势 |
-| `wenmai-sorftime-shopee-change-favorite-keyword` | Shopee 平台：移动收藏关键词 |
-| `wenmai-sorftime-shopee-del-favorite-keyword` | Shopee 平台：删除收藏关键词 |
-| `wenmai-sorftime-shopee-favorite-keyword` | Shopee 平台：收藏关键词 |
-| `wenmai-sorftime-shopee-get-favorite-keyword` | Shopee 平台：查询收藏关键词 |
-| `wenmai-sorftime-shopee-get-favorite-keyword-dict` | Shopee 平台：查询收藏夹列表 |
 | `wenmai-sorftime-shopee-keyword-relation-results` | Shopee 平台：关键词关联产品 |
 | `wenmai-sorftime-shopee-keyword-search` | Shopee 平台：热搜关键词榜单 |
 | `wenmai-sorftime-shopee-product-request` | Shopee 平台：产品详情 |
@@ -327,11 +317,6 @@ npx @wenmai-ai/wenmai-skills install wenmai-sif-asin-keywords --agent codex
 | `wenmai-sorftime-tiktok-product-video-author` | TikTok 平台：产品带货达人 |
 | `wenmai-sorftime-tiktok-similar-product` | TikTok 平台：相似产品查询 |
 | `wenmai-sorftime-walmart-category-report-by-node-id` | Walmart 平台：类目实时销量报告 |
-| `wenmai-sorftime-walmart-change-favorite-keyword` | Walmart 平台：移动收藏关键词 |
-| `wenmai-sorftime-walmart-del-favorite-keyword` | Walmart 平台：删除收藏关键词 |
-| `wenmai-sorftime-walmart-favorite-keyword` | Walmart 平台：收藏关键词 |
-| `wenmai-sorftime-walmart-get-favorite-keyword` | Walmart 平台：查询收藏关键词 |
-| `wenmai-sorftime-walmart-get-favorite-keyword-dict` | Walmart 平台：查询收藏夹列表 |
 | `wenmai-sorftime-walmart-keyword-detail` | Walmart 平台：关键词详情 |
 | `wenmai-sorftime-walmart-keyword-extends` | Walmart 平台：关键词延伸 |
 | `wenmai-sorftime-walmart-keyword-list` | Walmart 平台：实时热搜关键词列表 |
