@@ -1,0 +1,6 @@
+interface:
+  display_name: "Sorftime 类目Best Seller查询"
+  short_description: "调用 Sorftime standard API：类目Best Seller查询"
+  default_prompt: "Use $wenmai-sorftime-shopee-category-request to call shopee_category_request and return traceable results."
+policy:
+  allow_implicit_invocation: true

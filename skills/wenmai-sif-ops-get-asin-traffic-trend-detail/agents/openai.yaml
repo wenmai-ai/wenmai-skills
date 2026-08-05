@@ -1,0 +1,6 @@
+interface:
+  display_name: "SIF 功能：查看 ASIN 在指定时间窗口内的关键词级流量明细，按关键词分页返回各渠道排名与分数拆解。"
+  short_description: "调用 SIF standard API：功能：查看 ASIN 在指定时间窗口内的关键词级流量明细，按关键词分页返回各渠道排名与分"
+  default_prompt: "Use $wenmai-sif-ops-get-asin-traffic-trend-detail to call ops_get_asin_traffic_trend_detail and return traceable results."
+policy:
+  allow_implicit_invocation: true

@@ -9,5 +9,6 @@ if __name__ == "__main__":
         script_name='sellersprite_competitor_lookup.py',
         path='/sellersprite/competitor-lookup',
         required_fields=['request'],
+        enum_fields={'request.marketplace': ['US', 'JP', 'UK', 'DE', 'FR', 'IT', 'ES', 'CA', 'IN']},
         sample_params={'request': {'marketplace': 'US', 'asins': ['B08GHW4TBS'], 'page': 1, 'size': 50}},
     )

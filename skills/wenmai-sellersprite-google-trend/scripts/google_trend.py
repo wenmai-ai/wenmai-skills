@@ -9,5 +9,6 @@ if __name__ == "__main__":
         script_name='google_trend.py',
         path='/sellersprite/google-trend',
         required_fields=['request', 'request.marketplace'],
+        enum_fields={'request.marketplace': ['US', 'JP', 'UK', 'DE', 'FR', 'IT', 'ES', 'CA', 'IN']},
         sample_params={'request': {'marketplace': 'US'}},
     )

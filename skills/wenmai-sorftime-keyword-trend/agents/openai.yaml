@@ -1,0 +1,6 @@
+interface:
+  display_name: "Sorftime Amazon（亚马逊） 关键词历史趋势"
+  short_description: "调用 Sorftime Amazon（亚马逊） standard API：关键词历史趋势"
+  default_prompt: "Use $wenmai-sorftime-keyword-trend to call keyword_trend and return traceable results."
+policy:
+  allow_implicit_invocation: true

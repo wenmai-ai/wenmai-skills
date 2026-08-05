@@ -1,0 +1,6 @@
+interface:
+  display_name: "Sorftime 按产品名称搜类目"
+  short_description: "调用 Sorftime standard API：按产品名称搜类目"
+  default_prompt: "Use $wenmai-sorftime-temu-category-search-from-name to call temu_category_search_from_name and return traceable results."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Sorftime 收藏关键词"
+  short_description: "调用 Sorftime standard API：收藏关键词"
+  default_prompt: "Use $wenmai-sorftime-shopee-favorite-keyword to call shopee_favorite_keyword and return traceable results."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "SIF 功能：查询某 ASIN 的广告结构总览，统计历史全量范围内各广告类型的 campaign 数量。"
+  short_description: "调用 SIF standard API：功能：查询某 ASIN 的广告结构总览，统计历史全量范围内各广告类型的 campaign"
+  default_prompt: "Use $wenmai-sif-ads-get-asin-ad-structure to call ads_get_asin_ad_structure and return traceable results."
+policy:
+  allow_implicit_invocation: true

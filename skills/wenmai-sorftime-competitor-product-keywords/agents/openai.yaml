@@ -1,0 +1,6 @@
+interface:
+  display_name: "Sorftime Amazon（亚马逊） 竞品关键词分析"
+  short_description: "调用 Sorftime Amazon（亚马逊） standard API：竞品关键词分析"
+  default_prompt: "Use $wenmai-sorftime-competitor-product-keywords to call competitor_product_keywords and return traceable results."
+policy:
+  allow_implicit_invocation: true

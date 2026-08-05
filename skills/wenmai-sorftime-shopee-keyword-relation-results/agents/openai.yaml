@@ -1,0 +1,6 @@
+interface:
+  display_name: "Sorftime 关键词关联产品"
+  short_description: "调用 Sorftime standard API：关键词关联产品"
+  default_prompt: "Use $wenmai-sorftime-shopee-keyword-relation-results to call shopee_keyword_relation_results and return traceable results."
+policy:
+  allow_implicit_invocation: true

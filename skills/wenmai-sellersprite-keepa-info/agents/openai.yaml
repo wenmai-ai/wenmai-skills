@@ -1,0 +1,6 @@
+interface:
+  display_name: "SellerSprite 获取指定 Amazon ASIN 的完整商品画像及多维度历史趋势数据(不含有销量数据)。"
+  short_description: "调用 SellerSprite standard API：获取指定 Amazon ASIN 的完整商品画像及多维度历史趋势数据("
+  default_prompt: "Use $wenmai-sellersprite-keepa-info to call keepa_info and return traceable results."
+policy:
+  allow_implicit_invocation: true

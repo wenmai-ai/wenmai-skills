@@ -1,0 +1,6 @@
+interface:
+  display_name: "SellerSprite 专业级 Amazon 关键词市场与选品分析工具。"
+  short_description: "调用 SellerSprite standard API：专业级 Amazon 关键词市场与选品分析工具。"
+  default_prompt: "Use $wenmai-sellersprite-keyword-research to call keyword_research and return traceable results."
+policy:
+  allow_implicit_invocation: true

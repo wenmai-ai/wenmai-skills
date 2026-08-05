@@ -33,10 +33,10 @@ def require_api_key() -> str:
     key = os.environ.get("WENMAI_API_KEY") or os.environ.get("WENMAI_SECRET_KEY")
     if not key:
         die(
-            "缺少 WENMAI_API_KEY。"
-            "请参考 https://skill.wenmai-ai.com/wenmaiskills/use_guide.html 获取 secret-key，并导出为 WENMAI_API_KEY；"
+            "缺少 WENMAI_API_KEY。请在 "
+            "https://agent.wenmai-ai.com/app/account 的个人中心获取 secret-key，并导出为 WENMAI_API_KEY；"
             "额度不足时也在同一入口充值。"
-            "示例：export WENMAI_API_KEY=sk-...",
+            "示例：export WENMAI_API_KEY=\"replace-with-real-wenmai-api-key\"",
             code=2,
         )
     return key
@@ -51,10 +51,20 @@ def _get_path(params: dict, path: str):
     return current
 
 
-def validate_params(params: dict, required_fields: list[str]) -> None:
+def validate_params(params: dict, required_fields: list[str], enum_fields=None) -> None:
     missing = [name for name in required_fields if _get_path(params, name) in (None, "", [])]
     if missing:
         die("Missing required parameter(s): " + ", ".join(missing))
+
+    invalid = []
+    for name, allowed_values in (enum_fields or {}).items():
+        value = _get_path(params, name)
+        is_allowed = any(type(value) is type(item) and value == item for item in allowed_values)
+        if value is not None and not is_allowed:
+            allowed = ", ".join(str(item) for item in allowed_values)
+            invalid.append(f"{name}={value!r}; allowed: {allowed}")
+    if invalid:
+        die("Invalid enum parameter(s): " + "; ".join(invalid))
 
 
 def read_timeout() -> int:
@@ -74,9 +84,15 @@ def build_url(path: str) -> str:
     return f"{origin.rstrip('/')}/{base_path.strip('/')}/{path.strip('/')}"
 
 
-def call_standard_api(*, params: dict, path: str, required_fields: list[str]) -> dict:
+def call_standard_api(
+    *,
+    params: dict,
+    path: str,
+    required_fields: list[str],
+    enum_fields=None,
+) -> dict:
+    validate_params(params, required_fields, enum_fields)
     api_key = require_api_key()
-    validate_params(params, required_fields)
 
     data = json.dumps(params, ensure_ascii=False).encode("utf-8")
     request = Request(
@@ -107,7 +123,19 @@ def call_standard_api(*, params: dict, path: str, required_fields: list[str]) ->
         return {"error": "connection_failed", "reason": str(exc.reason)}
 
 
-def run_api(*, script_name: str, path: str, required_fields: list[str], sample_params: dict) -> None:
+def run_api(
+    *,
+    script_name: str,
+    path: str,
+    required_fields: list[str],
+    sample_params: dict,
+    enum_fields=None,
+) -> None:
     params = load_params(script_name, sample_params)
-    result = call_standard_api(params=params, path=path, required_fields=required_fields)
+    result = call_standard_api(
+        params=params,
+        path=path,
+        required_fields=required_fields,
+        enum_fields=enum_fields,
+    )
     print(json.dumps(result, ensure_ascii=False, indent=2))

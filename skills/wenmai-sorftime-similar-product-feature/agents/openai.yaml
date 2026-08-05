@@ -1,0 +1,6 @@
+interface:
+  display_name: "Sorftime Amazon（亚马逊） 相似产品特征"
+  short_description: "调用 Sorftime Amazon（亚马逊） standard API：相似产品特征"
+  default_prompt: "Use $wenmai-sorftime-similar-product-feature to call similar_product_feature and return traceable results."
+policy:
+  allow_implicit_invocation: true

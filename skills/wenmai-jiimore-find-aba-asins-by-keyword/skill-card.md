@@ -1,8 +1,18 @@
-# Wenmai JIIMORE 按关键词查询 ABA 商品
+# 极目数据（JIIMORE）Amazon ABA 关键词关联商品
 
-通过一个固定 Wenmai standard API 端点执行 `jiimore_find_aba_asins_by_keyword`。
+极目数据（JIIMORE）Amazon ABA 关键词关联商品接口，支持按 1～20 个关键词查找 ASIN，并返回标题、图片、品牌、价格、评分、评论量、7/30/360 日点击与转化、卖家及 ABA 相似度/相关等级。
 
+固定调用 Wenmai 极目数据（JIIMORE） standard API `jiimore_find_aba_asins_by_keyword`，不接受动态端点或其他操作。
+
+- Provider: 极目数据（JIIMORE）
+- Platform: Amazon（亚马逊）
+- Operation: `jiimore_find_aba_asins_by_keyword`
 - Endpoint: `POST /wmapi/v1/jiimore/aba-asins-by-keyword`
 - Script: `scripts/jiimore_find_aba_asins_by_keyword.py`
-- Auth: `WENMAI_API_KEY` 作为 `secret-key`
-- 凭据/充值：https://skill.wenmai-ai.com/wenmaiskills/use_guide.html
+- Authentication: `WENMAI_API_KEY`（兼容 `WENMAI_SECRET_KEY`）作为 `secret-key`
+- Inputs: JSON 对象；必填字段、包装层、默认值和限制以 API 契约为准
+- Output: 原始 JSON 响应；摘要必须可追溯并映射到响应字段，同时保留存在的 `requestId` 和 `warnings`
+- Limitations: 不接受动态端点；不静默截断或补造数据；不绕过上游额度、参数、市场或分页限制
+- API contract: [`references/api.md`](references/api.md)
+- 使用指南: https://skill.wenmai-ai.com/wenmaiskills/use_guide.html
+- API key / 充值: https://agent.wenmai-ai.com/

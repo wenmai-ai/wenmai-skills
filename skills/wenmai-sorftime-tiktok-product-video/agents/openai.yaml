@@ -1,0 +1,6 @@
+interface:
+  display_name: "Sorftime 产品带货视频"
+  short_description: "调用 Sorftime standard API：产品带货视频"
+  default_prompt: "Use $wenmai-sorftime-tiktok-product-video to call tiktok_product_video and return traceable results."
+policy:
+  allow_implicit_invocation: true

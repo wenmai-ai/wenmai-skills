@@ -1,0 +1,6 @@
+interface:
+  display_name: "Sorftime 实时热搜关键词列表"
+  short_description: "调用 Sorftime standard API：实时热搜关键词列表"
+  default_prompt: "Use $wenmai-sorftime-walmart-keyword-list to call walmart_keyword_list and return traceable results."
+policy:
+  allow_implicit_invocation: true

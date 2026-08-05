@@ -1,0 +1,6 @@
+interface:
+  display_name: "Sorftime Amazon（亚马逊） 细分类目（品类）市场"
+  short_description: "调用 Sorftime Amazon（亚马逊） standard API：细分类目（品类）市场"
+  default_prompt: "Use $wenmai-sorftime-search-categories-broadly to call search_categories_broadly and return traceable results."
+policy:
+  allow_implicit_invocation: true

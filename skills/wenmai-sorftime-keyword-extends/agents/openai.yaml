@@ -1,6 +1,6 @@
 interface:
-  display_name: "Sorftime 查延伸关键词"
-  short_description: "调用 Sorftime standard API：查延伸关键词"
+  display_name: "Sorftime Amazon（亚马逊） 查延伸关键词"
+  short_description: "调用 Sorftime Amazon（亚马逊） standard API：查延伸关键词"
   default_prompt: "Use $wenmai-sorftime-keyword-extends to call keyword_extends and return traceable results."
 policy:
   allow_implicit_invocation: true

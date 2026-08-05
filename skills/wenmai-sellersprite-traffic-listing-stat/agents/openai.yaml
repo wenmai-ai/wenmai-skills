@@ -1,0 +1,6 @@
+interface:
+  display_name: "SellerSprite 用于分析 Amazon ASIN 的流量来源结构，包括免费流量、付费流量和关联类型分布。"
+  short_description: "调用 SellerSprite standard API：用于分析 Amazon ASIN 的流量来源结构，包括免费流量、付费流"
+  default_prompt: "Use $wenmai-sellersprite-traffic-listing-stat to call traffic_listing_stat and return traceable results."
+policy:
+  allow_implicit_invocation: true

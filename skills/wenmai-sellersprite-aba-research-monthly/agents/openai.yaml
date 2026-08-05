@@ -1,0 +1,6 @@
+interface:
+  display_name: "SellerSprite 用于在指定 Amazon 站点和时间点（按月），"
+  short_description: "调用 SellerSprite standard API：用于在指定 Amazon 站点和时间点（按月），"
+  default_prompt: "Use $wenmai-sellersprite-aba-research-monthly to call aba_research_monthly and return traceable results."
+policy:
+  allow_implicit_invocation: true

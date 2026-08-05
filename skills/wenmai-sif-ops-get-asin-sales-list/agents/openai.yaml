@@ -1,0 +1,6 @@
+interface:
+  display_name: "SIF 功能：以列表视图查询一个或多个 ASIN 的销量数据，返回各变体的销量、价格、属性及月度趋势迷你图。"
+  short_description: "调用 SIF standard API：功能：以列表视图查询一个或多个 ASIN 的销量数据，返回各变体的销量、价格、属性及月度"
+  default_prompt: "Use $wenmai-sif-ops-get-asin-sales-list to call ops_get_asin_sales_list and return traceable results."
+policy:
+  allow_implicit_invocation: true

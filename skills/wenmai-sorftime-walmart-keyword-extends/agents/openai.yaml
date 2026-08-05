@@ -1,0 +1,6 @@
+interface:
+  display_name: "Sorftime 关键词延伸"
+  short_description: "调用 Sorftime standard API：关键词延伸"
+  default_prompt: "Use $wenmai-sorftime-walmart-keyword-extends to call walmart_keyword_extends and return traceable results."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Sorftime 按名称搜产品"
+  short_description: "调用 Sorftime standard API：按名称搜产品"
+  default_prompt: "Use $wenmai-sorftime-shopee-product-search-from-name to call shopee_product_search_from_name and return traceable results."
+policy:
+  allow_implicit_invocation: true

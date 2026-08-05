@@ -1,0 +1,6 @@
+interface:
+  display_name: "SellerSprite 用于分析指定 Amazon 市场类目节点下的A+视频分布"
+  short_description: "调用 SellerSprite standard API：用于分析指定 Amazon 市场类目节点下的A+视频分布"
+  default_prompt: "Use $wenmai-sellersprite-market-ebc-distribution to call market_ebc_distribution and return traceable results."
+policy:
+  allow_implicit_invocation: true
