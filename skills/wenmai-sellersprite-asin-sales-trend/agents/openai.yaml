@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 SellerSprite ASIN 销量趋势"
+  short_description: "查询 ASIN 父子体月度销量、销售额与价格趋势"
+  default_prompt: "Use $wenmai-sellersprite-asin-sales-trend to query an Amazon ASIN's monthly sales trend."
+policy:
+  allow_implicit_invocation: true
