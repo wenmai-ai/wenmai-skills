@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 FastMoss video_detail_analysis"
+  short_description: "调用 FastMoss video_detail_analysis 接口"
+  default_prompt: "Use $wenmai-fastmoss-video-detail-analysis to call video_detail_analysis and return traceable results."
+policy:
+  allow_implicit_invocation: true

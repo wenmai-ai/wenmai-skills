@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 FastMoss live_search"
+  short_description: "调用 FastMoss live_search 接口"
+  default_prompt: "Use $wenmai-fastmoss-live-search to call live_search and return traceable results."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 FastMoss market_category_analysis"
+  short_description: "调用 FastMoss market_category_analysis 接口"
+  default_prompt: "Use $wenmai-fastmoss-market-category-analysis to call market_category_analysis and return traceable results."
+policy:
+  allow_implicit_invocation: true

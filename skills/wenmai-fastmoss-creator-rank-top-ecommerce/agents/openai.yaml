@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 FastMoss creator_rank_top_ecommerce"
+  short_description: "调用 FastMoss creator_rank_top_ecommerce 接口"
+  default_prompt: "Use $wenmai-fastmoss-creator-rank-top-ecommerce to call creator_rank_top_ecommerce and return traceable results."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 FastMoss shop_sale_analysis"
+  short_description: "调用 FastMoss shop_sale_analysis 接口"
+  default_prompt: "Use $wenmai-fastmoss-shop-sale-analysis to call shop_sale_analysis and return traceable results."
+policy:
+  allow_implicit_invocation: true
