@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 FastMoss product_search"
+  short_description: "调用 FastMoss product_search 接口"
+  default_prompt: "Use $wenmai-fastmoss-product-search to call product_search and return traceable results."
+policy:
+  allow_implicit_invocation: true

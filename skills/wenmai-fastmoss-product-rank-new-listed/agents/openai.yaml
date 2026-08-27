@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 FastMoss product_rank_new_listed"
+  short_description: "调用 FastMoss product_rank_new_listed 接口"
+  default_prompt: "Use $wenmai-fastmoss-product-rank-new-listed to call product_rank_new_listed and return traceable results."
+policy:
+  allow_implicit_invocation: true

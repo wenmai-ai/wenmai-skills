@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 FastMoss product_investment"
+  short_description: "调用 FastMoss product_investment 接口"
+  default_prompt: "Use $wenmai-fastmoss-product-investment to call product_investment and return traceable results."
+policy:
+  allow_implicit_invocation: true

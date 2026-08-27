@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 FastMoss product_video_list"
+  short_description: "调用 FastMoss product_video_list 接口"
+  default_prompt: "Use $wenmai-fastmoss-product-video-list to call product_video_list and return traceable results."
+policy:
+  allow_implicit_invocation: true

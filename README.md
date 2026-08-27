@@ -3,10 +3,10 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/)
 [![Agent Skills](https://img.shields.io/badge/Agent%20Skills-Open%20Standard-orange)](https://agentskills.io)
-[![Skills](https://img.shields.io/badge/skills-174-brightgreen)](#skills-catalog)
+[![Skills](https://img.shields.io/badge/skills-216-brightgreen)](#skills-catalog)
 [![npm](https://img.shields.io/npm/v/%40wenmai-ai%2Fwenmai-skills.svg)](https://www.npmjs.com/package/@wenmai-ai/wenmai-skills)
 
-**Wenmai Skills** 是面向跨境电商的数据型 AI Skill 集合，提供 174 个 API 驱动的原子能力，覆盖多平台商品与内容采集、Amazon 评论、JIIMORE、Keepa、卖家精灵（SellerSprite）、SIF 和 Sorftime 等数据源。
+**Wenmai Skills** 是面向跨境电商的数据型 AI Skill 集合，提供 216 个 API 驱动的原子能力，覆盖多平台商品与内容采集、Amazon 评论、FastMoss、JIIMORE、Keepa、卖家精灵（SellerSprite）、SIF 和 Sorftime 等数据源。
 
 本仓库遵循 [Agent Skills](https://agentskills.io) 开放标准，可用于稳卖 Agent、Codex、Claude Code、Cursor、GitHub Copilot 等支持 Agent Skills 的 AI 编程与智能体平台。
 
@@ -121,7 +121,7 @@ npx @wenmai-ai/wenmai-skills install wenmai-sif-asin-keywords --agent codex
 
 ## Skills Catalog
 
-以下按数据源完整列出当前 174 个 Skill。
+以下按数据源列出当前 216 个 Skill。
 
 ### Alpha 多平台采集
 
@@ -326,6 +326,12 @@ npx @wenmai-ai/wenmai-skills install wenmai-sif-asin-keywords --agent codex
 | `wenmai-sorftime-walmart-product-traffic-terms` | Walmart 平台：产品流量词反查 |
 | `wenmai-sorftime-walmart-product-trend-by-product-id` | Walmart 平台：产品历史趋势 |
 | `wenmai-sorftime-walmart-product-variation-sales-by-product-id` | Walmart 平台：产品变体查询 |
+
+### FastMoss TikTok Shop
+
+| Skill | Description |
+| --- | --- |
+| `wenmai-fastmoss-*` | FastMoss 标准 API 原子 Skill，共 42 个，覆盖 TikTok Shop 的商品、店铺、达人、直播、视频、市场和 MCN 机构分析；每个 Skill 固定调用一个 `/wmapi/v1/fastmoss/...` 端点。 |
 
 ## Skill Structure
 

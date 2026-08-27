@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 FastMoss product_sku"
+  short_description: "调用 FastMoss product_sku 接口"
+  default_prompt: "Use $wenmai-fastmoss-product-sku to call product_sku and return traceable results."
+policy:
+  allow_implicit_invocation: true

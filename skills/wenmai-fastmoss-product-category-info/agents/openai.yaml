@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 FastMoss product_category_info"
+  short_description: "调用 FastMoss product_category_info 接口"
+  default_prompt: "Use $wenmai-fastmoss-product-category-info to call product_category_info and return traceable results."
+policy:
+  allow_implicit_invocation: true

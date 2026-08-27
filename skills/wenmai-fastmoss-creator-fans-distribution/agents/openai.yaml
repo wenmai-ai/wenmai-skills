@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 FastMoss creator_fans_distribution"
+  short_description: "调用 FastMoss creator_fans_distribution 接口"
+  default_prompt: "Use $wenmai-fastmoss-creator-fans-distribution to call creator_fans_distribution and return traceable results."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 FastMoss product_rank_top_selling"
+  short_description: "调用 FastMoss product_rank_top_selling 接口"
+  default_prompt: "Use $wenmai-fastmoss-product-rank-top-selling to call product_rank_top_selling and return traceable results."
+policy:
+  allow_implicit_invocation: true
