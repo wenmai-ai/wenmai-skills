@@ -1,0 +1,6 @@
+interface:
+  display_name: "稳卖 YY Amazon 评论抓取"
+  short_description: "按 ASIN 异步抓取 Amazon 最新评论（1～10 页），可区分变体，返回评论正文、星级、日期与所属子体"
+  default_prompt: "Use $wenmai-yy-review-monitor to crawl Amazon reviews through the Wenmai YY review monitor standard APIs."
+policy:
+  allow_implicit_invocation: true
