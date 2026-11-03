@@ -3,10 +3,10 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/)
 [![Agent Skills](https://img.shields.io/badge/Agent%20Skills-Open%20Standard-orange)](https://agentskills.io)
-[![Skills](https://img.shields.io/badge/skills-216-brightgreen)](#skills-catalog)
+[![Skills](https://img.shields.io/badge/skills-218-brightgreen)](#skills-catalog)
 [![npm](https://img.shields.io/npm/v/%40wenmai-ai%2Fwenmai-skills.svg)](https://www.npmjs.com/package/@wenmai-ai/wenmai-skills)
 
-**Wenmai Skills** 是面向跨境电商的数据型 AI Skill 集合，提供 216 个 API 驱动的原子能力，覆盖多平台商品与内容采集、Amazon 评论、FastMoss、JIIMORE、Keepa、卖家精灵（SellerSprite）、SIF 和 Sorftime 等数据源。
+**Wenmai Skills** 是面向跨境电商的数据型 AI Skill 集合，提供 218 个 API 驱动的原子能力，覆盖多平台商品与内容采集、Amazon 评论、YY数据、FastMoss、JIIMORE、Keepa、卖家精灵（SellerSprite）、SIF 和 Sorftime 等数据源。
 
 本仓库遵循 [Agent Skills](https://agentskills.io) 开放标准，可用于稳卖 Agent、Codex、Claude Code、Cursor、GitHub Copilot 等支持 Agent Skills 的 AI 编程与智能体平台。
 
@@ -121,7 +121,7 @@ npx @wenmai-ai/wenmai-skills install wenmai-sif-asin-keywords --agent codex
 
 ## Skills Catalog
 
-以下按数据源列出当前 216 个 Skill。
+以下按数据源列出当前 218 个 Skill。
 
 ### Alpha 多平台采集
 
@@ -155,6 +155,12 @@ npx @wenmai-ai/wenmai-skills install wenmai-sif-asin-keywords --agent codex
 | `wenmai-amazon-reviews` | 按 ASIN 获取 Amazon 买家评论，用于 VOC 与竞品研究 |
 | `wenmai-keepa-product-history` | Amazon 平台：查询价格、BSR、Buy Box、评分与评论等历史走势 |
 | `wenmai-keepa-product-search` | Amazon 平台：按关键词搜索 Keepa 商品池 |
+
+### YY数据
+
+| Skill | Description |
+| --- | --- |
+| `wenmai-yy-review-monitor` | Amazon 平台：按 1 个 ASIN 异步抓取最新评论（每页 10 条，1～10 页），可区分变体，并查询任务进度与抓取次数 |
 
 ### JIIMORE
 
