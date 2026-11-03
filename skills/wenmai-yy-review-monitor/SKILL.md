@@ -6,11 +6,11 @@ metadata:
   version: "1.0.0"
 ---
 
-# YY数据Amazon 评论抓取
+# Wenmai 数据Amazon 评论抓取
 
 ## Overview
 
-调用 Wenmai YY数据评论监控 standard API。评论抓取是异步任务，只调用以下 4 个固定端点，不接受动态端点或其他操作：
+调用 Wenmai 数据评论监控 standard API。评论抓取是异步任务，只调用以下 4 个固定端点，不接受动态端点或其他操作：
 
 | 步骤 | Endpoint | Script |
 |------|----------|--------|

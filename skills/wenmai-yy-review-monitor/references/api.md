@@ -1,4 +1,4 @@
-# Wenmai YY数据Amazon 评论抓取 API 参考
+# Wenmai 数据Amazon 评论抓取 API 参考
 
 ## 调用规范
 
