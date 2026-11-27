@@ -1,0 +1,6 @@
+interface:
+  display_name: "ScrapeCreators 获取帖子或 Reels 评论"
+  short_description: "调用 ScrapeCreators 获取帖子或 Reels 评论，返回可追溯网关数据"
+  default_prompt: "Use $wenmai-scrapecreators-instagram-post-comments to 获取帖子或 Reels 评论 and return traceable results."
+policy:
+  allow_implicit_invocation: true

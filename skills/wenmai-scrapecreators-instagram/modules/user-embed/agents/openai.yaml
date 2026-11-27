@@ -1,0 +1,6 @@
+interface:
+  display_name: "ScrapeCreators 获取 Instagram 主页嵌入 HTML"
+  short_description: "调用 ScrapeCreators 获取 Instagram 主页嵌入 HTML，返回可追溯网关数据"
+  default_prompt: "Use $wenmai-scrapecreators-instagram-user-embed to 获取 Instagram 主页嵌入 HTML and return traceable results."
+policy:
+  allow_implicit_invocation: true

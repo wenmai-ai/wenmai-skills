@@ -1,0 +1,6 @@
+interface:
+  display_name: "Facebook 主页与广告调研"
+  short_description: "搜主页、帖子、群组、Marketplace 和广告库；按需调用，普通 3 积分。"
+  default_prompt: "Use $wenmai-scrapecreators-facebook to research Facebook pages, posts, groups, Marketplace and Ad Library; call only the needed module."
+policy:
+  allow_implicit_invocation: true

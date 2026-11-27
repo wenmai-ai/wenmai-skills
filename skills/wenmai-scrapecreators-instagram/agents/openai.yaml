@@ -1,0 +1,6 @@
+interface:
+  display_name: "Instagram 达人与内容调研"
+  short_description: "搜账号、帖子、Reels 和评论，按需调用；普通 3 积分，不含 Facebook。"
+  default_prompt: "Use $wenmai-scrapecreators-instagram as the ScrapeCreators Instagram catalog and call only the needed module."
+policy:
+  allow_implicit_invocation: true

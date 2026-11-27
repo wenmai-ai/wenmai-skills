@@ -1,0 +1,6 @@
+interface:
+  display_name: "ScrapeCreators 获取用户粉丝列表"
+  short_description: "调用 ScrapeCreators 获取用户粉丝列表，返回可追溯网关数据"
+  default_prompt: "Use $wenmai-scrapecreators-tiktok-user-followers to 获取用户粉丝列表 and return traceable results."
+policy:
+  allow_implicit_invocation: true

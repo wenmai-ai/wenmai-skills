@@ -1,0 +1,6 @@
+interface:
+  display_name: "ScrapeCreators 搜索 Google 索引的公开 Twitter / X 帖子"
+  short_description: "调用 ScrapeCreators 搜索 Google 索引的公开 Twitter / X 帖子，返回可追溯网关数据"
+  default_prompt: "Use $wenmai-scrapecreators-twitter-search-posts to 搜索 Google 索引的公开 Twitter / X 帖子 and return traceable results."
+policy:
+  allow_implicit_invocation: true

@@ -3,10 +3,10 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/)
 [![Agent Skills](https://img.shields.io/badge/Agent%20Skills-Open%20Standard-orange)](https://agentskills.io)
-[![Skills](https://img.shields.io/badge/skills-218-brightgreen)](#skills-catalog)
+[![Skills](https://img.shields.io/badge/skills-224-brightgreen)](#skills-catalog)
 [![npm](https://img.shields.io/npm/v/%40wenmai-ai%2Fwenmai-skills.svg)](https://www.npmjs.com/package/@wenmai-ai/wenmai-skills)
 
-**Wenmai Skills** 是面向跨境电商的数据型 AI Skill 集合，提供 218 个 API 驱动的原子能力，覆盖多平台商品与内容采集、Amazon 评论、YY数据、FastMoss、JIIMORE、Keepa、卖家精灵（SellerSprite）、SIF 和 Sorftime 等数据源。
+**Wenmai Skills** 是面向跨境电商的数据型 AI Skill 集合，提供 224 个 API 驱动的 Skill，覆盖多平台商品与内容采集、Amazon 评论、YY数据、FastMoss、JIIMORE、Keepa、卖家精灵（SellerSprite）、SIF、Sorftime 和 ScrapeCreators 等数据源。
 
 本仓库遵循 [Agent Skills](https://agentskills.io) 开放标准，可用于稳卖 Agent、Codex、Claude Code、Cursor、GitHub Copilot 等支持 Agent Skills 的 AI 编程与智能体平台。
 
@@ -121,7 +121,7 @@ npx @wenmai-ai/wenmai-skills install wenmai-sif-asin-keywords --agent codex
 
 ## Skills Catalog
 
-以下按数据源列出当前 218 个 Skill。
+以下按数据源列出当前 224 个 Skill。
 
 ### Alpha 多平台采集
 
@@ -147,6 +147,17 @@ npx @wenmai-ai/wenmai-skills install wenmai-sif-asin-keywords --agent codex
 | `wenmai-alpha-xiaohongshu-pro-scraper` | 采集小红书笔记、关键词与内容趋势 |
 | `wenmai-alpha-youtube-comments-scraper` | 采集 YouTube 视频评论 |
 | `wenmai-alpha-youtube-scraper` | 采集 YouTube 视频、频道与搜索结果 |
+
+### ScrapeCreators 社媒采集
+
+| Skill | Description |
+| --- | --- |
+| `wenmai-scrapecreators-facebook` | Facebook 主页、帖子、群组、Marketplace、活动与广告库调研套件 |
+| `wenmai-scrapecreators-instagram` | Instagram 账号、帖子、Reels、故事精选与评论调研套件 |
+| `wenmai-scrapecreators-reddit` | Reddit 社群、帖子、评论、搜索与视频字幕调研套件 |
+| `wenmai-scrapecreators-tiktok` | TikTok 达人、视频、评论、粉丝、直播与音乐调研套件 |
+| `wenmai-scrapecreators-twitter` | Twitter / X 帖子搜索、账号、推文、视频转写与社群调研套件 |
+| `wenmai-scrapecreators-youtube` | YouTube 频道、视频、字幕、评论、Shorts 与播放列表调研套件 |
 
 ### Amazon 评论与 Keepa
 
