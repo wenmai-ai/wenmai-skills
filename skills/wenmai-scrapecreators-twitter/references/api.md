@@ -6,19 +6,19 @@
 - 顶层 Skill 是索引目录，真正请求发到下表 7 个 `/wmapi/v1/scrapecreators/twitter-*` 端点。不要因为套件有 7 个接口就全打一遍。
 - 认证：Header `secret-key: $WENMAI_API_KEY`，也兼容 `WENMAI_SECRET_KEY`
 - 凭据与充值：在 https://agent.wenmai-ai.com/app/account 获取 `secret-key`
-- 稳卖积分：普通接口成功为 2。贵参数会提高官方成本，默认不要开。
+- 稳卖积分：普通接口成功为 3。贵参数会提高官方成本，默认不要开。
 
 ## 接口索引
 
 | 子 Skill | 接口代码 | 请求地址 | 稳卖积分 | 详细契约 |
 |---|---|---|---|---|
-| 搜索 Google 索引的公开 Twitter / X 帖子 | `scrapecreators_twitter_search_posts` | `/wmapi/v1/scrapecreators/twitter-search-posts` | 2 | [modules/search-posts/references/api.md](../modules/search-posts/references/api.md) |
-| 获取 Twitter / X 用户资料 | `scrapecreators_twitter_profile` | `/wmapi/v1/scrapecreators/twitter-profile` | 2 | [modules/profile/references/api.md](../modules/profile/references/api.md) |
-| 获取用户主页上的热门推文 | `scrapecreators_twitter_user_tweets` | `/wmapi/v1/scrapecreators/twitter-user-tweets` | 2 | [modules/user-tweets/references/api.md](../modules/user-tweets/references/api.md) |
-| 获取单条 Twitter / X 推文详情 | `scrapecreators_twitter_tweet` | `/wmapi/v1/scrapecreators/twitter-tweet` | 2 | [modules/tweet/references/api.md](../modules/tweet/references/api.md) |
-| 获取视频推文的 AI 转写 | `scrapecreators_twitter_tweet_transcript` | `/wmapi/v1/scrapecreators/twitter-tweet-transcript` | 2 | [modules/tweet-transcript/references/api.md](../modules/tweet-transcript/references/api.md) |
-| 获取 Twitter / X 社群详情 | `scrapecreators_twitter_community` | `/wmapi/v1/scrapecreators/twitter-community` | 2 | [modules/community/references/api.md](../modules/community/references/api.md) |
-| 获取 Twitter / X 社群帖子 | `scrapecreators_twitter_community_tweets` | `/wmapi/v1/scrapecreators/twitter-community-tweets` | 2 | [modules/community-tweets/references/api.md](../modules/community-tweets/references/api.md) |
+| 搜索 Google 索引的公开 Twitter / X 帖子 | `scrapecreators_twitter_search_posts` | `/wmapi/v1/scrapecreators/twitter-search-posts` | 3 | [modules/search-posts/references/api.md](../modules/search-posts/references/api.md) |
+| 获取 Twitter / X 用户资料 | `scrapecreators_twitter_profile` | `/wmapi/v1/scrapecreators/twitter-profile` | 3 | [modules/profile/references/api.md](../modules/profile/references/api.md) |
+| 获取用户主页上的热门推文 | `scrapecreators_twitter_user_tweets` | `/wmapi/v1/scrapecreators/twitter-user-tweets` | 3 | [modules/user-tweets/references/api.md](../modules/user-tweets/references/api.md) |
+| 获取单条 Twitter / X 推文详情 | `scrapecreators_twitter_tweet` | `/wmapi/v1/scrapecreators/twitter-tweet` | 3 | [modules/tweet/references/api.md](../modules/tweet/references/api.md) |
+| 获取视频推文的 AI 转写 | `scrapecreators_twitter_tweet_transcript` | `/wmapi/v1/scrapecreators/twitter-tweet-transcript` | 3 | [modules/tweet-transcript/references/api.md](../modules/tweet-transcript/references/api.md) |
+| 获取 Twitter / X 社群详情 | `scrapecreators_twitter_community` | `/wmapi/v1/scrapecreators/twitter-community` | 3 | [modules/community/references/api.md](../modules/community/references/api.md) |
+| 获取 Twitter / X 社群帖子 | `scrapecreators_twitter_community_tweets` | `/wmapi/v1/scrapecreators/twitter-community-tweets` | 3 | [modules/community-tweets/references/api.md](../modules/community-tweets/references/api.md) |
 
 每个子 Skill 的请求参数、响应字段、示例和 curl 写在对应模块的 `references/api.md`，不要在索引页发明字段。
 

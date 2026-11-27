@@ -9,7 +9,7 @@
 - **接口代码**：`scrapecreators_instagram_search_popular`
 - **脚本入口**：`modules/search-popular/scripts/search_popular.py`
 - **凭据与充值**：在 https://agent.wenmai-ai.com/app/account 获取 `secret-key`，额度不足时在同一入口充值
-- **稳卖积分**：成功时 `costCredit` 为 `2`。
+- **稳卖积分**：成功时 `costCredit` 为 `3`。
 
 ## 请求参数
 
@@ -66,7 +66,7 @@ Wenmai 网关外层通常包含 `code`、`message`、`requestId`、`supplier`、
 
 ## 使用要点
 
-- 刮的是 Instagram 公开专题页 /popular/{词}，不是普通搜索。只用 music、travel 这类专题词；品牌名 gymshark、官方示例 basketball 都可能没有专题页。失败后改打 search-hashtag 或 reels-search。每次成功扣 2 稳卖积分。
+- 刮的是 Instagram 公开专题页 /popular/{词}，不是普通搜索。只用 music、travel 这类专题词；品牌名 gymshark、官方示例 basketball 都可能没有专题页。失败后改打 search-hashtag 或 reels-search。每次成功扣 3 稳卖积分。
 - 顶层直接传业务字段，不要增加 `request` 包装层。
 - 返回 `warnings` 时，在结果摘要中明确保留截断、部分失败或完整性警告。
 

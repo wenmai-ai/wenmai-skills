@@ -1,6 +1,6 @@
 ---
 name: wenmai-scrapecreators-twitter-user-tweets
-description: "ScrapeCreators Twitter 套件内的获取用户主页上的热门推文子 Skill，调用 `scrapecreators_twitter_user_tweets`。固定 `POST /wmapi/v1/scrapecreators/twitter-user-tweets`。每次成功调用扣 2 稳卖积分。从属于 `$wenmai-scrapecreators-twitter`，不作为独立顶层 Skill 安装。"
+description: "ScrapeCreators Twitter 套件内的获取用户主页上的热门推文子 Skill，调用 `scrapecreators_twitter_user_tweets`。固定 `POST /wmapi/v1/scrapecreators/twitter-user-tweets`。每次成功调用扣 3 稳卖积分。从属于 `$wenmai-scrapecreators-twitter`，不作为独立顶层 Skill 安装。"
 metadata:
   author: wenmai-ai
   version: "1.0.0"
@@ -48,11 +48,11 @@ python3 modules/user-tweets/scripts/user_tweets.py '{"handle": "levelsio"}'
 - 顶层直接传业务字段，不要增加 `request` 包装层，也不要把内部字段提升或改名。
 - 保留用户指定的搜索词、handle、推文链接、社群链接和 cursor；缺少会改变查询范围的值时先询问，不自行猜测。
 - 仅发送 `references/api.md` 定义的字段、类型、枚举值及受支持组合。
-- 返回热门推文，不是最新时间线。trim 不要当默认。每次成功扣 2 稳卖积分。
+- 返回热门推文，不是最新时间线。trim 不要当默认。每次成功扣 3 稳卖积分。
 
 ## Response Rules
 
-- 先报告 `code`、`requestId` 和 `costCredit`。此接口成功时 `costCredit` 应为 `2`。
+- 先报告 `code`、`requestId` 和 `costCredit`。此接口成功时 `costCredit` 应为 `3`。
 - 按用户决策目的展示关键字段，同时保留原始字段名和值。
 - 仅在响应存在时展示 `warnings`、分页、返回数量和数据完整性字段。
 - 明确区分成功、部分失败、未解析输入、截断和数据不完整；长数组需要摘要时说明覆盖范围，不静默遗漏或合并记录。

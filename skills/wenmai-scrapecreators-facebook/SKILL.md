@@ -1,10 +1,10 @@
 ---
 name: wenmai-scrapecreators-facebook
-description: "ScrapeCreators Facebook 社媒标准 API 套件。一个顶层 Skill 索引 23 个子 Skill：主页详情、主页 Reels、主页照片、主页帖子、主页活动、公开视频搜索、帖子详情、帖子字幕、帖子评论、评论回复、群组信息、群组帖子、Marketplace 地点、Marketplace 商品搜索、Marketplace 商品详情、活动搜索、城市活动、活动详情、广告库广告详情、广告库字幕、广告库搜索、公司在投广告、广告主搜索。普通接口每次成功 2 积分。长字幕、get_transcript 和 trim 不要当默认。当用户需要 Facebook 主页、帖子、群组、Marketplace、广告库或提到 ScrapeCreators 时使用；即使用户未明确提及 ScrapeCreators，只要任务需要该数据源也应触发本套件，再按索引只调用所需子 Skill。"
+description: "ScrapeCreators Facebook 社媒标准 API 套件。一个顶层 Skill 索引 23 个子 Skill：主页详情、主页 Reels、主页照片、主页帖子、主页活动、公开视频搜索、帖子详情、帖子字幕、帖子评论、评论回复、群组信息、群组帖子、Marketplace 地点、Marketplace 商品搜索、Marketplace 商品详情、活动搜索、城市活动、活动详情、广告库广告详情、广告库字幕、广告库搜索、公司在投广告、广告主搜索。普通接口每次成功 3 积分。长字幕、get_transcript 和 trim 不要当默认。当用户需要 Facebook 主页、帖子、群组、Marketplace、广告库或提到 ScrapeCreators 时使用；即使用户未明确提及 ScrapeCreators，只要任务需要该数据源也应触发本套件，再按索引只调用所需子 Skill。"
 metadata:
   author: wenmai-ai
   version: "1.0.0"
-  short-description: 搜主页、帖子、群组、Marketplace 和广告库；按需调用，普通 2 积分。
+  short-description: 搜主页、帖子、群组、Marketplace 和广告库；按需调用，普通 3 积分。
 ---
 
 # Facebook 主页与广告调研
@@ -25,29 +25,29 @@ metadata:
 
 | 场景 | 子 Skill | Endpoint | 稳卖积分 | 脚本 |
 |---|---|---|---|---|
-| 获取 Facebook 主页详情 | [`modules/profile`](modules/profile/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-profile` | 2 | `modules/profile/scripts/profile.py` |
-| 获取 Facebook 主页 Reels | [`modules/profile-reels`](modules/profile-reels/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-profile-reels` | 2 | `modules/profile-reels/scripts/profile_reels.py` |
-| 获取 Facebook 主页相册照片 | [`modules/profile-photos`](modules/profile-photos/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-profile-photos` | 2 | `modules/profile-photos/scripts/profile_photos.py` |
-| 获取 Facebook 主页帖子 | [`modules/profile-posts`](modules/profile-posts/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-profile-posts` | 2 | `modules/profile-posts/scripts/profile_posts.py` |
-| 获取 Facebook 主页活动 | [`modules/profile-events`](modules/profile-events/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-profile-events` | 2 | `modules/profile-events/scripts/profile_events.py` |
-| 搜索 Facebook 公开视频和 Reels | [`modules/search-videos`](modules/search-videos/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-search-videos` | 2 | `modules/search-videos/scripts/search_videos.py` |
-| 获取 Facebook 帖子或 Reel 详情 | [`modules/post`](modules/post/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-post` | 2 | `modules/post/scripts/post.py` |
-| 获取 Facebook 帖子或 Reel 字幕 | [`modules/post-transcript`](modules/post-transcript/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-post-transcript` | 2 | `modules/post-transcript/scripts/post_transcript.py` |
-| 获取 Facebook 帖子评论 | [`modules/post-comments`](modules/post-comments/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-post-comments` | 2 | `modules/post-comments/scripts/post_comments.py` |
-| 获取指定 Facebook 评论的回复 | [`modules/post-comment-replies`](modules/post-comment-replies/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-post-comment-replies` | 2 | `modules/post-comment-replies/scripts/post_comment_replies.py` |
-| 获取 Facebook 公开群组信息 | [`modules/group`](modules/group/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-group` | 2 | `modules/group/scripts/group.py` |
-| 获取 Facebook 公开群组帖子 | [`modules/group-posts`](modules/group-posts/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-group-posts` | 2 | `modules/group-posts/scripts/group_posts.py` |
-| 搜索 Facebook Marketplace 地点 | [`modules/marketplace-location-search`](modules/marketplace-location-search/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-marketplace-location-search` | 2 | `modules/marketplace-location-search/scripts/marketplace_location_search.py` |
-| 搜索 Facebook Marketplace 商品 | [`modules/marketplace-search`](modules/marketplace-search/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-marketplace-search` | 2 | `modules/marketplace-search/scripts/marketplace_search.py` |
-| 获取 Facebook Marketplace 商品详情 | [`modules/marketplace-item`](modules/marketplace-item/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-marketplace-item` | 2 | `modules/marketplace-item/scripts/marketplace_item.py` |
-| 搜索 Facebook 活动 | [`modules/events-search`](modules/events-search/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-events-search` | 2 | `modules/events-search/scripts/events_search.py` |
-| 获取某城市 Facebook 活动 | [`modules/events`](modules/events/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-events` | 2 | `modules/events/scripts/events.py` |
-| 获取 Facebook 活动详情 | [`modules/event-details`](modules/event-details/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-event-details` | 2 | `modules/event-details/scripts/event_details.py` |
-| 获取 Facebook 广告库广告详情 | [`modules/ad-library-ad`](modules/ad-library-ad/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-ad-library-ad` | 2 | `modules/ad-library-ad/scripts/ad_library_ad.py` |
-| 获取 Facebook 广告库视频字幕 | [`modules/ad-library-ad-transcript`](modules/ad-library-ad-transcript/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-ad-library-ad-transcript` | 2 | `modules/ad-library-ad-transcript/scripts/ad_library_ad_transcript.py` |
-| 按关键词搜索 Facebook 广告库 | [`modules/ad-library-search-ads`](modules/ad-library-search-ads/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-ad-library-search-ads` | 2 | `modules/ad-library-search-ads/scripts/ad_library_search_ads.py` |
-| 获取某公司在 Facebook 广告库的在投广告 | [`modules/ad-library-company-ads`](modules/ad-library-company-ads/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-ad-library-company-ads` | 2 | `modules/ad-library-company-ads/scripts/ad_library_company_ads.py` |
-| 在 Facebook 广告库搜索广告主 | [`modules/ad-library-search-companies`](modules/ad-library-search-companies/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-ad-library-search-companies` | 2 | `modules/ad-library-search-companies/scripts/ad_library_search_companies.py` |
+| 获取 Facebook 主页详情 | [`modules/profile`](modules/profile/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-profile` | 3 | `modules/profile/scripts/profile.py` |
+| 获取 Facebook 主页 Reels | [`modules/profile-reels`](modules/profile-reels/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-profile-reels` | 3 | `modules/profile-reels/scripts/profile_reels.py` |
+| 获取 Facebook 主页相册照片 | [`modules/profile-photos`](modules/profile-photos/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-profile-photos` | 3 | `modules/profile-photos/scripts/profile_photos.py` |
+| 获取 Facebook 主页帖子 | [`modules/profile-posts`](modules/profile-posts/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-profile-posts` | 3 | `modules/profile-posts/scripts/profile_posts.py` |
+| 获取 Facebook 主页活动 | [`modules/profile-events`](modules/profile-events/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-profile-events` | 3 | `modules/profile-events/scripts/profile_events.py` |
+| 搜索 Facebook 公开视频和 Reels | [`modules/search-videos`](modules/search-videos/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-search-videos` | 3 | `modules/search-videos/scripts/search_videos.py` |
+| 获取 Facebook 帖子或 Reel 详情 | [`modules/post`](modules/post/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-post` | 3 | `modules/post/scripts/post.py` |
+| 获取 Facebook 帖子或 Reel 字幕 | [`modules/post-transcript`](modules/post-transcript/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-post-transcript` | 3 | `modules/post-transcript/scripts/post_transcript.py` |
+| 获取 Facebook 帖子评论 | [`modules/post-comments`](modules/post-comments/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-post-comments` | 3 | `modules/post-comments/scripts/post_comments.py` |
+| 获取指定 Facebook 评论的回复 | [`modules/post-comment-replies`](modules/post-comment-replies/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-post-comment-replies` | 3 | `modules/post-comment-replies/scripts/post_comment_replies.py` |
+| 获取 Facebook 公开群组信息 | [`modules/group`](modules/group/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-group` | 3 | `modules/group/scripts/group.py` |
+| 获取 Facebook 公开群组帖子 | [`modules/group-posts`](modules/group-posts/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-group-posts` | 3 | `modules/group-posts/scripts/group_posts.py` |
+| 搜索 Facebook Marketplace 地点 | [`modules/marketplace-location-search`](modules/marketplace-location-search/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-marketplace-location-search` | 3 | `modules/marketplace-location-search/scripts/marketplace_location_search.py` |
+| 搜索 Facebook Marketplace 商品 | [`modules/marketplace-search`](modules/marketplace-search/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-marketplace-search` | 3 | `modules/marketplace-search/scripts/marketplace_search.py` |
+| 获取 Facebook Marketplace 商品详情 | [`modules/marketplace-item`](modules/marketplace-item/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-marketplace-item` | 3 | `modules/marketplace-item/scripts/marketplace_item.py` |
+| 搜索 Facebook 活动 | [`modules/events-search`](modules/events-search/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-events-search` | 3 | `modules/events-search/scripts/events_search.py` |
+| 获取某城市 Facebook 活动 | [`modules/events`](modules/events/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-events` | 3 | `modules/events/scripts/events.py` |
+| 获取 Facebook 活动详情 | [`modules/event-details`](modules/event-details/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-event-details` | 3 | `modules/event-details/scripts/event_details.py` |
+| 获取 Facebook 广告库广告详情 | [`modules/ad-library-ad`](modules/ad-library-ad/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-ad-library-ad` | 3 | `modules/ad-library-ad/scripts/ad_library_ad.py` |
+| 获取 Facebook 广告库视频字幕 | [`modules/ad-library-ad-transcript`](modules/ad-library-ad-transcript/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-ad-library-ad-transcript` | 3 | `modules/ad-library-ad-transcript/scripts/ad_library_ad_transcript.py` |
+| 按关键词搜索 Facebook 广告库 | [`modules/ad-library-search-ads`](modules/ad-library-search-ads/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-ad-library-search-ads` | 3 | `modules/ad-library-search-ads/scripts/ad_library_search_ads.py` |
+| 获取某公司在 Facebook 广告库的在投广告 | [`modules/ad-library-company-ads`](modules/ad-library-company-ads/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-ad-library-company-ads` | 3 | `modules/ad-library-company-ads/scripts/ad_library_company_ads.py` |
+| 在 Facebook 广告库搜索广告主 | [`modules/ad-library-search-companies`](modules/ad-library-search-companies/MODULE.md) | `POST /wmapi/v1/scrapecreators/facebook-ad-library-search-companies` | 3 | `modules/ad-library-search-companies/scripts/ad_library_search_companies.py` |
 
 ## 怎么选
 
@@ -60,14 +60,14 @@ metadata:
 7. 广告库：搜广告主 `ad-library-search-companies`，搜广告 `ad-library-search-ads`，公司在投优先 `pageId` 打 `ad-library-company-ads`，详情 `ad-library-ad`，字幕 `ad-library-ad-transcript`。
 8. `allow_long_transcription` / `get_transcript` / `trim` 用户没点名不要开。
 
-普通接口成功 `costCredit=2`。不要默认开启长字幕。
+普通接口成功 `costCredit=3`。不要默认开启长字幕。
 
 ## Workflow
 
 1. 从用户问题映射到上表中的 1 个子 Skill；链路任务按「主页/搜索 → 帖子/商品/广告 → 字幕/评论」展开，仍只调用当前步骤需要的接口。
 2. 阅读对应 `modules/<name>/MODULE.md` 和 `modules/<name>/references/api.md`，不要凭记忆补字段；子模块不是独立 Skill。
 3. 在套件根目录运行该子 Skill 脚本，保留原始 JSON。
-4. 检查 `code`、`requestId`、`costCredit`；成功应为 2。
+4. 检查 `code`、`requestId`、`costCredit`；成功应为 3。
 5. 摘要必须能追溯到响应字段；缺失就写缺失。
 
 ## How To Run

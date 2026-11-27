@@ -6,19 +6,19 @@
 - 顶层 Skill 是索引目录，真正请求发到下表 7 个 `/wmapi/v1/scrapecreators/reddit-*` 端点。不要因为套件有 7 个接口就全打一遍。
 - 认证：Header `secret-key: $WENMAI_API_KEY`，也兼容 `WENMAI_SECRET_KEY`
 - 凭据与充值：在 https://agent.wenmai-ai.com/app/account 获取 `secret-key`
-- 稳卖积分：普通接口成功为 2。贵参数会提高官方成本，默认不要开。
+- 稳卖积分：普通接口成功为 3。贵参数会提高官方成本，默认不要开。
 
 ## 接口索引
 
 | 子 Skill | 接口代码 | 请求地址 | 稳卖积分 | 详细契约 |
 |---|---|---|---|---|
-| 获取 Subreddit 详情 | `scrapecreators_reddit_subreddit_details` | `/wmapi/v1/scrapecreators/reddit-subreddit-details` | 2 | [modules/subreddit-details/references/api.md](../modules/subreddit-details/references/api.md) |
-| 获取 Subreddit 帖子列表 | `scrapecreators_reddit_subreddit` | `/wmapi/v1/scrapecreators/reddit-subreddit` | 2 | [modules/subreddit/references/api.md](../modules/subreddit/references/api.md) |
-| 在指定 Subreddit 内搜索 | `scrapecreators_reddit_subreddit_search` | `/wmapi/v1/scrapecreators/reddit-subreddit-search` | 2 | [modules/subreddit-search/references/api.md](../modules/subreddit-search/references/api.md) |
-| 全站搜索 Reddit 帖子或评论 | `scrapecreators_reddit_search` | `/wmapi/v1/scrapecreators/reddit-search` | 2 | [modules/search/references/api.md](../modules/search/references/api.md) |
-| 获取 Reddit 帖子详情 | `scrapecreators_reddit_post` | `/wmapi/v1/scrapecreators/reddit-post` | 2 | [modules/post/references/api.md](../modules/post/references/api.md) |
-| 获取 Reddit 帖子评论 | `scrapecreators_reddit_post_comments` | `/wmapi/v1/scrapecreators/reddit-post-comments` | 2 | [modules/post-comments/references/api.md](../modules/post-comments/references/api.md) |
-| 获取 Reddit 视频帖字幕 | `scrapecreators_reddit_post_transcript` | `/wmapi/v1/scrapecreators/reddit-post-transcript` | 2 | [modules/post-transcript/references/api.md](../modules/post-transcript/references/api.md) |
+| 获取 Subreddit 详情 | `scrapecreators_reddit_subreddit_details` | `/wmapi/v1/scrapecreators/reddit-subreddit-details` | 3 | [modules/subreddit-details/references/api.md](../modules/subreddit-details/references/api.md) |
+| 获取 Subreddit 帖子列表 | `scrapecreators_reddit_subreddit` | `/wmapi/v1/scrapecreators/reddit-subreddit` | 3 | [modules/subreddit/references/api.md](../modules/subreddit/references/api.md) |
+| 在指定 Subreddit 内搜索 | `scrapecreators_reddit_subreddit_search` | `/wmapi/v1/scrapecreators/reddit-subreddit-search` | 3 | [modules/subreddit-search/references/api.md](../modules/subreddit-search/references/api.md) |
+| 全站搜索 Reddit 帖子或评论 | `scrapecreators_reddit_search` | `/wmapi/v1/scrapecreators/reddit-search` | 3 | [modules/search/references/api.md](../modules/search/references/api.md) |
+| 获取 Reddit 帖子详情 | `scrapecreators_reddit_post` | `/wmapi/v1/scrapecreators/reddit-post` | 3 | [modules/post/references/api.md](../modules/post/references/api.md) |
+| 获取 Reddit 帖子评论 | `scrapecreators_reddit_post_comments` | `/wmapi/v1/scrapecreators/reddit-post-comments` | 3 | [modules/post-comments/references/api.md](../modules/post-comments/references/api.md) |
+| 获取 Reddit 视频帖字幕 | `scrapecreators_reddit_post_transcript` | `/wmapi/v1/scrapecreators/reddit-post-transcript` | 3 | [modules/post-transcript/references/api.md](../modules/post-transcript/references/api.md) |
 
 每个子 Skill 的请求参数、响应字段、示例和 curl 写在对应模块的 `references/api.md`，不要在索引页发明字段。
 

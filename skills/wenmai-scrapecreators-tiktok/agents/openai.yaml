@@ -1,6 +1,6 @@
 interface:
   display_name: "TikTok 达人与爆款内容调研"
-  short_description: "搜达人和爆款视频，查主页地区、粉丝、评论字幕、直播和音乐；按需调用，普通 2 积分。"
-  default_prompt: "Use $wenmai-scrapecreators-tiktok to research TikTok creators, viral videos, comments, live rooms and music; call only the needed module."
+  short_description: "搜达人和爆款视频，查主页地区、粉丝、评论字幕、直播和音乐；按需调用，普通 3 积分。"
+  default_prompt: "Use $wenmai-scrapecreators-tiktok as the ScrapeCreators TikTok catalog and call only the needed module."
 policy:
   allow_implicit_invocation: true

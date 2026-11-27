@@ -1,10 +1,10 @@
 ---
 name: wenmai-scrapecreators-instagram
-description: "ScrapeCreators Instagram 社媒标准 API 套件。一个顶层 Skill 索引 19 个子 Skill：综合搜索、热门专题、话题帖、主页搜索、Reels 搜索、热门 Reels、主页、基础主页、帖子总数、嵌入、帖子列表、Reels 列表、被标记帖、故事精选、音频 Reels、帖子详情、精选详情、评论、评论回复。普通接口每次成功 2 积分。不含 Facebook、TikTok Shop、Ad Library 和字幕转写。当用户需要 Instagram 达人、帖子、Reels、评论或提到 ScrapeCreators 时使用；即使用户未明确提及 ScrapeCreators，只要任务需要该数据源也应触发本套件，再按索引只调用所需子 Skill。"
+description: "ScrapeCreators Instagram 社媒标准 API 套件。一个顶层 Skill 索引 19 个子 Skill：综合搜索、热门专题、话题帖、主页搜索、Reels 搜索、热门 Reels、主页、基础主页、帖子总数、嵌入、帖子列表、Reels 列表、被标记帖、故事精选、音频 Reels、帖子详情、精选详情、评论、评论回复。普通接口每次成功 3 积分。不含 Facebook、TikTok Shop、Ad Library 和字幕转写。当用户需要 Instagram 达人、帖子、Reels、评论或提到 ScrapeCreators 时使用；即使用户未明确提及 ScrapeCreators，只要任务需要该数据源也应触发本套件，再按索引只调用所需子 Skill。"
 metadata:
   author: wenmai-ai
   version: "1.0.0"
-  short-description: 搜账号、帖子、Reels 和评论，按需调用；普通 2 积分，不含 Facebook。
+  short-description: 搜账号、帖子、Reels 和评论，按需调用；普通 3 积分，不含 Facebook。
 ---
 
 # Instagram 达人与内容调研
@@ -25,25 +25,25 @@ metadata:
 
 | 场景 | 子 Skill | Endpoint | 稳卖积分 | 脚本 |
 |---|---|---|---|---|
-| 搜索 Instagram 用户、话题、地点和关键词 | [`modules/search`](modules/search/MODULE.md) | `POST /wmapi/v1/scrapecreators/instagram-search` | 2 | `modules/search/scripts/search.py` |
-| 按热门话题搜索 Instagram 帖子 | [`modules/search-popular`](modules/search-popular/MODULE.md) | `POST /wmapi/v1/scrapecreators/instagram-search-popular` | 2 | `modules/search-popular/scripts/search_popular.py` |
-| 按话题搜索 Instagram 帖子 | [`modules/search-hashtag`](modules/search-hashtag/MODULE.md) | `POST /wmapi/v1/scrapecreators/instagram-search-hashtag` | 2 | `modules/search-hashtag/scripts/search_hashtag.py` |
-| 搜索 Instagram 用户主页 | [`modules/search-profiles`](modules/search-profiles/MODULE.md) | `POST /wmapi/v1/scrapecreators/instagram-search-profiles` | 2 | `modules/search-profiles/scripts/search_profiles.py` |
-| 按关键词搜索 Instagram Reels | [`modules/reels-search`](modules/reels-search/MODULE.md) | `POST /wmapi/v1/scrapecreators/instagram-reels-search` | 2 | `modules/reels-search/scripts/reels_search.py` |
-| 获取近 7 天热门 Reels | [`modules/reels-trending`](modules/reels-trending/MODULE.md) | `POST /wmapi/v1/scrapecreators/instagram-reels-trending` | 2 | `modules/reels-trending/scripts/reels_trending.py` |
-| 获取 Instagram 用户主页 | [`modules/profile`](modules/profile/MODULE.md) | `POST /wmapi/v1/scrapecreators/instagram-profile` | 2 | `modules/profile/scripts/profile.py` |
-| 获取 Instagram 基础主页 | [`modules/basic-profile`](modules/basic-profile/MODULE.md) | `POST /wmapi/v1/scrapecreators/instagram-basic-profile` | 2 | `modules/basic-profile/scripts/basic_profile.py` |
-| 获取 Instagram 帖子总数 | [`modules/profile-post-count`](modules/profile-post-count/MODULE.md) | `POST /wmapi/v1/scrapecreators/instagram-profile-post-count` | 2 | `modules/profile-post-count/scripts/profile_post_count.py` |
-| 获取 Instagram 主页嵌入 HTML | [`modules/user-embed`](modules/user-embed/MODULE.md) | `POST /wmapi/v1/scrapecreators/instagram-user-embed` | 2 | `modules/user-embed/scripts/user_embed.py` |
-| 获取 Instagram 用户帖子列表 | [`modules/user-posts`](modules/user-posts/MODULE.md) | `POST /wmapi/v1/scrapecreators/instagram-user-posts` | 2 | `modules/user-posts/scripts/user_posts.py` |
-| 获取 Instagram 用户 Reels 列表 | [`modules/user-reels`](modules/user-reels/MODULE.md) | `POST /wmapi/v1/scrapecreators/instagram-user-reels` | 2 | `modules/user-reels/scripts/user_reels.py` |
-| 获取用户被标记的帖子 | [`modules/user-tagged-posts`](modules/user-tagged-posts/MODULE.md) | `POST /wmapi/v1/scrapecreators/instagram-user-tagged-posts` | 2 | `modules/user-tagged-posts/scripts/user_tagged_posts.py` |
-| 获取用户故事精选列表 | [`modules/user-highlights`](modules/user-highlights/MODULE.md) | `POST /wmapi/v1/scrapecreators/instagram-user-highlights` | 2 | `modules/user-highlights/scripts/user_highlights.py` |
-| 按音频 ID 获取使用该音频的 Reels | [`modules/audio-reels`](modules/audio-reels/MODULE.md) | `POST /wmapi/v1/scrapecreators/instagram-audio-reels` | 2 | `modules/audio-reels/scripts/audio_reels.py` |
-| 获取 Instagram 帖子或 Reels 详情 | [`modules/post`](modules/post/MODULE.md) | `POST /wmapi/v1/scrapecreators/instagram-post` | 2 | `modules/post/scripts/post.py` |
-| 获取故事精选详情 | [`modules/highlight-detail`](modules/highlight-detail/MODULE.md) | `POST /wmapi/v1/scrapecreators/instagram-highlight-detail` | 2 | `modules/highlight-detail/scripts/highlight_detail.py` |
-| 获取帖子或 Reels 评论 | [`modules/post-comments`](modules/post-comments/MODULE.md) | `POST /wmapi/v1/scrapecreators/instagram-post-comments` | 2 | `modules/post-comments/scripts/post_comments.py` |
-| 获取指定评论的回复 | [`modules/comment-replies`](modules/comment-replies/MODULE.md) | `POST /wmapi/v1/scrapecreators/instagram-comment-replies` | 2 | `modules/comment-replies/scripts/comment_replies.py` |
+| 搜索 Instagram 用户、话题、地点和关键词 | [`modules/search`](modules/search/MODULE.md) | `POST /wmapi/v1/scrapecreators/instagram-search` | 3 | `modules/search/scripts/search.py` |
+| 按热门话题搜索 Instagram 帖子 | [`modules/search-popular`](modules/search-popular/MODULE.md) | `POST /wmapi/v1/scrapecreators/instagram-search-popular` | 3 | `modules/search-popular/scripts/search_popular.py` |
+| 按话题搜索 Instagram 帖子 | [`modules/search-hashtag`](modules/search-hashtag/MODULE.md) | `POST /wmapi/v1/scrapecreators/instagram-search-hashtag` | 3 | `modules/search-hashtag/scripts/search_hashtag.py` |
+| 搜索 Instagram 用户主页 | [`modules/search-profiles`](modules/search-profiles/MODULE.md) | `POST /wmapi/v1/scrapecreators/instagram-search-profiles` | 3 | `modules/search-profiles/scripts/search_profiles.py` |
+| 按关键词搜索 Instagram Reels | [`modules/reels-search`](modules/reels-search/MODULE.md) | `POST /wmapi/v1/scrapecreators/instagram-reels-search` | 3 | `modules/reels-search/scripts/reels_search.py` |
+| 获取近 7 天热门 Reels | [`modules/reels-trending`](modules/reels-trending/MODULE.md) | `POST /wmapi/v1/scrapecreators/instagram-reels-trending` | 3 | `modules/reels-trending/scripts/reels_trending.py` |
+| 获取 Instagram 用户主页 | [`modules/profile`](modules/profile/MODULE.md) | `POST /wmapi/v1/scrapecreators/instagram-profile` | 3 | `modules/profile/scripts/profile.py` |
+| 获取 Instagram 基础主页 | [`modules/basic-profile`](modules/basic-profile/MODULE.md) | `POST /wmapi/v1/scrapecreators/instagram-basic-profile` | 3 | `modules/basic-profile/scripts/basic_profile.py` |
+| 获取 Instagram 帖子总数 | [`modules/profile-post-count`](modules/profile-post-count/MODULE.md) | `POST /wmapi/v1/scrapecreators/instagram-profile-post-count` | 3 | `modules/profile-post-count/scripts/profile_post_count.py` |
+| 获取 Instagram 主页嵌入 HTML | [`modules/user-embed`](modules/user-embed/MODULE.md) | `POST /wmapi/v1/scrapecreators/instagram-user-embed` | 3 | `modules/user-embed/scripts/user_embed.py` |
+| 获取 Instagram 用户帖子列表 | [`modules/user-posts`](modules/user-posts/MODULE.md) | `POST /wmapi/v1/scrapecreators/instagram-user-posts` | 3 | `modules/user-posts/scripts/user_posts.py` |
+| 获取 Instagram 用户 Reels 列表 | [`modules/user-reels`](modules/user-reels/MODULE.md) | `POST /wmapi/v1/scrapecreators/instagram-user-reels` | 3 | `modules/user-reels/scripts/user_reels.py` |
+| 获取用户被标记的帖子 | [`modules/user-tagged-posts`](modules/user-tagged-posts/MODULE.md) | `POST /wmapi/v1/scrapecreators/instagram-user-tagged-posts` | 3 | `modules/user-tagged-posts/scripts/user_tagged_posts.py` |
+| 获取用户故事精选列表 | [`modules/user-highlights`](modules/user-highlights/MODULE.md) | `POST /wmapi/v1/scrapecreators/instagram-user-highlights` | 3 | `modules/user-highlights/scripts/user_highlights.py` |
+| 按音频 ID 获取使用该音频的 Reels | [`modules/audio-reels`](modules/audio-reels/MODULE.md) | `POST /wmapi/v1/scrapecreators/instagram-audio-reels` | 3 | `modules/audio-reels/scripts/audio_reels.py` |
+| 获取 Instagram 帖子或 Reels 详情 | [`modules/post`](modules/post/MODULE.md) | `POST /wmapi/v1/scrapecreators/instagram-post` | 3 | `modules/post/scripts/post.py` |
+| 获取故事精选详情 | [`modules/highlight-detail`](modules/highlight-detail/MODULE.md) | `POST /wmapi/v1/scrapecreators/instagram-highlight-detail` | 3 | `modules/highlight-detail/scripts/highlight_detail.py` |
+| 获取帖子或 Reels 评论 | [`modules/post-comments`](modules/post-comments/MODULE.md) | `POST /wmapi/v1/scrapecreators/instagram-post-comments` | 3 | `modules/post-comments/scripts/post_comments.py` |
+| 获取指定评论的回复 | [`modules/comment-replies`](modules/comment-replies/MODULE.md) | `POST /wmapi/v1/scrapecreators/instagram-comment-replies` | 3 | `modules/comment-replies/scripts/comment_replies.py` |
 
 ## 怎么选
 

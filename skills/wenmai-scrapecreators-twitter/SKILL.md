@@ -1,10 +1,10 @@
 ---
 name: wenmai-scrapecreators-twitter
-description: "ScrapeCreators Twitter / X 社媒标准 API 套件。一个顶层 Skill 索引 7 个子 Skill：搜索 Google 索引的公开 Twitter / X 帖子、获取 Twitter / X 用户资料、获取用户主页上的热门推文、获取单条 Twitter / X 推文详情、获取视频推文的 AI 转写、获取 Twitter / X 社群详情、获取 Twitter / X 社群帖子。普通接口每次成功 2 积分。长转写和 trim 不要当默认。当用户需要 Twitter 帖子搜索、账号资料、推文详情、视频转写、社群或提到 ScrapeCreators 时使用；即使用户未明确提及 ScrapeCreators，只要任务需要该数据源也应触发本套件，再按索引只调用所需子 Skill。"
+description: "ScrapeCreators Twitter / X 社媒标准 API 套件。一个顶层 Skill 索引 7 个子 Skill：搜索 Google 索引的公开 Twitter / X 帖子、获取 Twitter / X 用户资料、获取用户主页上的热门推文、获取单条 Twitter / X 推文详情、获取视频推文的 AI 转写、获取 Twitter / X 社群详情、获取 Twitter / X 社群帖子。普通接口每次成功 3 积分。长转写和 trim 不要当默认。当用户需要 Twitter 帖子搜索、账号资料、推文详情、视频转写、社群或提到 ScrapeCreators 时使用；即使用户未明确提及 ScrapeCreators，只要任务需要该数据源也应触发本套件，再按索引只调用所需子 Skill。"
 metadata:
   author: wenmai-ai
   version: "1.0.0"
-  short-description: 搜 Twitter 帖子、账号、转写和社群；按需调用，普通 2 积分。
+  short-description: 搜 Twitter 帖子、账号、转写和社群；按需调用，普通 3 积分。
 ---
 
 # Twitter 帖子搜索调研
@@ -25,13 +25,13 @@ metadata:
 
 | 场景 | 子 Skill | Endpoint | 稳卖积分 | 脚本 |
 |---|---|---|---|---|
-| 搜索 Google 索引的公开 Twitter / X 帖子 | [`modules/search-posts`](modules/search-posts/MODULE.md) | `POST /wmapi/v1/scrapecreators/twitter-search-posts` | 2 | `modules/search-posts/scripts/search_posts.py` |
-| 获取 Twitter / X 用户资料 | [`modules/profile`](modules/profile/MODULE.md) | `POST /wmapi/v1/scrapecreators/twitter-profile` | 2 | `modules/profile/scripts/profile.py` |
-| 获取用户主页上的热门推文 | [`modules/user-tweets`](modules/user-tweets/MODULE.md) | `POST /wmapi/v1/scrapecreators/twitter-user-tweets` | 2 | `modules/user-tweets/scripts/user_tweets.py` |
-| 获取单条 Twitter / X 推文详情 | [`modules/tweet`](modules/tweet/MODULE.md) | `POST /wmapi/v1/scrapecreators/twitter-tweet` | 2 | `modules/tweet/scripts/tweet.py` |
-| 获取视频推文的 AI 转写 | [`modules/tweet-transcript`](modules/tweet-transcript/MODULE.md) | `POST /wmapi/v1/scrapecreators/twitter-tweet-transcript` | 2 | `modules/tweet-transcript/scripts/tweet_transcript.py` |
-| 获取 Twitter / X 社群详情 | [`modules/community`](modules/community/MODULE.md) | `POST /wmapi/v1/scrapecreators/twitter-community` | 2 | `modules/community/scripts/community.py` |
-| 获取 Twitter / X 社群帖子 | [`modules/community-tweets`](modules/community-tweets/MODULE.md) | `POST /wmapi/v1/scrapecreators/twitter-community-tweets` | 2 | `modules/community-tweets/scripts/community_tweets.py` |
+| 搜索 Google 索引的公开 Twitter / X 帖子 | [`modules/search-posts`](modules/search-posts/MODULE.md) | `POST /wmapi/v1/scrapecreators/twitter-search-posts` | 3 | `modules/search-posts/scripts/search_posts.py` |
+| 获取 Twitter / X 用户资料 | [`modules/profile`](modules/profile/MODULE.md) | `POST /wmapi/v1/scrapecreators/twitter-profile` | 3 | `modules/profile/scripts/profile.py` |
+| 获取用户主页上的热门推文 | [`modules/user-tweets`](modules/user-tweets/MODULE.md) | `POST /wmapi/v1/scrapecreators/twitter-user-tweets` | 3 | `modules/user-tweets/scripts/user_tweets.py` |
+| 获取单条 Twitter / X 推文详情 | [`modules/tweet`](modules/tweet/MODULE.md) | `POST /wmapi/v1/scrapecreators/twitter-tweet` | 3 | `modules/tweet/scripts/tweet.py` |
+| 获取视频推文的 AI 转写 | [`modules/tweet-transcript`](modules/tweet-transcript/MODULE.md) | `POST /wmapi/v1/scrapecreators/twitter-tweet-transcript` | 3 | `modules/tweet-transcript/scripts/tweet_transcript.py` |
+| 获取 Twitter / X 社群详情 | [`modules/community`](modules/community/MODULE.md) | `POST /wmapi/v1/scrapecreators/twitter-community` | 3 | `modules/community/scripts/community.py` |
+| 获取 Twitter / X 社群帖子 | [`modules/community-tweets`](modules/community-tweets/MODULE.md) | `POST /wmapi/v1/scrapecreators/twitter-community-tweets` | 3 | `modules/community-tweets/scripts/community_tweets.py` |
 
 ## 怎么选
 
@@ -41,14 +41,14 @@ metadata:
 4. 已有社群链接：`community` 看信息，`community-tweets` 看帖子。
 5. `allow_long_transcription` / `trim` 用户没点名不要开。长转写会变贵。
 
-普通接口成功 `costCredit=2`。不要默认开启长转写。
+普通接口成功 `costCredit=3`。不要默认开启长转写。
 
 ## Workflow
 
 1. 从用户问题映射到上表中的 1 个子 Skill；链路任务按「搜索/账号 → 推文 → 转写/社群」展开，仍只调用当前步骤需要的接口。
 2. 阅读对应 `modules/<name>/MODULE.md` 和 `modules/<name>/references/api.md`，不要凭记忆补字段；子模块不是独立 Skill。
 3. 在套件根目录运行该子 Skill 脚本，保留原始 JSON。
-4. 检查 `code`、`requestId`、`costCredit`；成功应为 2。
+4. 检查 `code`、`requestId`、`costCredit`；成功应为 3。
 5. 摘要必须能追溯到响应字段；缺失就写缺失。
 
 ## How To Run

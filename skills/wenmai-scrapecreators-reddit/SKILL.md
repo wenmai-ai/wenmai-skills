@@ -1,10 +1,10 @@
 ---
 name: wenmai-scrapecreators-reddit
-description: "ScrapeCreators Reddit 社媒标准 API 套件。一个顶层 Skill 索引 7 个子 Skill：获取 Subreddit 详情、获取 Subreddit 帖子列表、在指定 Subreddit 内搜索、全站搜索 Reddit 帖子或评论、获取 Reddit 帖子详情、获取 Reddit 帖子评论、获取 Reddit 视频帖字幕。普通接口每次成功 2 积分。trim 不要当默认。字幕是原生 VTT，不是 AI 转写。当用户需要 Reddit 社群详情、帖子、评论、字幕、搜索或提到 ScrapeCreators 时使用；即使用户未明确提及 ScrapeCreators，只要任务需要该数据源也应触发本套件，再按索引只调用所需子 Skill。"
+description: "ScrapeCreators Reddit 社媒标准 API 套件。一个顶层 Skill 索引 7 个子 Skill：获取 Subreddit 详情、获取 Subreddit 帖子列表、在指定 Subreddit 内搜索、全站搜索 Reddit 帖子或评论、获取 Reddit 帖子详情、获取 Reddit 帖子评论、获取 Reddit 视频帖字幕。普通接口每次成功 3 积分。trim 不要当默认。字幕是原生 VTT，不是 AI 转写。当用户需要 Reddit 社群详情、帖子、评论、字幕、搜索或提到 ScrapeCreators 时使用；即使用户未明确提及 ScrapeCreators，只要任务需要该数据源也应触发本套件，再按索引只调用所需子 Skill。"
 metadata:
   author: wenmai-ai
   version: "1.0.0"
-  short-description: 查 Subreddit 详情、帖子、评论和搜索；按需调用，普通 2 积分。
+  short-description: 查 Subreddit 详情、帖子、评论和搜索；按需调用，普通 3 积分。
 ---
 
 # Reddit 社群与帖子调研
@@ -25,13 +25,13 @@ metadata:
 
 | 场景 | 子 Skill | Endpoint | 稳卖积分 | 脚本 |
 |---|---|---|---|---|
-| 获取 Subreddit 详情 | [`modules/subreddit-details`](modules/subreddit-details/MODULE.md) | `POST /wmapi/v1/scrapecreators/reddit-subreddit-details` | 2 | `modules/subreddit-details/scripts/subreddit_details.py` |
-| 获取 Subreddit 帖子列表 | [`modules/subreddit`](modules/subreddit/MODULE.md) | `POST /wmapi/v1/scrapecreators/reddit-subreddit` | 2 | `modules/subreddit/scripts/subreddit.py` |
-| 在指定 Subreddit 内搜索 | [`modules/subreddit-search`](modules/subreddit-search/MODULE.md) | `POST /wmapi/v1/scrapecreators/reddit-subreddit-search` | 2 | `modules/subreddit-search/scripts/subreddit_search.py` |
-| 全站搜索 Reddit 帖子或评论 | [`modules/search`](modules/search/MODULE.md) | `POST /wmapi/v1/scrapecreators/reddit-search` | 2 | `modules/search/scripts/search.py` |
-| 获取 Reddit 帖子详情 | [`modules/post`](modules/post/MODULE.md) | `POST /wmapi/v1/scrapecreators/reddit-post` | 2 | `modules/post/scripts/post.py` |
-| 获取 Reddit 帖子评论 | [`modules/post-comments`](modules/post-comments/MODULE.md) | `POST /wmapi/v1/scrapecreators/reddit-post-comments` | 2 | `modules/post-comments/scripts/post_comments.py` |
-| 获取 Reddit 视频帖字幕 | [`modules/post-transcript`](modules/post-transcript/MODULE.md) | `POST /wmapi/v1/scrapecreators/reddit-post-transcript` | 2 | `modules/post-transcript/scripts/post_transcript.py` |
+| 获取 Subreddit 详情 | [`modules/subreddit-details`](modules/subreddit-details/MODULE.md) | `POST /wmapi/v1/scrapecreators/reddit-subreddit-details` | 3 | `modules/subreddit-details/scripts/subreddit_details.py` |
+| 获取 Subreddit 帖子列表 | [`modules/subreddit`](modules/subreddit/MODULE.md) | `POST /wmapi/v1/scrapecreators/reddit-subreddit` | 3 | `modules/subreddit/scripts/subreddit.py` |
+| 在指定 Subreddit 内搜索 | [`modules/subreddit-search`](modules/subreddit-search/MODULE.md) | `POST /wmapi/v1/scrapecreators/reddit-subreddit-search` | 3 | `modules/subreddit-search/scripts/subreddit_search.py` |
+| 全站搜索 Reddit 帖子或评论 | [`modules/search`](modules/search/MODULE.md) | `POST /wmapi/v1/scrapecreators/reddit-search` | 3 | `modules/search/scripts/search.py` |
+| 获取 Reddit 帖子详情 | [`modules/post`](modules/post/MODULE.md) | `POST /wmapi/v1/scrapecreators/reddit-post` | 3 | `modules/post/scripts/post.py` |
+| 获取 Reddit 帖子评论 | [`modules/post-comments`](modules/post-comments/MODULE.md) | `POST /wmapi/v1/scrapecreators/reddit-post-comments` | 3 | `modules/post-comments/scripts/post_comments.py` |
+| 获取 Reddit 视频帖字幕 | [`modules/post-transcript`](modules/post-transcript/MODULE.md) | `POST /wmapi/v1/scrapecreators/reddit-post-transcript` | 3 | `modules/post-transcript/scripts/post_transcript.py` |
 
 ## 怎么选
 
@@ -40,14 +40,14 @@ metadata:
 3. 已有帖子链接：详情 `post`，评论 `post-comments`；视频字幕 `post-transcript`。
 4. `trim` 用户没点名不要开。字幕不是 AI 转写，没有 VTT 就记缺失。
 
-普通接口成功 `costCredit=2`。不要默认开启 trim。
+普通接口成功 `costCredit=3`。不要默认开启 trim。
 
 ## Workflow
 
 1. 从用户问题映射到上表中的 1 个子 Skill；链路任务按「社群/搜索 → 帖子 → 评论/字幕」展开，仍只调用当前步骤需要的接口。
 2. 阅读对应 `modules/<name>/MODULE.md` 和 `modules/<name>/references/api.md`，不要凭记忆补字段；子模块不是独立 Skill。
 3. 在套件根目录运行该子 Skill 脚本，保留原始 JSON。
-4. 检查 `code`、`requestId`、`costCredit`；成功应为 2。
+4. 检查 `code`、`requestId`、`costCredit`；成功应为 3。
 5. 摘要必须能追溯到响应字段；缺失就写缺失。
 
 ## How To Run

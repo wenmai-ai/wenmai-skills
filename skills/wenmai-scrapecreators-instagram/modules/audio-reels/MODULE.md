@@ -1,6 +1,6 @@
 ---
 name: wenmai-scrapecreators-instagram-audio-reels
-description: "ScrapeCreators Instagram 套件内的按音频 ID 获取使用该音频的 Reels子 Skill，调用 `scrapecreators_instagram_audio_reels`。固定 `POST /wmapi/v1/scrapecreators/instagram-audio-reels`。每次成功调用扣 2 稳卖积分。从属于 `$wenmai-scrapecreators-instagram`，不作为独立顶层 Skill 安装。"
+description: "ScrapeCreators Instagram 套件内的按音频 ID 获取使用该音频的 Reels子 Skill，调用 `scrapecreators_instagram_audio_reels`。固定 `POST /wmapi/v1/scrapecreators/instagram-audio-reels`。每次成功调用扣 3 稳卖积分。从属于 `$wenmai-scrapecreators-instagram`，不作为独立顶层 Skill 安装。"
 metadata:
   author: wenmai-ai
   version: "1.0.0"
@@ -48,11 +48,11 @@ python3 modules/audio-reels/scripts/audio_reels.py '{"audio_id": "13929699928417
 - 顶层直接传业务字段，不要增加 `request` 包装层，也不要把内部字段提升或改名。
 - 保留用户指定的用户名、帖子链接、话题、分页、筛选和地区；缺少会改变查询范围的值时先询问，不自行猜测。
 - 仅发送 `references/api.md` 定义的字段、类型、枚举值及受支持组合。
-- audio_id 来自音频页 URL。每次成功扣 2 稳卖积分。
+- audio_id 来自音频页 URL。每次成功扣 3 稳卖积分。
 
 ## Response Rules
 
-- 先报告 `code`、`requestId` 和 `costCredit`。此接口成功时 `costCredit` 应为 `2`。
+- 先报告 `code`、`requestId` 和 `costCredit`。此接口成功时 `costCredit` 应为 `3`。
 - 按用户决策目的展示关键字段，同时保留原始字段名和值。
 - 仅在响应存在时展示 `warnings`、分页、返回数量和数据完整性字段。
 - 明确区分成功、部分失败、未解析输入、截断和数据不完整；长数组需要摘要时说明覆盖范围，不静默遗漏或合并记录。

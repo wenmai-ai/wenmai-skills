@@ -6,30 +6,30 @@
 - 顶层 Skill 是索引目录，真正请求发到下表 18 个 `/wmapi/v1/scrapecreators/youtube-**` 端点。不要因为套件有 18 个接口就全打一遍。
 - 认证：Header `secret-key: $WENMAI_API_KEY`，也兼容 `WENMAI_SECRET_KEY`
 - 凭据与充值：在 https://agent.wenmai-ai.com/app/account 获取 `secret-key`
-- 稳卖积分：普通接口成功为 2。贵参数会提高官方成本，默认不要开。
+- 稳卖积分：普通接口成功为 3。贵参数会提高官方成本，默认不要开。
 
 ## 接口索引
 
 | 子 Skill | 接口代码 | 请求地址 | 稳卖积分 | 详细契约 |
 |---|---|---|---|---|
-| 搜索 YouTube 视频、频道、播放列表、Shorts 和直播 | `scrapecreators_youtube_search` | `/wmapi/v1/scrapecreators/youtube-search` | 2 | [modules/search/references/api.md](../modules/search/references/api.md) |
-| 获取 YouTube 搜索联想词 | `scrapecreators_youtube_search_typeahead` | `/wmapi/v1/scrapecreators/youtube-search-typeahead` | 2 | [modules/search-typeahead/references/api.md](../modules/search-typeahead/references/api.md) |
-| 按话题搜索 YouTube 视频 | `scrapecreators_youtube_search_hashtag` | `/wmapi/v1/scrapecreators/youtube-search-hashtag` | 2 | [modules/search-hashtag/references/api.md](../modules/search-hashtag/references/api.md) |
-| 获取 YouTube 频道详情 | `scrapecreators_youtube_channel` | `/wmapi/v1/scrapecreators/youtube-channel` | 2 | [modules/channel/references/api.md](../modules/channel/references/api.md) |
-| 获取 YouTube 频道视频列表 | `scrapecreators_youtube_channel_videos` | `/wmapi/v1/scrapecreators/youtube-channel-videos` | 2 | [modules/channel-videos/references/api.md](../modules/channel-videos/references/api.md) |
-| 在指定 YouTube 频道内搜索 | `scrapecreators_youtube_channel_search` | `/wmapi/v1/scrapecreators/youtube-channel-search` | 2 | [modules/channel-search/references/api.md](../modules/channel-search/references/api.md) |
-| 获取 YouTube 频道播放列表 | `scrapecreators_youtube_channel_playlists` | `/wmapi/v1/scrapecreators/youtube-channel-playlists` | 2 | [modules/channel-playlists/references/api.md](../modules/channel-playlists/references/api.md) |
-| 获取 YouTube 频道直播和历史直播 | `scrapecreators_youtube_channel_lives` | `/wmapi/v1/scrapecreators/youtube-channel-lives` | 2 | [modules/channel-lives/references/api.md](../modules/channel-lives/references/api.md) |
-| 获取 YouTube 频道社区帖 | `scrapecreators_youtube_channel_community_posts` | `/wmapi/v1/scrapecreators/youtube-channel-community-posts` | 2 | [modules/channel-community-posts/references/api.md](../modules/channel-community-posts/references/api.md) |
-| 获取 YouTube 频道 Shorts | `scrapecreators_youtube_channel_shorts` | `/wmapi/v1/scrapecreators/youtube-channel-shorts` | 2 | [modules/channel-shorts/references/api.md](../modules/channel-shorts/references/api.md) |
-| 获取 YouTube 视频或 Short 详情 | `scrapecreators_youtube_video` | `/wmapi/v1/scrapecreators/youtube-video` | 2 | [modules/video/references/api.md](../modules/video/references/api.md) |
-| 获取 YouTube 视频或 Short 字幕或转写 | `scrapecreators_youtube_video_transcript` | `/wmapi/v1/scrapecreators/youtube-video-transcript` | 2 | [modules/video-transcript/references/api.md](../modules/video-transcript/references/api.md) |
-| 推断 YouTube 视频可能的赞助商 | `scrapecreators_youtube_video_sponsors` | `/wmapi/v1/scrapecreators/youtube-video-sponsors` | 2 | [modules/video-sponsors/references/api.md](../modules/video-sponsors/references/api.md) |
-| 获取 YouTube 视频评论 | `scrapecreators_youtube_video_comments` | `/wmapi/v1/scrapecreators/youtube-video-comments` | 2 | [modules/video-comments/references/api.md](../modules/video-comments/references/api.md) |
-| 获取指定 YouTube 评论的回复 | `scrapecreators_youtube_video_comment_replies` | `/wmapi/v1/scrapecreators/youtube-video-comment-replies` | 2 | [modules/video-comment-replies/references/api.md](../modules/video-comment-replies/references/api.md) |
-| 获取 YouTube 热门 Shorts | `scrapecreators_youtube_shorts_trending` | `/wmapi/v1/scrapecreators/youtube-shorts-trending` | 2 | [modules/shorts-trending/references/api.md](../modules/shorts-trending/references/api.md) |
-| 获取 YouTube 播放列表中的视频 | `scrapecreators_youtube_playlist` | `/wmapi/v1/scrapecreators/youtube-playlist` | 2 | [modules/playlist/references/api.md](../modules/playlist/references/api.md) |
-| 获取 YouTube 社区帖详情 | `scrapecreators_youtube_community_post` | `/wmapi/v1/scrapecreators/youtube-community-post` | 2 | [modules/community-post/references/api.md](../modules/community-post/references/api.md) |
+| 搜索 YouTube 视频、频道、播放列表、Shorts 和直播 | `scrapecreators_youtube_search` | `/wmapi/v1/scrapecreators/youtube-search` | 3 | [modules/search/references/api.md](../modules/search/references/api.md) |
+| 获取 YouTube 搜索联想词 | `scrapecreators_youtube_search_typeahead` | `/wmapi/v1/scrapecreators/youtube-search-typeahead` | 3 | [modules/search-typeahead/references/api.md](../modules/search-typeahead/references/api.md) |
+| 按话题搜索 YouTube 视频 | `scrapecreators_youtube_search_hashtag` | `/wmapi/v1/scrapecreators/youtube-search-hashtag` | 3 | [modules/search-hashtag/references/api.md](../modules/search-hashtag/references/api.md) |
+| 获取 YouTube 频道详情 | `scrapecreators_youtube_channel` | `/wmapi/v1/scrapecreators/youtube-channel` | 3 | [modules/channel/references/api.md](../modules/channel/references/api.md) |
+| 获取 YouTube 频道视频列表 | `scrapecreators_youtube_channel_videos` | `/wmapi/v1/scrapecreators/youtube-channel-videos` | 3 | [modules/channel-videos/references/api.md](../modules/channel-videos/references/api.md) |
+| 在指定 YouTube 频道内搜索 | `scrapecreators_youtube_channel_search` | `/wmapi/v1/scrapecreators/youtube-channel-search` | 3 | [modules/channel-search/references/api.md](../modules/channel-search/references/api.md) |
+| 获取 YouTube 频道播放列表 | `scrapecreators_youtube_channel_playlists` | `/wmapi/v1/scrapecreators/youtube-channel-playlists` | 3 | [modules/channel-playlists/references/api.md](../modules/channel-playlists/references/api.md) |
+| 获取 YouTube 频道直播和历史直播 | `scrapecreators_youtube_channel_lives` | `/wmapi/v1/scrapecreators/youtube-channel-lives` | 3 | [modules/channel-lives/references/api.md](../modules/channel-lives/references/api.md) |
+| 获取 YouTube 频道社区帖 | `scrapecreators_youtube_channel_community_posts` | `/wmapi/v1/scrapecreators/youtube-channel-community-posts` | 3 | [modules/channel-community-posts/references/api.md](../modules/channel-community-posts/references/api.md) |
+| 获取 YouTube 频道 Shorts | `scrapecreators_youtube_channel_shorts` | `/wmapi/v1/scrapecreators/youtube-channel-shorts` | 3 | [modules/channel-shorts/references/api.md](../modules/channel-shorts/references/api.md) |
+| 获取 YouTube 视频或 Short 详情 | `scrapecreators_youtube_video` | `/wmapi/v1/scrapecreators/youtube-video` | 3 | [modules/video/references/api.md](../modules/video/references/api.md) |
+| 获取 YouTube 视频或 Short 字幕或转写 | `scrapecreators_youtube_video_transcript` | `/wmapi/v1/scrapecreators/youtube-video-transcript` | 3 | [modules/video-transcript/references/api.md](../modules/video-transcript/references/api.md) |
+| 推断 YouTube 视频可能的赞助商 | `scrapecreators_youtube_video_sponsors` | `/wmapi/v1/scrapecreators/youtube-video-sponsors` | 3 | [modules/video-sponsors/references/api.md](../modules/video-sponsors/references/api.md) |
+| 获取 YouTube 视频评论 | `scrapecreators_youtube_video_comments` | `/wmapi/v1/scrapecreators/youtube-video-comments` | 3 | [modules/video-comments/references/api.md](../modules/video-comments/references/api.md) |
+| 获取指定 YouTube 评论的回复 | `scrapecreators_youtube_video_comment_replies` | `/wmapi/v1/scrapecreators/youtube-video-comment-replies` | 3 | [modules/video-comment-replies/references/api.md](../modules/video-comment-replies/references/api.md) |
+| 获取 YouTube 热门 Shorts | `scrapecreators_youtube_shorts_trending` | `/wmapi/v1/scrapecreators/youtube-shorts-trending` | 3 | [modules/shorts-trending/references/api.md](../modules/shorts-trending/references/api.md) |
+| 获取 YouTube 播放列表中的视频 | `scrapecreators_youtube_playlist` | `/wmapi/v1/scrapecreators/youtube-playlist` | 3 | [modules/playlist/references/api.md](../modules/playlist/references/api.md) |
+| 获取 YouTube 社区帖详情 | `scrapecreators_youtube_community_post` | `/wmapi/v1/scrapecreators/youtube-community-post` | 3 | [modules/community-post/references/api.md](../modules/community-post/references/api.md) |
 
 每个子 Skill 的请求参数、响应字段、示例和 curl 写在对应模块的 `references/api.md`，不要在索引页发明字段。
 

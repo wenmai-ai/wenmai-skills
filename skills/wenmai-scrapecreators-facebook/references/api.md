@@ -6,35 +6,35 @@
 - 顶层 Skill 是索引目录，真正请求发到下表 23 个 `/wmapi/v1/scrapecreators/facebook-*` 端点。不要因为套件有 23 个接口就全打一遍。
 - 认证：Header `secret-key: $WENMAI_API_KEY`，也兼容 `WENMAI_SECRET_KEY`
 - 凭据与充值：在 https://agent.wenmai-ai.com/app/account 获取 `secret-key`
-- 稳卖积分：普通接口成功为 2。贵参数会提高官方成本，默认不要开。
+- 稳卖积分：普通接口成功为 3。贵参数会提高官方成本，默认不要开。
 
 ## 接口索引
 
 | 子 Skill | 接口代码 | 请求地址 | 稳卖积分 | 详细契约 |
 |---|---|---|---|---|
-| 获取 Facebook 主页详情 | `scrapecreators_facebook_profile` | `/wmapi/v1/scrapecreators/facebook-profile` | 2 | [modules/profile/references/api.md](../modules/profile/references/api.md) |
-| 获取 Facebook 主页 Reels | `scrapecreators_facebook_profile_reels` | `/wmapi/v1/scrapecreators/facebook-profile-reels` | 2 | [modules/profile-reels/references/api.md](../modules/profile-reels/references/api.md) |
-| 获取 Facebook 主页相册照片 | `scrapecreators_facebook_profile_photos` | `/wmapi/v1/scrapecreators/facebook-profile-photos` | 2 | [modules/profile-photos/references/api.md](../modules/profile-photos/references/api.md) |
-| 获取 Facebook 主页帖子 | `scrapecreators_facebook_profile_posts` | `/wmapi/v1/scrapecreators/facebook-profile-posts` | 2 | [modules/profile-posts/references/api.md](../modules/profile-posts/references/api.md) |
-| 获取 Facebook 主页活动 | `scrapecreators_facebook_profile_events` | `/wmapi/v1/scrapecreators/facebook-profile-events` | 2 | [modules/profile-events/references/api.md](../modules/profile-events/references/api.md) |
-| 搜索 Facebook 公开视频和 Reels | `scrapecreators_facebook_search_videos` | `/wmapi/v1/scrapecreators/facebook-search-videos` | 2 | [modules/search-videos/references/api.md](../modules/search-videos/references/api.md) |
-| 获取 Facebook 帖子或 Reel 详情 | `scrapecreators_facebook_post` | `/wmapi/v1/scrapecreators/facebook-post` | 2 | [modules/post/references/api.md](../modules/post/references/api.md) |
-| 获取 Facebook 帖子或 Reel 字幕 | `scrapecreators_facebook_post_transcript` | `/wmapi/v1/scrapecreators/facebook-post-transcript` | 2 | [modules/post-transcript/references/api.md](../modules/post-transcript/references/api.md) |
-| 获取 Facebook 帖子评论 | `scrapecreators_facebook_post_comments` | `/wmapi/v1/scrapecreators/facebook-post-comments` | 2 | [modules/post-comments/references/api.md](../modules/post-comments/references/api.md) |
-| 获取指定 Facebook 评论的回复 | `scrapecreators_facebook_post_comment_replies` | `/wmapi/v1/scrapecreators/facebook-post-comment-replies` | 2 | [modules/post-comment-replies/references/api.md](../modules/post-comment-replies/references/api.md) |
-| 获取 Facebook 公开群组信息 | `scrapecreators_facebook_group` | `/wmapi/v1/scrapecreators/facebook-group` | 2 | [modules/group/references/api.md](../modules/group/references/api.md) |
-| 获取 Facebook 公开群组帖子 | `scrapecreators_facebook_group_posts` | `/wmapi/v1/scrapecreators/facebook-group-posts` | 2 | [modules/group-posts/references/api.md](../modules/group-posts/references/api.md) |
-| 搜索 Facebook Marketplace 地点 | `scrapecreators_facebook_marketplace_location_search` | `/wmapi/v1/scrapecreators/facebook-marketplace-location-search` | 2 | [modules/marketplace-location-search/references/api.md](../modules/marketplace-location-search/references/api.md) |
-| 搜索 Facebook Marketplace 商品 | `scrapecreators_facebook_marketplace_search` | `/wmapi/v1/scrapecreators/facebook-marketplace-search` | 2 | [modules/marketplace-search/references/api.md](../modules/marketplace-search/references/api.md) |
-| 获取 Facebook Marketplace 商品详情 | `scrapecreators_facebook_marketplace_item` | `/wmapi/v1/scrapecreators/facebook-marketplace-item` | 2 | [modules/marketplace-item/references/api.md](../modules/marketplace-item/references/api.md) |
-| 搜索 Facebook 活动 | `scrapecreators_facebook_events_search` | `/wmapi/v1/scrapecreators/facebook-events-search` | 2 | [modules/events-search/references/api.md](../modules/events-search/references/api.md) |
-| 获取某城市 Facebook 活动 | `scrapecreators_facebook_events` | `/wmapi/v1/scrapecreators/facebook-events` | 2 | [modules/events/references/api.md](../modules/events/references/api.md) |
-| 获取 Facebook 活动详情 | `scrapecreators_facebook_event_details` | `/wmapi/v1/scrapecreators/facebook-event-details` | 2 | [modules/event-details/references/api.md](../modules/event-details/references/api.md) |
-| 获取 Facebook 广告库广告详情 | `scrapecreators_facebook_ad_library_ad` | `/wmapi/v1/scrapecreators/facebook-ad-library-ad` | 2 | [modules/ad-library-ad/references/api.md](../modules/ad-library-ad/references/api.md) |
-| 获取 Facebook 广告库视频字幕 | `scrapecreators_facebook_ad_library_ad_transcript` | `/wmapi/v1/scrapecreators/facebook-ad-library-ad-transcript` | 2 | [modules/ad-library-ad-transcript/references/api.md](../modules/ad-library-ad-transcript/references/api.md) |
-| 按关键词搜索 Facebook 广告库 | `scrapecreators_facebook_ad_library_search_ads` | `/wmapi/v1/scrapecreators/facebook-ad-library-search-ads` | 2 | [modules/ad-library-search-ads/references/api.md](../modules/ad-library-search-ads/references/api.md) |
-| 获取某公司在 Facebook 广告库的在投广告 | `scrapecreators_facebook_ad_library_company_ads` | `/wmapi/v1/scrapecreators/facebook-ad-library-company-ads` | 2 | [modules/ad-library-company-ads/references/api.md](../modules/ad-library-company-ads/references/api.md) |
-| 在 Facebook 广告库搜索广告主 | `scrapecreators_facebook_ad_library_search_companies` | `/wmapi/v1/scrapecreators/facebook-ad-library-search-companies` | 2 | [modules/ad-library-search-companies/references/api.md](../modules/ad-library-search-companies/references/api.md) |
+| 获取 Facebook 主页详情 | `scrapecreators_facebook_profile` | `/wmapi/v1/scrapecreators/facebook-profile` | 3 | [modules/profile/references/api.md](../modules/profile/references/api.md) |
+| 获取 Facebook 主页 Reels | `scrapecreators_facebook_profile_reels` | `/wmapi/v1/scrapecreators/facebook-profile-reels` | 3 | [modules/profile-reels/references/api.md](../modules/profile-reels/references/api.md) |
+| 获取 Facebook 主页相册照片 | `scrapecreators_facebook_profile_photos` | `/wmapi/v1/scrapecreators/facebook-profile-photos` | 3 | [modules/profile-photos/references/api.md](../modules/profile-photos/references/api.md) |
+| 获取 Facebook 主页帖子 | `scrapecreators_facebook_profile_posts` | `/wmapi/v1/scrapecreators/facebook-profile-posts` | 3 | [modules/profile-posts/references/api.md](../modules/profile-posts/references/api.md) |
+| 获取 Facebook 主页活动 | `scrapecreators_facebook_profile_events` | `/wmapi/v1/scrapecreators/facebook-profile-events` | 3 | [modules/profile-events/references/api.md](../modules/profile-events/references/api.md) |
+| 搜索 Facebook 公开视频和 Reels | `scrapecreators_facebook_search_videos` | `/wmapi/v1/scrapecreators/facebook-search-videos` | 3 | [modules/search-videos/references/api.md](../modules/search-videos/references/api.md) |
+| 获取 Facebook 帖子或 Reel 详情 | `scrapecreators_facebook_post` | `/wmapi/v1/scrapecreators/facebook-post` | 3 | [modules/post/references/api.md](../modules/post/references/api.md) |
+| 获取 Facebook 帖子或 Reel 字幕 | `scrapecreators_facebook_post_transcript` | `/wmapi/v1/scrapecreators/facebook-post-transcript` | 3 | [modules/post-transcript/references/api.md](../modules/post-transcript/references/api.md) |
+| 获取 Facebook 帖子评论 | `scrapecreators_facebook_post_comments` | `/wmapi/v1/scrapecreators/facebook-post-comments` | 3 | [modules/post-comments/references/api.md](../modules/post-comments/references/api.md) |
+| 获取指定 Facebook 评论的回复 | `scrapecreators_facebook_post_comment_replies` | `/wmapi/v1/scrapecreators/facebook-post-comment-replies` | 3 | [modules/post-comment-replies/references/api.md](../modules/post-comment-replies/references/api.md) |
+| 获取 Facebook 公开群组信息 | `scrapecreators_facebook_group` | `/wmapi/v1/scrapecreators/facebook-group` | 3 | [modules/group/references/api.md](../modules/group/references/api.md) |
+| 获取 Facebook 公开群组帖子 | `scrapecreators_facebook_group_posts` | `/wmapi/v1/scrapecreators/facebook-group-posts` | 3 | [modules/group-posts/references/api.md](../modules/group-posts/references/api.md) |
+| 搜索 Facebook Marketplace 地点 | `scrapecreators_facebook_marketplace_location_search` | `/wmapi/v1/scrapecreators/facebook-marketplace-location-search` | 3 | [modules/marketplace-location-search/references/api.md](../modules/marketplace-location-search/references/api.md) |
+| 搜索 Facebook Marketplace 商品 | `scrapecreators_facebook_marketplace_search` | `/wmapi/v1/scrapecreators/facebook-marketplace-search` | 3 | [modules/marketplace-search/references/api.md](../modules/marketplace-search/references/api.md) |
+| 获取 Facebook Marketplace 商品详情 | `scrapecreators_facebook_marketplace_item` | `/wmapi/v1/scrapecreators/facebook-marketplace-item` | 3 | [modules/marketplace-item/references/api.md](../modules/marketplace-item/references/api.md) |
+| 搜索 Facebook 活动 | `scrapecreators_facebook_events_search` | `/wmapi/v1/scrapecreators/facebook-events-search` | 3 | [modules/events-search/references/api.md](../modules/events-search/references/api.md) |
+| 获取某城市 Facebook 活动 | `scrapecreators_facebook_events` | `/wmapi/v1/scrapecreators/facebook-events` | 3 | [modules/events/references/api.md](../modules/events/references/api.md) |
+| 获取 Facebook 活动详情 | `scrapecreators_facebook_event_details` | `/wmapi/v1/scrapecreators/facebook-event-details` | 3 | [modules/event-details/references/api.md](../modules/event-details/references/api.md) |
+| 获取 Facebook 广告库广告详情 | `scrapecreators_facebook_ad_library_ad` | `/wmapi/v1/scrapecreators/facebook-ad-library-ad` | 3 | [modules/ad-library-ad/references/api.md](../modules/ad-library-ad/references/api.md) |
+| 获取 Facebook 广告库视频字幕 | `scrapecreators_facebook_ad_library_ad_transcript` | `/wmapi/v1/scrapecreators/facebook-ad-library-ad-transcript` | 3 | [modules/ad-library-ad-transcript/references/api.md](../modules/ad-library-ad-transcript/references/api.md) |
+| 按关键词搜索 Facebook 广告库 | `scrapecreators_facebook_ad_library_search_ads` | `/wmapi/v1/scrapecreators/facebook-ad-library-search-ads` | 3 | [modules/ad-library-search-ads/references/api.md](../modules/ad-library-search-ads/references/api.md) |
+| 获取某公司在 Facebook 广告库的在投广告 | `scrapecreators_facebook_ad_library_company_ads` | `/wmapi/v1/scrapecreators/facebook-ad-library-company-ads` | 3 | [modules/ad-library-company-ads/references/api.md](../modules/ad-library-company-ads/references/api.md) |
+| 在 Facebook 广告库搜索广告主 | `scrapecreators_facebook_ad_library_search_companies` | `/wmapi/v1/scrapecreators/facebook-ad-library-search-companies` | 3 | [modules/ad-library-search-companies/references/api.md](../modules/ad-library-search-companies/references/api.md) |
 
 每个子 Skill 的请求参数、响应字段、示例和 curl 写在对应模块的 `references/api.md`，不要在索引页发明字段。
 

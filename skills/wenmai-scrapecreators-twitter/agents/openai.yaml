@@ -1,6 +1,6 @@
 interface:
   display_name: "Twitter 帖子搜索调研"
-  short_description: "搜 Twitter 帖子、账号、转写和社群；按需调用，普通 2 积分。"
+  short_description: "搜 Twitter 帖子、账号、转写和社群；按需调用，普通 3 积分。"
   default_prompt: "Use $wenmai-scrapecreators-twitter to research Twitter posts, profiles, tweets, transcripts and communities; call only the needed module."
 policy:
   allow_implicit_invocation: true

@@ -9,7 +9,7 @@
 - **接口代码**：`scrapecreators_reddit_subreddit_details`
 - **脚本入口**：`modules/subreddit-details/scripts/subreddit_details.py`
 - **凭据与充值**：在 https://agent.wenmai-ai.com/app/account 获取 `secret-key`，额度不足时在同一入口充值
-- **稳卖积分**：成功时 `costCredit` 为 `2`。
+- **稳卖积分**：成功时 `costCredit` 为 `3`。
 
 ## 请求参数
 
@@ -52,7 +52,7 @@ Wenmai 网关外层通常包含 `code`、`message`、`requestId`、`supplier`、
 
 ## 使用要点
 
-- subreddit 大小写敏感。每次成功扣 2 稳卖积分。
+- subreddit 大小写敏感。每次成功扣 3 稳卖积分。
 - 顶层直接传业务字段，不要增加 `request` 包装层。
 - 返回 `warnings` 时，在结果摘要中明确保留截断、部分失败或完整性警告。
 

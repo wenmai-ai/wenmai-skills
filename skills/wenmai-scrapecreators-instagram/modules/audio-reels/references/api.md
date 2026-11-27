@@ -9,7 +9,7 @@
 - **接口代码**：`scrapecreators_instagram_audio_reels`
 - **脚本入口**：`modules/audio-reels/scripts/audio_reels.py`
 - **凭据与充值**：在 https://agent.wenmai-ai.com/app/account 获取 `secret-key`，额度不足时在同一入口充值
-- **稳卖积分**：成功时 `costCredit` 为 `2`。
+- **稳卖积分**：成功时 `costCredit` 为 `3`。
 
 ## 请求参数
 
@@ -412,7 +412,7 @@ Wenmai 网关外层通常包含 `code`、`message`、`requestId`、`supplier`、
 
 ## 使用要点
 
-- audio_id 来自音频页 URL。每次成功扣 2 稳卖积分。
+- audio_id 来自音频页 URL。每次成功扣 3 稳卖积分。
 - 顶层直接传业务字段，不要增加 `request` 包装层。
 - 返回 `warnings` 时，在结果摘要中明确保留截断、部分失败或完整性警告。
 

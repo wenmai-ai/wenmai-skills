@@ -1,10 +1,10 @@
 ---
 name: wenmai-scrapecreators-youtube
-description: "ScrapeCreators YouTube 社媒标准 API 套件。一个顶层 Skill 索引 18 个子 Skill：综合搜索、搜索联想、话题搜索、频道详情、频道视频、频道内搜索、频道播放列表、频道直播、频道社区帖、频道 Shorts、视频详情、字幕、赞助推断、评论、评论回复、热门 Shorts、播放列表视频、社区帖详情。普通接口每次成功 2 积分。不含 Facebook、TikTok Shop 和 Ad Library。当用户需要 YouTube 频道、爆款视频、字幕、评论、Shorts 或提到 ScrapeCreators 时使用；即使用户未明确提及 ScrapeCreators，只要任务需要该数据源也应触发本套件，再按索引只调用所需子 Skill。"
+description: "ScrapeCreators YouTube 社媒标准 API 套件。一个顶层 Skill 索引 18 个子 Skill：综合搜索、搜索联想、话题搜索、频道详情、频道视频、频道内搜索、频道播放列表、频道直播、频道社区帖、频道 Shorts、视频详情、字幕、赞助推断、评论、评论回复、热门 Shorts、播放列表视频、社区帖详情。普通接口每次成功 3 积分。不含 Facebook、TikTok Shop 和 Ad Library。当用户需要 YouTube 频道、爆款视频、字幕、评论、Shorts 或提到 ScrapeCreators 时使用；即使用户未明确提及 ScrapeCreators，只要任务需要该数据源也应触发本套件，再按索引只调用所需子 Skill。"
 metadata:
   author: wenmai-ai
   version: "1.0.0"
-  short-description: 搜频道和爆款视频，查详情、字幕、评论和 Shorts；按需调用，普通 2 积分。
+  short-description: 搜频道和爆款视频，查详情、字幕、评论和 Shorts；按需调用，普通 3 积分。
 ---
 
 # YouTube 频道与爆款内容调研
@@ -25,24 +25,24 @@ metadata:
 
 | 场景 | 子 Skill | Endpoint | 稳卖积分 | 脚本 |
 |---|---|---|---|---|
-| 搜索 YouTube 视频、频道、播放列表、Shorts 和直播 | [`modules/search`](modules/search/MODULE.md) | `POST /wmapi/v1/scrapecreators/youtube-search` | 2 | `modules/search/scripts/search.py` |
-| 获取 YouTube 搜索联想词 | [`modules/search-typeahead`](modules/search-typeahead/MODULE.md) | `POST /wmapi/v1/scrapecreators/youtube-search-typeahead` | 2 | `modules/search-typeahead/scripts/search_typeahead.py` |
-| 按话题搜索 YouTube 视频 | [`modules/search-hashtag`](modules/search-hashtag/MODULE.md) | `POST /wmapi/v1/scrapecreators/youtube-search-hashtag` | 2 | `modules/search-hashtag/scripts/search_hashtag.py` |
-| 获取 YouTube 频道详情 | [`modules/channel`](modules/channel/MODULE.md) | `POST /wmapi/v1/scrapecreators/youtube-channel` | 2 | `modules/channel/scripts/channel.py` |
-| 获取 YouTube 频道视频列表 | [`modules/channel-videos`](modules/channel-videos/MODULE.md) | `POST /wmapi/v1/scrapecreators/youtube-channel-videos` | 2 | `modules/channel-videos/scripts/channel_videos.py` |
-| 在指定 YouTube 频道内搜索 | [`modules/channel-search`](modules/channel-search/MODULE.md) | `POST /wmapi/v1/scrapecreators/youtube-channel-search` | 2 | `modules/channel-search/scripts/channel_search.py` |
-| 获取 YouTube 频道播放列表 | [`modules/channel-playlists`](modules/channel-playlists/MODULE.md) | `POST /wmapi/v1/scrapecreators/youtube-channel-playlists` | 2 | `modules/channel-playlists/scripts/channel_playlists.py` |
-| 获取 YouTube 频道直播和历史直播 | [`modules/channel-lives`](modules/channel-lives/MODULE.md) | `POST /wmapi/v1/scrapecreators/youtube-channel-lives` | 2 | `modules/channel-lives/scripts/channel_lives.py` |
-| 获取 YouTube 频道社区帖 | [`modules/channel-community-posts`](modules/channel-community-posts/MODULE.md) | `POST /wmapi/v1/scrapecreators/youtube-channel-community-posts` | 2 | `modules/channel-community-posts/scripts/channel_community_posts.py` |
-| 获取 YouTube 频道 Shorts | [`modules/channel-shorts`](modules/channel-shorts/MODULE.md) | `POST /wmapi/v1/scrapecreators/youtube-channel-shorts` | 2 | `modules/channel-shorts/scripts/channel_shorts.py` |
-| 获取 YouTube 视频或 Short 详情 | [`modules/video`](modules/video/MODULE.md) | `POST /wmapi/v1/scrapecreators/youtube-video` | 2 | `modules/video/scripts/video.py` |
-| 获取 YouTube 视频或 Short 字幕或转写 | [`modules/video-transcript`](modules/video-transcript/MODULE.md) | `POST /wmapi/v1/scrapecreators/youtube-video-transcript` | 2 | `modules/video-transcript/scripts/video_transcript.py` |
-| 推断 YouTube 视频可能的赞助商 | [`modules/video-sponsors`](modules/video-sponsors/MODULE.md) | `POST /wmapi/v1/scrapecreators/youtube-video-sponsors` | 2 | `modules/video-sponsors/scripts/video_sponsors.py` |
-| 获取 YouTube 视频评论 | [`modules/video-comments`](modules/video-comments/MODULE.md) | `POST /wmapi/v1/scrapecreators/youtube-video-comments` | 2 | `modules/video-comments/scripts/video_comments.py` |
-| 获取指定 YouTube 评论的回复 | [`modules/video-comment-replies`](modules/video-comment-replies/MODULE.md) | `POST /wmapi/v1/scrapecreators/youtube-video-comment-replies` | 2 | `modules/video-comment-replies/scripts/video_comment_replies.py` |
-| 获取 YouTube 热门 Shorts | [`modules/shorts-trending`](modules/shorts-trending/MODULE.md) | `POST /wmapi/v1/scrapecreators/youtube-shorts-trending` | 2 | `modules/shorts-trending/scripts/shorts_trending.py` |
-| 获取 YouTube 播放列表中的视频 | [`modules/playlist`](modules/playlist/MODULE.md) | `POST /wmapi/v1/scrapecreators/youtube-playlist` | 2 | `modules/playlist/scripts/playlist.py` |
-| 获取 YouTube 社区帖详情 | [`modules/community-post`](modules/community-post/MODULE.md) | `POST /wmapi/v1/scrapecreators/youtube-community-post` | 2 | `modules/community-post/scripts/community_post.py` |
+| 搜索 YouTube 视频、频道、播放列表、Shorts 和直播 | [`modules/search`](modules/search/MODULE.md) | `POST /wmapi/v1/scrapecreators/youtube-search` | 3 | `modules/search/scripts/search.py` |
+| 获取 YouTube 搜索联想词 | [`modules/search-typeahead`](modules/search-typeahead/MODULE.md) | `POST /wmapi/v1/scrapecreators/youtube-search-typeahead` | 3 | `modules/search-typeahead/scripts/search_typeahead.py` |
+| 按话题搜索 YouTube 视频 | [`modules/search-hashtag`](modules/search-hashtag/MODULE.md) | `POST /wmapi/v1/scrapecreators/youtube-search-hashtag` | 3 | `modules/search-hashtag/scripts/search_hashtag.py` |
+| 获取 YouTube 频道详情 | [`modules/channel`](modules/channel/MODULE.md) | `POST /wmapi/v1/scrapecreators/youtube-channel` | 3 | `modules/channel/scripts/channel.py` |
+| 获取 YouTube 频道视频列表 | [`modules/channel-videos`](modules/channel-videos/MODULE.md) | `POST /wmapi/v1/scrapecreators/youtube-channel-videos` | 3 | `modules/channel-videos/scripts/channel_videos.py` |
+| 在指定 YouTube 频道内搜索 | [`modules/channel-search`](modules/channel-search/MODULE.md) | `POST /wmapi/v1/scrapecreators/youtube-channel-search` | 3 | `modules/channel-search/scripts/channel_search.py` |
+| 获取 YouTube 频道播放列表 | [`modules/channel-playlists`](modules/channel-playlists/MODULE.md) | `POST /wmapi/v1/scrapecreators/youtube-channel-playlists` | 3 | `modules/channel-playlists/scripts/channel_playlists.py` |
+| 获取 YouTube 频道直播和历史直播 | [`modules/channel-lives`](modules/channel-lives/MODULE.md) | `POST /wmapi/v1/scrapecreators/youtube-channel-lives` | 3 | `modules/channel-lives/scripts/channel_lives.py` |
+| 获取 YouTube 频道社区帖 | [`modules/channel-community-posts`](modules/channel-community-posts/MODULE.md) | `POST /wmapi/v1/scrapecreators/youtube-channel-community-posts` | 3 | `modules/channel-community-posts/scripts/channel_community_posts.py` |
+| 获取 YouTube 频道 Shorts | [`modules/channel-shorts`](modules/channel-shorts/MODULE.md) | `POST /wmapi/v1/scrapecreators/youtube-channel-shorts` | 3 | `modules/channel-shorts/scripts/channel_shorts.py` |
+| 获取 YouTube 视频或 Short 详情 | [`modules/video`](modules/video/MODULE.md) | `POST /wmapi/v1/scrapecreators/youtube-video` | 3 | `modules/video/scripts/video.py` |
+| 获取 YouTube 视频或 Short 字幕或转写 | [`modules/video-transcript`](modules/video-transcript/MODULE.md) | `POST /wmapi/v1/scrapecreators/youtube-video-transcript` | 3 | `modules/video-transcript/scripts/video_transcript.py` |
+| 推断 YouTube 视频可能的赞助商 | [`modules/video-sponsors`](modules/video-sponsors/MODULE.md) | `POST /wmapi/v1/scrapecreators/youtube-video-sponsors` | 3 | `modules/video-sponsors/scripts/video_sponsors.py` |
+| 获取 YouTube 视频评论 | [`modules/video-comments`](modules/video-comments/MODULE.md) | `POST /wmapi/v1/scrapecreators/youtube-video-comments` | 3 | `modules/video-comments/scripts/video_comments.py` |
+| 获取指定 YouTube 评论的回复 | [`modules/video-comment-replies`](modules/video-comment-replies/MODULE.md) | `POST /wmapi/v1/scrapecreators/youtube-video-comment-replies` | 3 | `modules/video-comment-replies/scripts/video_comment_replies.py` |
+| 获取 YouTube 热门 Shorts | [`modules/shorts-trending`](modules/shorts-trending/MODULE.md) | `POST /wmapi/v1/scrapecreators/youtube-shorts-trending` | 3 | `modules/shorts-trending/scripts/shorts_trending.py` |
+| 获取 YouTube 播放列表中的视频 | [`modules/playlist`](modules/playlist/MODULE.md) | `POST /wmapi/v1/scrapecreators/youtube-playlist` | 3 | `modules/playlist/scripts/playlist.py` |
+| 获取 YouTube 社区帖详情 | [`modules/community-post`](modules/community-post/MODULE.md) | `POST /wmapi/v1/scrapecreators/youtube-community-post` | 3 | `modules/community-post/scripts/community_post.py` |
 
 ## 怎么选
 
@@ -53,14 +53,14 @@ metadata:
 5. 赞助商推断 `video-sponsors` 是实验能力，用户没点名不要打。
 6. 播放列表用 `playlist`；社区帖详情用 `community-post`。
 
-普通接口成功 `costCredit=2`。不要默认开启 `includeExtras`。
+普通接口成功 `costCredit=3`。不要默认开启 `includeExtras`。
 
 ## Workflow
 
 1. 从用户问题映射到上表中的 1 个子 Skill；链路任务按「搜索/频道 → 视频 → 字幕/评论」展开，仍只调用当前步骤需要的接口。
 2. 阅读对应 `modules/<name>/MODULE.md` 和 `modules/<name>/references/api.md`，不要凭记忆补字段；子模块不是独立 Skill。
 3. 在套件根目录运行该子 Skill 脚本，保留原始 JSON。
-4. 检查 `code`、`requestId`、`costCredit`；成功应为 2。
+4. 检查 `code`、`requestId`、`costCredit`；成功应为 3。
 5. 摘要必须能追溯到响应字段；缺失就写缺失。
 
 ## How To Run

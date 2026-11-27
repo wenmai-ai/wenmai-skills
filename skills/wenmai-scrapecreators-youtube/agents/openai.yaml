@@ -1,6 +1,6 @@
 interface:
   display_name: "YouTube 频道与爆款内容调研"
-  short_description: "搜频道和爆款视频，查详情、字幕、评论和 Shorts；按需调用，普通 2 积分。"
+  short_description: "搜频道和爆款视频，查详情、字幕、评论和 Shorts；按需调用，普通 3 积分。"
   default_prompt: "Use $wenmai-scrapecreators-youtube to research YouTube channels, videos, comments, transcripts and Shorts; call only the needed module."
 policy:
   allow_implicit_invocation: true
