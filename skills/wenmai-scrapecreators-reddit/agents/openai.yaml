@@ -1,0 +1,6 @@
+interface:
+  display_name: "Reddit 社群与帖子调研"
+  short_description: "查 Subreddit 详情、帖子、评论和搜索；按需调用，普通 2 积分。"
+  default_prompt: "Use $wenmai-scrapecreators-reddit to research Reddit subreddits, posts, comments and search; call only the needed module."
+policy:
+  allow_implicit_invocation: true

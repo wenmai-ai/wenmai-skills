@@ -1,0 +1,6 @@
+interface:
+  display_name: "ScrapeCreators 获取 Facebook 公开群组信息"
+  short_description: "调用 ScrapeCreators 获取 Facebook 公开群组信息，返回可追溯网关数据"
+  default_prompt: "Use $wenmai-scrapecreators-facebook-group to 获取 Facebook 公开群组信息 and return traceable results."
+policy:
+  allow_implicit_invocation: true

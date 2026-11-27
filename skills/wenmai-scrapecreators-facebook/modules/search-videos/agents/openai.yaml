@@ -1,0 +1,6 @@
+interface:
+  display_name: "ScrapeCreators 搜索 Facebook 公开视频和 Reels"
+  short_description: "调用 ScrapeCreators 搜索 Facebook 公开视频和 Reels，返回可追溯网关数据"
+  default_prompt: "Use $wenmai-scrapecreators-facebook-search-videos to 搜索 Facebook 公开视频和 Reels and return traceable results."
+policy:
+  allow_implicit_invocation: true

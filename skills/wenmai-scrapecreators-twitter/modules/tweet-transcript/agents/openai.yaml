@@ -1,0 +1,6 @@
+interface:
+  display_name: "ScrapeCreators 获取视频推文的 AI 转写"
+  short_description: "调用 ScrapeCreators 获取视频推文的 AI 转写，返回可追溯网关数据"
+  default_prompt: "Use $wenmai-scrapecreators-twitter-tweet-transcript to 获取视频推文的 AI 转写 and return traceable results."
+policy:
+  allow_implicit_invocation: true

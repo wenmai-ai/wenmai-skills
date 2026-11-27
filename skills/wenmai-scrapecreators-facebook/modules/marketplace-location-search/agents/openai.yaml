@@ -1,0 +1,6 @@
+interface:
+  display_name: "ScrapeCreators 搜索 Facebook Marketplace 地点"
+  short_description: "调用 ScrapeCreators 搜索 Facebook Marketplace 地点，返回可追溯网关数据"
+  default_prompt: "Use $wenmai-scrapecreators-facebook-marketplace-location-search to 搜索 Facebook Marketplace 地点 and return traceable results."
+policy:
+  allow_implicit_invocation: true

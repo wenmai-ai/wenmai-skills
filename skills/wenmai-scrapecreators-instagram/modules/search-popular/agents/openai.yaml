@@ -1,0 +1,6 @@
+interface:
+  display_name: "ScrapeCreators 按热门话题搜索 Instagram 帖子"
+  short_description: "调用 ScrapeCreators 按热门话题搜索 Instagram 帖子，返回可追溯网关数据"
+  default_prompt: "Use $wenmai-scrapecreators-instagram-search-popular to 按热门话题搜索 Instagram 帖子 and return traceable results."
+policy:
+  allow_implicit_invocation: true
